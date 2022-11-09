@@ -1,3 +1,13 @@
+.singleProductImage{
+  border: 2px solid rgb(208, 203, 203);
+}
+.singleProductImage:hover{
+    transform: scale(1.1);
+}
+.singleProductAddtoCart:hover{
+  transform: scale(1.2);
+  color: teal;
+}
 .container {
   padding: 0 2rem;
 }
