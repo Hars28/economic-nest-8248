@@ -12,13 +12,17 @@
     "@chakra-ui/react": "^2.3.7",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "axios": "^1.1.3",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
+    "fast-two-sms": "^3.0.0",
     "framer-motion": "^6.5.1",
     "mongoose": "^6.7.2",
     "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "redis": "^4.4.0"
+    "redis": "^4.4.0",
+    "sms-service": "^1.1.7",
+    "unirest": "^0.6.0"
   }
 }
