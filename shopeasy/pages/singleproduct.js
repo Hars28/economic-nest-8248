@@ -137,7 +137,7 @@ export default function SingleProduct() {
                     />
                   </Box>
                 ))}
-              </Flex>
+            </Flex>
               <Text {...arrowStyles} left="0" onClick={prevSlide}>
                 &#10094;
               </Text>

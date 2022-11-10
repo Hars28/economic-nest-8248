@@ -21,10 +21,9 @@ export default function Cart(){
                                     <Box>Savings: 200</Box>
                                     <Flex>
                                         <Box textDecoration="line-through">{item.price}</Box>
-                                        <Box px="4" py="1" bgColor="teal.100" borderLeft="6px solid teal" fontWeight="600" fontSize="18" ml="3">{item.discount_price}</Box>
+                                         <Box px="4" py="1" bgColor="teal.100" borderLeft="6px solid teal" fontWeight="600" fontSize="18" ml="3">{item.discount_price}</Box>
                                     </Flex>
-                                   
-                                 </Box>
+                                   </Box>
                             </Flex>
                             
                         ))
