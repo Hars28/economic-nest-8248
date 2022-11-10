@@ -1,7 +1,7 @@
 import mongoose from 'mongoose'
 
-const MONGODB_URI = "mongodb+srv://server:server@cluster0.impaz7q.mongodb.net/?retryWrites=true&w=majority"
-
+const MONGODB_URI = "mongodb+srv://server:server@cluster0.bgu4xhh.mongodb.net/shopeasy"
+// mongodb+srv://server:server@cluster0.bgu4xhh.mongodb.net/?retryWrites=true&w=majority
 let cached = global.mongoose
 
 if (!cached) {

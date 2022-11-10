@@ -22,6 +22,7 @@ import {
   HStack,
   Checkbox,
 } from "@chakra-ui/react";
+import { signIn, useSession } from "next-auth/react";
 
 const LoginPg = ({ children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -41,6 +42,10 @@ const LoginPg = ({ children }) => {
   });
 
 // api to set data into backend
+
+const seassion = useSession()
+
+console.log(seassion)
 
 
 
@@ -147,6 +152,7 @@ const LoginPg = ({ children }) => {
                       variant={"outline"}
                       color={"red"}
                       colorScheme={"red"}
+                      onClick={()=>signIn()}
                     >
                       Google
                     </Button>
