@@ -1,12 +1,12 @@
 import { UnlockIcon } from "@chakra-ui/icons";
-import { Box, Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 
 const Footer = () => {
   return (
     <Flex direction="column" p="10px" width="100%" bg="#2c4152">
-      <Flex direction="column">
-          <Flex direction="row" justify="space-around">
+      <Flex direction="column" >
+          <SimpleGrid columns={[1,2,2,4]} spacingX='40px' spacingY='20px'>
             <Box >
               <Text color="#c0c5be">Ajio</Text>
               <Flex direction="column" mt="10px">
@@ -55,7 +55,7 @@ const Footer = () => {
                 <Text color="#c0c5be">Pinterest</Text>
               </Flex>
             </Box>
-          </Flex>
+          </SimpleGrid>
       </Flex>
       <Divider orientation="horizontal"/>
       <Flex direction="column">
@@ -64,13 +64,13 @@ const Footer = () => {
         <Text color='#c0c5be'>Secure systems</Text>
         </Flex>
         <Flex direction="row" justify="space-between">
-            <Flex direction="row">
+            <SimpleGrid columns={[2,2,4,5]} spacingX="20px" spacingY="10px">
             <Text color='#c0c5be'>Net Banking</Text>
             <Text color='#c0c5be'>Verified by VISA</Text>
             <Text color='#c0c5be'>MasterCard</Text>
             <Text color='#c0c5be'>CASH ON DELIVERY</Text>
             <Text color='#c0c5be'>Jio Money</Text>
-            </Flex>
+            </SimpleGrid>
             <Flex direction="row">
                 <Text color='#c0c5be'><UnlockIcon/>256 BIT</Text>
             </Flex>
