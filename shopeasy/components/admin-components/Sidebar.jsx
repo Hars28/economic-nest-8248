@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Icon } from "@chakra-ui/react";
+import Link from "next/link";
 import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
 import { AiOutlineUser } from "react-icons/ai";
 
@@ -8,7 +9,7 @@ export default function Sidebar() {
       <Flex
         sx={{
           padding: "2rem",
-          fontSize: "1.2rem",
+          fontSize: "1.6rem",
           flexDir: "column",
           height: "100vh",
           minW: "15rem",
@@ -22,11 +23,25 @@ export default function Sidebar() {
             mt: "5rem",
           }}
         >
-          <Flex mb="2rem" gap="5px" alignItems="center">
+          <Flex
+            onClick={() => {
+              // setLinkTarget("dashboard");
+            }}
+            mb="2rem"
+            gap="5px"
+            alignItems="center"
+          >
             <Icon as={MdDashboard} />
             <h2>Dashboard</h2>
           </Flex>
-          <Flex mb="2rem" gap="5px" alignItems="center">
+          <Flex
+            // onClick={() => {
+            //   changeLinkTarget("products");
+            // }}
+            mb="2rem"
+            gap="5px"
+            alignItems="center"
+          >
             <Icon as={MdProductionQuantityLimits} />
             <h2>Products</h2>
           </Flex>
