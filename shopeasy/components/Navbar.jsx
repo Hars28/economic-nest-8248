@@ -2,6 +2,7 @@ import { Search2Icon } from '@chakra-ui/icons'
 import { Button, Flex, Input, InputGroup, InputRightElement, Text, Box } from '@chakra-ui/react'
 import React from 'react'
 import { Icon } from '@chakra-ui/react'
+import LoginPg from './loginSignupmodal/LoginPg'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
         <Text>AJIO</Text>
         <Flex direction="column">
         <Flex direction="row" gap="10px" align="center" justify="flex-end">
-            <Text>Sign in / Join AJIO</Text>
+            <LoginPg>Sign in / Join AJIO</LoginPg>
             <Text>Customer Care</Text>
             <Button bg="black" color="white">Visit AJIOLUXE</Button>
         </Flex>

@@ -21,3 +21,6 @@ export default async function allmens(req, res) {
      return   res.end(e.massage)
     }
 }
+
+
+
