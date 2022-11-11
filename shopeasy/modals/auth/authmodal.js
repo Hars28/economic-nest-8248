@@ -14,7 +14,8 @@ const authSchema = new mongoose.Schema(
         },
         password: {
             type: String,
-            require: true
+            require: true,
+
         },
         inviteCode: {
             type: String,
@@ -22,18 +23,24 @@ const authSchema = new mongoose.Schema(
             default: "masai-school"
         },
         role: {
-            type: string,
+            type: String,
             default: "user",
             enum: ["user", "admin"]
         },
         istermsaggreed: {
             type: Boolean,
-            require: true,
+            require: false,
             default: true
         },
-        gender : {
-            type : string ,
-            enum : ["Male" , "Female"]
+        gender: {
+            type: String,
+            require  : false ,
+            enum: ["Male", "Female"]
+        },
+        oauth: {
+            type: String,
+            enum: ["google", 'faceBook'],
+            require: true
         }
     }, {
     versionKey: false

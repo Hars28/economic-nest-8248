@@ -24,7 +24,10 @@ import {
 } from "@chakra-ui/react";
 import { signIn, useSession } from "next-auth/react";
 
-const LoginPg = ({ children }) => {
+const LoginPg = ({ children, providers, session }) => {
+
+console.log(providers, session);
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
@@ -44,14 +47,6 @@ const LoginPg = ({ children }) => {
 // api to set data into backend
 
 const seassion = useSession()
-
-console.log(seassion)
-
-
-
-
-
-
   const handlesavedata = (e) => {
     const { checked, value, name, type } = e.target;
     setUserinfo({
@@ -93,9 +88,7 @@ console.log(seassion)
     }
   };
 
-  useEffect(() => {
-    console.log(userinfo);
-  }, [userinfo]);
+
 
   return (
     <>
@@ -145,6 +138,7 @@ console.log(seassion)
                       variant={"outline"}
                       color={"blue"}
                       colorScheme={"blue"}
+                      onClick={()=>signIn("facebook")}
                     >
                       Facebook
                     </Button>
@@ -152,7 +146,7 @@ console.log(seassion)
                       variant={"outline"}
                       color={"red"}
                       colorScheme={"red"}
-                      onClick={()=>signIn()}
+                      onClick={()=>signIn("google")}
                     >
                       Google
                     </Button>
@@ -334,3 +328,12 @@ console.log(seassion)
 };
 
 export default LoginPg;
+
+
+
+LoginPg.getInitialProps = async (context) => {
+  return {
+    providers: await providers(context),
+    session: await getSession(context)
+  }
+}

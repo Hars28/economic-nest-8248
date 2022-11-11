@@ -1,56 +1,51 @@
 import NextAuth from "next-auth"
-import GithubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google";
+import FacebookProvider from "next-auth/providers/facebook";
+import dbConnect from "../../../lib/dbConnect";
+import authModal from "../../../modals/auth/authmodal";
 
-const CLIENT_ID = '1099013241213-kpro4gfoc4shhpu9rijemngqpvi4eupk.apps.googleusercontent.com'
-const CLIENT_SECRET_ID = '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'
+const GOOGLE_CLIENT_ID = '1099013241213-kpro4gfoc4shhpu9rijemngqpvi4eupk.apps.googleusercontent.com'
+const GOOGLE_CLIENT_SECRET = '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'
 const NEXTAUTH_SECRET = "NEXTAUTH_SECRET"
+const MONGODB_URI = "mongodb+srv://server:server@cluster0.bgu4xhh.mongodb.net/shopeasy"
+const  FACEBOOK_CLIENT_ID ='1206442673628854'
+const  FACEBOOK_CLIENT_SECRET ="fde38029797a136cb11fc754e622071e"
 
 
 
-
-
-
-
-export default NextAuth({
-
+export const authOptions = {
+  // Configure one or more authentication providers
   providers: [
-
     GoogleProvider({
-      clientId: CLIENT_ID,
-      clientSecret: CLIENT_SECRET_ID,
-      authorization: {
-        params: {
-          prompt: "consent",
-          access_type: "offline",
-          response_type: "code"
-        }
-      },
-      jwt : {
-        encryption : true
-      },
-      secret : NEXTAUTH_SECRET,
-      callbacks : {
-        async jwt(token, account){
-                  if(account?.accessToken) 
-          {
-            token.accessToken = account.accessToken
-          }
-          return token;
-        }
-      },
-      redirect : async(url, _baseUrl) => {
-        console.log("url is ",  url, "and base url is", _baseUrl)
-        if(url === "/register")
-        {
-          return Promise.resolve("/")
-        }
-        return Promise.resolve("/")
-      }
-    })
+      clientId: GOOGLE_CLIENT_ID,
+      clientSecret: GOOGLE_CLIENT_SECRET
+    }),
+    FacebookProvider({
+      clientId: FACEBOOK_CLIENT_ID,
+      clientSecret: FACEBOOK_CLIENT_SECRET
+    }),
+    // ...add more providers here
+  ],session : {
+    jwt : true 
+  },
+  database: MONGODB_URI,
+  callbacks: {
+    async signIn({user, account, profile}){
+   
+      await dbConnect()
 
-  ],
-
-  secret: NEXTAUTH_SECRET
+      const newuser = new authModal({
+        name : user.name,
+        email : user.email,
+        password : user.name.trim().split(" ")[0] + '@123',
+        oauth : account.provider,
+      })
+      await newuser.save()
+      return true
+    }
+    
+  }
   
-})
+}
+
+export default NextAuth(authOptions)
