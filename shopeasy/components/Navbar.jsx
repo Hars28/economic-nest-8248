@@ -7,22 +7,41 @@ import {
   IconButton,
   CloseButton,
 } from "@chakra-ui/react";
-import React from 'react'
+import Logout from './loginSignupmodal/Logout';
+import React, { useEffect, useState } from 'react'
 import {ImMan, ImWoman} from "react-icons/im"
 import {FaChild} from "react-icons/fa"
 import {MdMapsHomeWork} from "react-icons/md"
 import {AiFillHeart, AiOutlineMenu, AiOutlineShoppingCart} from "react-icons/Ai"
 import LoginPg from './loginSignupmodal/LoginPg'
+import { useSession } from 'next-auth/react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
 const Navbar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
+  const session  = useSession()
+  const router = useRouter()
+const [auth, setauth] = useState(false)
+
+
+useEffect(()=>{
+if(session.status=="authenticated"){
+setauth(true)
+}else{
+  setauth(false)
+}
+},[session.status])
 
   return (    
-        <Flex alignItems="center" justifyContent="space-around" mx="auto">
-         <Image objectFit="cover" boxSize={["90px","90px","100px","150px"]} src="/shopeasy-logo.jpeg" alt=""/>
-          <Flex w={{sm:"500px",sm:"500px",md:"700px",lg:"900px",}} direction="column" border="3px orange">
-          <HStack  display={{ base: "none", md: "inline-flex", lg:"inline-flex" }} alignItems="center" justify="flex-end" >
-            <LoginPg>Sign in / Join AJIO</LoginPg>
+        <Flex borderTop="2px solid" alignItems="center" justifyContent="space-around" mx="auto" left={0} top={0} pos="sticky" bg="white" zIndex={10000} opacity={10000}>
+         <Image w={["20%","20%","15%","15%"]} src="/shopeeasy-logo.png" alt=""/>
+          <Flex  w={{sm:"500px",sm:"500px",md:"700px",lg:"900px",}} direction="column" border="3px orange">
+          <HStack   display={{ base: "none", md: "inline-flex", lg:"inline-flex" }} alignItems="center" justify="flex-end" >
+          {
+            auth ? <Logout setauth={setauth}/> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
+          }
             <Text>Customer Care</Text>
             <Button bg="black" color="white">Visit AJIOLUXE</Button>
         </HStack>
@@ -34,17 +53,18 @@ const Navbar = () => {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
               justify="flex-end">
-              <Button variant="ghost">MEN</Button>
-              <Button variant="ghost">WOMEN</Button>
-              <Button variant="ghost">KIDS</Button>
-              <Button variant="ghost">INDIE</Button>
-              <Button variant="ghost">HOME AND KITCHEN</Button>
+            
+              <Button variant="ghost" onClick={()=>router.replace("/mens")}>MEN</Button>
+              <Button variant="ghost" onClick={()=>router.replace("/womens")}>WOMEN</Button>
+              <Button variant="ghost" onClick={()=>router.replace("/kids")}>KIDS</Button>
+              <Button variant="ghost" onClick={()=>router.replace("/indie")}>INDIE</Button>
+              <Button variant="ghost" onClick={()=>router.replace("/home")}>HOME AND KITCHEN</Button>
               <InputGroup width="250px">
             <Input borderRadius="25px" placeholder='Search AJIO'/>
             <InputRightElement><Search2Icon/></InputRightElement>
             </InputGroup>
             <AiFillHeart size="25px"/>
-            <AiOutlineShoppingCart size="25px"/>
+            <AiOutlineShoppingCart size="25px" onClick={()=>router.replace("/cart")}/>
             </HStack>
            
             <HStack display={{ base: "inline-flex", md: "none" }} border="5px solid #ffddba" justify="flex-end">
@@ -88,26 +108,25 @@ const Navbar = () => {
                   onClick={mobileNav.onClose}
                 />
 
-                <Button leftIcon={<ImMan/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/mens")} leftIcon={<ImMan/>} border="2px solid" variant="ghost">
                   MEN
                 </Button>
-                <Button leftIcon={<ImWoman/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/womens")} leftIcon={<ImWoman/>} border="2px solid" variant="ghost">
                   WOMEN
                 </Button>
-                <Button leftIcon={<FaChild/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/kids")} leftIcon={<FaChild/>} border="2px solid" variant="ghost">
                   KIDS
                 </Button>                
-                <Button leftIcon={<MdMapsHomeWork/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/home")} leftIcon={<MdMapsHomeWork/>} border="2px solid" variant="ghost">
                   HOME AND KITCHEN
                 </Button>
-            
-                <Button leftIcon={<AiOutlineShoppingCart/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/cart")} leftIcon={<AiOutlineShoppingCart/>} border="2px solid" variant="ghost">
                   CART
                 </Button>
-                <Button leftIcon={<AiFillHeart/>} border="2px solid" variant="ghost">
+                <Button onClick={()=>router.replace("/")} leftIcon={<AiFillHeart/>} border="2px solid" variant="ghost">
                   WISHLIST
                 </Button>
-                <LoginPg>LOGIN / SIGNUP</LoginPg>
+                <LoginPg >LOGIN / SIGNUP</LoginPg>
               </Flex>
             </HStack>
           </Flex>

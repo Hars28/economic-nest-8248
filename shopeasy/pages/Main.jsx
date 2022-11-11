@@ -2,9 +2,7 @@ import { Box, Flex, Icon, Image, SimpleGrid, Text, VStack } from "@chakra-ui/rea
 import React, { useEffect, useState } from "react";
 import AutoCarousel from "../components/carouselcomponents/Autocarousel";
 import KeyCarousel from "../components/carouselcomponents/Keycarousel";
-import {GiCardExchange} from "react-icons/gi"
-import {FaHandHoldingHeart} from "react-icons/fa"
-import {BsFillPatchCheckFill} from "react-icons/bs"
+
 const Main = () => {
   const sponsoredBrandData = [
     {
@@ -525,7 +523,7 @@ const Main = () => {
   ];
 
   return (
-    <Box zIndex={1} mt="20px">
+    <Box zIndex={1}  >
       <AutoCarousel slides={slide1} />
       <AutoCarousel slides={slide2} />
       <Box>
@@ -1052,22 +1050,7 @@ const Main = () => {
         src="https://assets.ajio.com/cms/AJIO/WEB/08032022-D-unisex-ajiocares-strip%20new%20d.jpg"
         alt="Img-label"
       />
-      <Flex>
-        <Flex justify="space-evenly" align="center" w="100%" p={["5px","5px","10px","10px"]}>
-          <VStack>
-          <Icon as={GiCardExchange} boxSize={["35px","40px","45px","50px"]}/>
-          <Text>EASY EXCHANGE</Text>
-          </VStack>
-          <VStack>
-          <Icon as={FaHandHoldingHeart} boxSize={["35px","40px","45px","50px"]}/>
-          <Text>100% HANDPICKED</Text>
-          </VStack>
-          <VStack>
-          <Icon as={BsFillPatchCheckFill} boxSize={["35px","40px","45px","50px"]}/>
-          <Text>ASSURED QUALITY</Text>
-          </VStack>
-        </Flex>
-      </Flex>
+      
     </Box>
   );
 };
