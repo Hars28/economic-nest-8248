@@ -1,4 +1,5 @@
 import { Flex } from "@chakra-ui/react";
+import Dashboard from "../../components/admin-components/Dashboard";
 import Sidebar from "../../components/admin-components/Sidebar";
 
 export default function Admin() {
@@ -6,7 +7,7 @@ export default function Admin() {
     <>
       <Flex gap="2rem">
         <Sidebar />
-        <h1>Admin Page</h1>
+        <Dashboard />
       </Flex>
     </>
   );
