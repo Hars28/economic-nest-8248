@@ -40,15 +40,14 @@ setauth(true)
 
   return (    
         <Flex borderTop="2px solid" alignItems="center" justifyContent="space-around" mx="auto" left={0} top={0} pos="sticky" bg="white" zIndex={10000} opacity={10000}>
-         <Image w={["20%","20%","15%","15%"]} src="/shopeeasy-logo.png" alt=""/>
+         <Image onClick={()=>router.replace("/")} cursor="pointer" w={["20%","20%","15%","15%"]} src="/shopeeasy-logo.png" alt=""/>
           <Flex  w={{sm:"500px",sm:"500px",md:"700px",lg:"900px",}} direction="column" border="3px orange">
           <HStack   display={{ base: "none", md: "inline-flex", lg:"inline-flex" }} alignItems="center" justify="flex-end" >
           {
-            auth ? <Logout setauth={setauth}/> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
+            auth ? <><Text>{session.data.user.name}</Text><Logout setauth={setauth}/></> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
           }
 
-            <Text>Customer Care</Text>
-            <Button bg="black" color="white">Visit AJIOLUXE</Button>
+            <Button _hover={{bg:"#ffddba",textDecoration:"underline", color:"black"}} bg="black" onClick={()=>router.push("https://luxe.ajio.com/?_ga=2.146994423.1331547409.1667928574-1338200682.1667928574")} color="white">Visit AJIOLUXE</Button>
         </HStack>
         {/* <Divider orientation="horizontal"/> */}
             <HStack
@@ -131,7 +130,12 @@ setauth(true)
                 <Button onClick={()=>router.replace("/")} leftIcon={<AiFillHeart/>} border="2px solid" variant="ghost">
                   WISHLIST
                 </Button>
+                <Button border="2px solid" variant="ghost">{
+                  auth?
                 <LoginPg >LOGIN / SIGNUP</LoginPg>
+                :<Logout setauth={setauth}/>
+}
+                </Button>
               </Flex>
             </HStack>
           </Flex>
