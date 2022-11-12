@@ -1,13 +1,13 @@
 import React from 'react'
-import KeyCarousel from '../carouselcomponents/Keycarousel'
+import KeyCarousel from '../../carouselcomponents/Keycarousel';
 
-const MensGridBox = () => {
+const MensKey = () => {
     const slides = [
         {
-            img: "https://assets.ajio.com/cms/AJIO/WEB/10112022-D-MHP-JItstaic-p1-homegrownbrands-upto80.jpg",
+            img: "https://assets.ajio.com/cms/AJIO/WEB/04112022-D-MHP-sponsorbrands-theindiangarage-min60.jpg",
         },
         {
-            img: "https://assets.ajio.com/cms/AJIO/WEB/10112022-D-MHP-JItstaic-p1-homegrownbrands-upto80.jpg",
+            img: "https://assets.ajio.com/cms/AJIO/WEB/04112022-D-MHP-sponsorbrands-levis-flat50extra10.jpg",
         },
         {
             img: "https://assets.ajio.com/cms/AJIO/WEB/04112022-D-MHP-sponsorbrands-campus-upto60.jpg",
@@ -30,4 +30,4 @@ const MensGridBox = () => {
     )
 }
 
-export default MensGridBox
+export default MensKey

@@ -37,7 +37,7 @@ const AutoCarousel = ({ slides }) => {
             _dark={{
                 bg: "#3e3e3e",
             }}
-            p={5}
+            p={2}
             alignItems="center"
             justifyContent="center"
         >

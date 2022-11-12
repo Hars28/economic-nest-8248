@@ -1,5 +1,5 @@
 import React from 'react'
-import AutoCarousel from '../carouselcomponents/Autocarousel'
+import AutoCarousel from '../../carouselcomponents/Autocarousel';
 
 const MenAuto = () => {
     const slides = [
@@ -18,9 +18,7 @@ const MenAuto = () => {
         {
             img: "https://assets.ajio.com/cms/AJIO/WEB/10112022-D-MHP-maincarousel-p6-travelbags&luggage-brands-upto80.jpg",
         },
-        {
-            img: "https://assets.ajio.com/cms/AJIO/WEB/Paytm-1440x128.jpg",
-        },
+
     ];
 
     return (
