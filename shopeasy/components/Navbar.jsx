@@ -13,6 +13,7 @@ import {ImMan, ImWoman} from "react-icons/im"
 import {FaChild} from "react-icons/fa"
 import {MdMapsHomeWork} from "react-icons/md"
 import {AiFillHeart, AiOutlineMenu, AiOutlineShoppingCart} from "react-icons/Ai"
+import { Icon } from '@chakra-ui/react'
 import LoginPg from './loginSignupmodal/LoginPg'
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
@@ -42,6 +43,7 @@ setauth(true)
           {
             auth ? <Logout setauth={setauth}/> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
           }
+
             <Text>Customer Care</Text>
             <Button bg="black" color="white">Visit AJIOLUXE</Button>
         </HStack>

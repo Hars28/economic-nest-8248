@@ -1,7 +1,5 @@
 import dbConnect from '../../../../lib/dbConnect'
-import girlModal from '../../../../modals/products/girlModals'
-
-const mongoose = require('mongoose')
+import girlModal from '../../../../modals/products/girlModal'
 
 export default async function allmens(req, res) {
 

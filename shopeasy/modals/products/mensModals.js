@@ -8,6 +8,7 @@ const schema = new mongoose.Schema(
         brand: String,
         discount_price: String,
         price: String,
+        type : String,
         _id: mongoose.Schema.Types.ObjectId
     }
     , {

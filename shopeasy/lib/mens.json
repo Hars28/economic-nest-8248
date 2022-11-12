@@ -1,0 +1,1201 @@
+[{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd70"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5415202/2018/5/23/7a32e5c1-6ac6-4219-984e-63cb68497fa21527075068613-Roadster-Men-Trousers-6171527075067295-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Cargos",
+  "discount_price": "Rs. 1127",
+  "price": "Rs. 2399",
+  "id": 0,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd71"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Pure Cotton Casual Shirt",
+  "discount_price": "Rs. 524",
+  "price": "Rs. 1499",
+  "id": 1,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd72"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 872",
+  "price": "Rs. 3795",
+  "id": 2,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd73"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2308267/2018/1/29/11517216335231-Roadster-Men-Maroon-Printed-Round-Neck-T-shirt-5591517216335098-1.jpg",
+  "brand": "Roadster",
+  "name": "Typography Cotton T-shirt",
+  "discount_price": "Rs. 209",
+  "price": "Rs. 599",
+  "id": 3,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd74"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5670082/2022/4/19/33026568-9ea9-4fa6-9344-67e06e2186c71650361538625-Roadster-Men-Navy-Blue-Skinny-Fit-Mid-Rise-Low-Distress-Stre-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 594",
+  "price": "Rs. 1699",
+  "id": 4,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd75"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8673407/2019/4/1/ffa55417-328e-4259-a757-07aa873135201554120715115-WROGN-Men-Blue-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Je-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 1259",
+  "price": "Rs. 2799",
+  "id": 5,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd76"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1758578/2017/5/12/11494569522819-WROGN-Men-Shirts-8521494569522516-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Casual Shirt",
+  "discount_price": "Rs. 1149",
+  "price": "Rs. 2299",
+  "id": 6,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd77"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg",
+  "brand": "Roadster",
+  "name": "Printed Casual Shirt",
+  "discount_price": "Rs. 749",
+  "price": "Rs. 1499",
+  "id": 7,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd78"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13077156/2021/1/27/0dbb8154-b2c0-4db2-aacf-8437c609672b1611743030950-Mast--Harbour-Men-Jeans-5961611743029391-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 599",
+  "price": "Rs. 1499",
+  "id": 8,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd79"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/3/7/0adbc936-ec99-4157-ab34-9a7226e0738f1646660549902RoadsterMenBlackSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 872",
+  "price": "Rs. 3795",
+  "id": 9,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1678869/2017/3/17/11489743045853-Mast--Harbour-Men-Black-Solid-Regular-Fit-Chino-7871489743045672-2.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Chino Joggers",
+  "discount_price": "Rs. 874",
+  "price": "Rs. 2499",
+  "id": 10,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17350726/2022/5/12/1fbba260-8584-4d2a-86fa-a5fa91ddad701652344722392-Puma-Men-White--Black-Colourblocked-IDP-Sneakers-87416523447-1.jpg",
+  "brand": "Puma",
+  "name": "Men Colourblocked IDP Sneakers",
+  "discount_price": "Rs. 3374",
+  "price": "Rs. 4499",
+  "id": 11,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2478210/2019/11/8/85bba7bd-b3f3-4ea3-a063-5890340301471573214255868-WROGN-Men-Pink-Slim-Fit-Solid-Casual-Shirt-7431573214250598-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Casual Shirt",
+  "discount_price": "Rs. 1199",
+  "price": "Rs. 2399",
+  "id": 12,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14528384/2021/7/16/ccb4d0a4-b494-4e60-bf8a-9be73c1a88771626414102911-Nike-Winflo-8-Mens-Running-Shoe-9771626414102570-1.jpg",
+  "brand": "Nike",
+  "name": "Men Winflo 8 Running Shoes",
+  "discount_price": "Rs. 7050",
+  "price": "Rs. 8295",
+  "id": 13,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11007314/2020/6/5/605acdc7-6157-48eb-84f0-27e432126c611591355165720-Mast--Harbour-Men-Shirts-4111591355163609-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Checked Regular Casual Shirt",
+  "discount_price": "Rs. 1099",
+  "price": "Rs. 1999",
+  "id": 14,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd7f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10248557/2022/8/3/7e905109-4e00-422e-866c-60c2df73b97c1659524393162-Puma-Men-Black-Enzo-Running-Shoes-6251659524392836-1.jpg",
+  "brand": "Puma",
+  "name": "Men Enzo Running Shoes",
+  "discount_price": "Rs. 2584",
+  "price": "Rs. 5499",
+  "id": 15,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd80"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2275336/2021/11/10/9d98163d-83f6-4bca-875d-88bb539e1a071636534889039-Roadster-Men-Maroon-Slub-Effect-Printed-Round-Neck-T-shirt-8-1.jpg",
+  "brand": "Roadster",
+  "name": "Slub Effect Printed Cotton Pure Cotton T-shirt",
+  "discount_price": "Rs. 239",
+  "price": "Rs. 599",
+  "id": 16,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd81"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1923646/2018/10/9/4047301c-1394-4f63-8110-4db695b893e71539082423667-Roadster-Men-Green-Regular-Fit-Solid-Joggers-187153908242205-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Cotton Joggers",
+  "discount_price": "Rs. 769",
+  "price": "Rs. 2199",
+  "id": 17,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd82"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1667077/2018/2/8/11518090736106-Roadster-Men-Black-Shadow-Checks-Casual-Shirt-1211518090735845-1.jpg",
+  "brand": "Roadster",
+  "name": "Shadow Check Casual Shirt",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 1699",
+  "id": 18,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd83"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11361514/2021/12/9/8c6963cf-7893-4833-8ce7-9a38530fa6631639025038149-WROGN-Men-Blue-Faded-Cotton-Casual-Shirt-6181639025037462-1.jpg",
+  "brand": "WROGN",
+  "name": "Faded Cotton Casual Shirt",
+  "discount_price": "Rs. 1199",
+  "price": "Rs. 2399",
+  "id": 19,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd84"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18684780/2022/7/5/db84d2f5-8aa1-429b-bfe4-6b7e9da63d3e1657008072890-Flying-Machine-Men-Casual-Shoes-4931657008072384-1.jpg",
+  "brand": "Flying Machine",
+  "name": "Men Slip-On Sneakers",
+  "discount_price": "Rs. 1299",
+  "price": "Rs. 1999",
+  "id": 20,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd85"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/7139512/2018/9/21/52ac3343-f859-4ac7-92f1-3d2451fe92951537510763979-Roadster-Men-Black-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-1421537510763791-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 874",
+  "price": "Rs. 2499",
+  "id": 21,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd86"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10167307/2022/4/18/3afd98da-3278-4179-827f-647bbac0e9511650284917884TheRoadsterLifestyleCoMenBlackSolidHoodedSweatshirt1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Sweatshirt",
+  "discount_price": "Rs. 779",
+  "price": "Rs. 1299",
+  "id": 22,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd87"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19353768/2022/8/2/cd11bde1-8c9c-4580-b1d7-90c227bc31801659439588824AllenSollyGreyTrousers1.jpg",
+  "brand": "Allen Solly",
+  "name": "Men Slim Fit Trousers",
+  "discount_price": "Rs. 1741",
+  "price": "Rs. 2049",
+  "id": 23,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd88"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15119106/2022/6/13/42a914aa-70a2-40b8-b8e3-d760c766739d1655120732223PumaMenBlackLogoPrintedFront-OpenHoodedSweatshirt1.jpg",
+  "brand": "Puma",
+  "name": "Men Printed Hooded Sweatshirt",
+  "discount_price": "Rs. 2099",
+  "price": "Rs. 3499",
+  "id": 24,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd89"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17350728/2022/5/11/0f1ce8f1-6394-4785-9c67-d238acce820c1652267748897-Puma-Men-Casual-Shoes-9391652267748578-1.jpg",
+  "brand": "Puma",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 3374",
+  "price": "Rs. 4499",
+  "id": 25,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8894685/2019/3/27/bc668260-5bd7-4cb1-9d91-239e2a5d1f221553667952837-Roadster-Men-Maroon--Navy-Blue-Regular-Fit-Checked-Casual-Sh-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Micro Check Casual Shirt",
+  "discount_price": "Rs. 629",
+  "price": "Rs. 1499",
+  "id": 26,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1823142/2017/4/27/11493281526215-WROGN-Men-Navy-Blue-Slim-Fit-Checked-Casual-Shirt-5201493281525914-1.jpg",
+  "brand": "WROGN",
+  "name": "Slim Fit Checked Casual Shirt",
+  "discount_price": "Rs. 1195",
+  "price": "Rs. 2299",
+  "id": 27,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10941384/2020/2/13/9447a845-892a-49f5-91ee-4de8a6589a541581587257528-Roadster-Men-Tshirts-8221581587255142-1.jpg",
+  "brand": "Roadster",
+  "name": "Solid Round Neck Pure Cotton T-shirt",
+  "discount_price": "Rs. 499",
+  "price": "Rs. 999",
+  "id": 28,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1667048/2017/1/23/11485147470285-Roadster-Men-Maroon-Regular-Fit-Checked-Casual-Shirt-1531485147470065-1.jpg",
+  "brand": "Roadster",
+  "name": "Regular Checked Casual Shirt",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 1699",
+  "id": 29,
+  "type": "mens",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17333752/2022/2/28/1b9a9e4a-3eaf-43e6-b6ef-b255ae87c8461646053483586RoadsterMenBlueTexturedSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Textured Sneakers",
+  "discount_price": "Rs. 899",
+  "price": "Rs. 4495",
+  "id": 30,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd8f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/6510458/2018/10/30/da83c4d2-8416-4f3a-bc6d-46129eaf5ef71540895310508-Roadster-Men-Black-Solid-Sweatshirt-9721540895310347-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Sweatshirt",
+  "discount_price": "Rs. 629",
+  "price": "Rs. 1399",
+  "id": 31,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd90"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2303701/2019/3/7/dcb5e566-c7ab-4e0e-bdfb-66d93d7932901551949925470-Roadster-Men-Navy-Blue-Printed-Round-Neck-T-shirt-1471551949-1.jpg",
+  "brand": "Roadster",
+  "name": "Varsity Cotton T-shirt",
+  "discount_price": "Rs. 384",
+  "price": "Rs. 699",
+  "id": 32,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd91"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2167363/2019/10/17/8c63e255-4aee-4da8-8f8e-3897c94c2d471571291553064-Roadster-Men-Black-Regular-Fit-Solid-Chinos-2911571291551227-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Chinos",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 1999",
+  "id": 33,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd92"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14782606/2022/8/9/416e812e-da8a-4167-bb8c-0e48dac3322b1660043426558-ADIDAS-Men-Black--Grey-Runesy-Woven-Design-Running-Shoes-610-1.jpg",
+  "brand": "ADIDAS",
+  "name": "Men Runesy Shoes",
+  "discount_price": "Rs. 3199",
+  "price": "Rs. 3999",
+  "id": 34,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd93"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16470850/2021/12/11/c430d9f6-89e0-4d58-92a1-60982a662f0b1639202760038CasualShoes1.jpg",
+  "brand": "Puma",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 1719",
+  "price": "Rs. 3999",
+  "id": 35,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd94"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/5669835/2018/6/12/fe5aa3f1-2e78-4a64-b465-372640475a681528807456962-Roadster-Men-Navy-Blue-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-4841528807456704-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 594",
+  "price": "Rs. 1699",
+  "id": 36,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd95"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8938267/2022/2/25/ee168554-4e24-4917-9905-84b780586cc51645766479661-Roadster-Men-Grey-Melange-Varsity-Graphic-T-shirt-9281645766-1.jpg",
+  "brand": "Roadster",
+  "name": "Cotton Printed Graphic T-shirt",
+  "discount_price": "Rs. 244",
+  "price": "Rs. 699",
+  "id": 37,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd96"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10944848/2019/12/30/c8a8d954-e98c-47b1-9b71-5d16a99624401577696975302-Roadster-Men-Shirts-411577696972343-1.jpg",
+  "brand": "Roadster",
+  "name": "Cotton Conversational Print Shirt",
+  "discount_price": "Rs. 519",
+  "price": "Rs. 1299",
+  "id": 38,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd97"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18684750/2022/7/5/233949d5-a5b3-46be-97a8-965448579d271657008007227-Flying-Machine-Men-Casual-Shoes-5201657008006777-1.jpg",
+  "brand": "Flying Machine",
+  "name": "Men Mid-Top Sneakers",
+  "discount_price": "Rs. 1429",
+  "price": "Rs. 2199",
+  "id": 39,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd98"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16925016/2022/2/5/cc1134fd-37ab-4236-a5f3-82874ce0ea0e1644058684160RoadsterMenWhiteSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 878",
+  "price": "Rs. 3995",
+  "id": 40,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd99"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11979886/2022/7/22/2349da8f-54c2-4376-aa55-7d22ebd9199b1658489173548-Nike-Revolution-5-Mens-Running-Shoe-9961658489173141-1.jpg",
+  "brand": "Nike",
+  "name": "Men Revolution 5 Running Shoes",
+  "discount_price": "Rs. 3140",
+  "price": "Rs. 3695",
+  "id": 41,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8894777/2019/4/2/e46504d5-37f7-43c9-8580-6c3578ded88d1554181213184-Roadster-Men-Blue-Regular-Fit-Faded-Casual-Shirt-78815541812-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Faded Denim Shirt",
+  "discount_price": "Rs. 755",
+  "price": "Rs. 1799",
+  "id": 42,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14276600/2022/6/13/2e06ced2-2fce-413c-87b0-327ad7e9b3ce1655120808637PumaMenBlackSoftrideRiftBreezeWalkingShoes1.jpg",
+  "brand": "Puma",
+  "name": "Softride Rift Breeze",
+  "discount_price": "Rs. 2924",
+  "price": "Rs. 6499",
+  "id": 43,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11201234/2022/4/13/9ac102e1-774a-4790-92b7-bf6fdb57bf051649831416686RoadsterMenGreenSustainableChinos1.jpg",
+  "brand": "Roadster",
+  "name": "Men Chinos",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 1999",
+  "id": 44,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10945088/2020/1/31/80fea103-f089-476d-a27d-6594a069a1281580455058892-Roadster-Men-Shirts-6341580455057092-1.jpg",
+  "brand": "Roadster",
+  "name": "Cotton Striped Shirt",
+  "discount_price": "Rs. 1039",
+  "price": "Rs. 1999",
+  "id": 45,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8903705/2019/9/30/1b45f349-f7bd-41ef-9201-3889a6f814651569846875597-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 699",
+  "price": "Rs. 1999",
+  "id": 46,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fd9f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/6832388/2018/9/14/7c81479f-9dcf-4e9b-863b-bdc74d8afa2f1536913047231-WROGN-Men-Grey-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-Jeans-2401536913047047-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 1511",
+  "price": "Rs. 2799",
+  "id": 47,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15022294/2022/8/9/493e26ff-b5f2-48d4-a8a8-7c06bda5dc4d1660037544133-Nike-Men-Black-Quest-4-Running-Shoes-4051660037543748-1.jpg",
+  "brand": "Nike",
+  "name": "Men Quest 4 Running Shoes",
+  "discount_price": "Rs. 5095",
+  "price": "Rs. 5995",
+  "id": 48,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1536592/2018/10/17/e5ad6a20-5fec-4923-aabe-46db9a694e721539765741785-WROGN-Men-Black-Slim-Fit-Checked-Casual-Shirt-68315397657395-1.jpg",
+  "brand": "WROGN",
+  "name": "Cotton Slim Checked Casual Shirt",
+  "discount_price": "Rs. 1079",
+  "price": "Rs. 2399",
+  "id": 49,
+  "type": "mens",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1536592/2018/10/17/e5ad6a20-5fec-4923-aabe-46db9a694e721539765741785-WROGN-Men-Black-Slim-Fit-Checked-Casual-Shirt-68315397657395-1.jpg",
+  "brand": "WROGN",
+  "name": "Cotton Slim Checked Casual Shirt",
+  "discount_price": "Rs. 1079",
+  "price": "Rs. 2399",
+  "id": 50,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8889511/2019/4/3/f3e974a4-1680-487f-8e9a-3a2df1b3157f1554281507539-Roadster-Men-Navy-Blue--Beige-Regular-Fit-Checked-Casual-Shi-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Casual Shirt",
+  "discount_price": "Rs. 849",
+  "price": "Rs. 1699",
+  "id": 51,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10167357/2019/9/5/4f59ed7d-e9e4-494a-a3e3-9f0b9c67eee31567682718212-Roadster-Men-Grey-Melange-Solid-Hooded-Sweatshirt-4421567682-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Hooded Sweatshirt",
+  "discount_price": "Rs. 779",
+  "price": "Rs. 1299",
+  "id": 52,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18962782/2022/7/18/98700a87-5cef-428e-b0f4-5816877c51ca1658126545017-Nike-Dri-FIT-Epic-Mens-Full-Zip-Knit-Training-Jacket-1161658-1.jpg",
+  "brand": "Nike",
+  "name": "Men Dri-FIT Sporty Jacket",
+  "discount_price": "Rs. 2630",
+  "price": "Rs. 3095",
+  "id": 53,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/7139455/2020/9/24/39287e29-0f88-47b3-b1d9-b33095aab3a31600932034431-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Clean-Look-Stretchable-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Skinny Fit Jeans",
+  "discount_price": "Rs. 1049",
+  "price": "Rs. 2999",
+  "id": 54,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16740716/2022/7/15/acb7a7c5-6646-40e5-931f-335282b156a81657867977596-ADIDAS-Men-Track-Pants-4531657867976770-1.jpg",
+  "brand": "ADIDAS",
+  "name": "M SERENO PT Track Pants",
+  "discount_price": "Rs. 1679",
+  "price": "Rs. 2799",
+  "id": 55,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14643392/2021/7/15/e7c68423-29c5-40f2-96ed-be6954169ab51626340451998-Nike-Dri-FIT-Challenger-Mens-Woven-Running-Pants-77616263404-1.jpg",
+  "brand": "Nike",
+  "name": "Men Solid Woven Running Pants",
+  "discount_price": "Rs. 2621",
+  "price": "Rs. 3495",
+  "id": 56,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fda9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2338465/2020/10/15/75cca87d-29e7-4962-9d5f-2e3e15d01cfe1602751193849-WROGN-Men-Blue-Jogger-Mid-Rise-Clean-Look-Stretchable-Jeans--1.jpg",
+  "brand": "WROGN",
+  "name": "Men Jogger Jeans",
+  "discount_price": "Rs. 1499",
+  "price": "Rs. 2999",
+  "id": 57,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdaa"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17146178/2022/8/4/0d55984d-0ba1-4879-bdb0-fe5541091cba1659610687969-ADIDAS-Men-Black--Grey-Woven-Design-Aerojolt-Running-Shoes-1-1.jpg",
+  "brand": "ADIDAS",
+  "name": "Men Aerojolt Running Shoes",
+  "discount_price": "Rs. 4499",
+  "price": "Rs. 5999",
+  "id": 58,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdab"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10939048/2020/1/30/fc83c8e3-27ed-46d6-b539-444b683b48e61580372663614-Roadster-Men-Mustard-Solid-Round-Neck-T-shirt-63915803726623-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Round Neck Pure Cotton T-shirt",
+  "discount_price": "Rs. 384",
+  "price": "Rs. 699",
+  "id": 59,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdac"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/4653773/2022/7/6/e1ee8a44-1ec8-45c8-8c44-4d0a08a034bb1657094369787-Roadster-Men-Blue-Slim-Fit-Mid-Rise-Clean-Look-Jeans-5681657-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Slim Fit Jeans",
+  "discount_price": "Rs. 559",
+  "price": "Rs. 1399",
+  "id": 60,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdad"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12422178/2020/11/10/275153e1-134d-4099-879e-9fb9bf7b639b1604994896935-WROGN-Men-Jeans-7571604994894568-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Jeans",
+  "discount_price": "Rs. 1349",
+  "price": "Rs. 2999",
+  "id": 61,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdae"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11326800/2020/1/30/8231a8bf-65c3-4b7c-9c67-a35ca1ec396f1580380871535-Roadster-Men-Shirts-5681580380869586-1.jpg",
+  "brand": "Roadster",
+  "name": "Cotton Checked Shirt",
+  "discount_price": "Rs. 764",
+  "price": "Rs. 1699",
+  "id": 62,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdaf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2033152/2019/3/7/83168dd0-da64-45c8-8434-23e353d094421551936377699-WROGN-Men-Charcoal-Grey--Black-Camouflage-Printed-Joggers-81-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Camouflage Joggers",
+  "discount_price": "Rs. 1649",
+  "price": "Rs. 2999",
+  "id": 63,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2001884/2022/4/26/2a8e5f4b-5b82-44ce-86e4-c2b3cca7d3bf1650970632175-WROGN-Men-Brown--Navy-Relaxed--Smart-Fit-Checked-Casual-Shir-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Relaxed & Smart Fit Casual Shirt",
+  "discount_price": "Rs. 1034",
+  "price": "Rs. 2299",
+  "id": 64,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2242690/2022/4/25/9f017e01-ff02-427a-be58-91260ca081631650883763658MastHarbourMenWhiteSneakers1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 1224",
+  "price": "Rs. 3499",
+  "id": 65,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/9951777/2019/8/19/8e563456-3060-48ab-b4fe-3058e9bb7e771566203738559-Roadster-Men-Navy-Blue--Grey-Regular-Fit-Checked-Casual-Shir-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Casual Shirt",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 1999",
+  "id": 66,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12947396/2021/1/27/23fa6246-cf75-41e7-9bb5-8591727e78d51611740719400-Roadster-Men-Shirts-2451611740717583-1.jpg",
+  "brand": "Roadster",
+  "name": "Regular Fit Casual Shirt",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 1699",
+  "id": 67,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/10/3/09814e9d-8388-4857-8f41-a03c9d9698701570086314065-1.jpg",
+  "brand": "Allen Solly",
+  "name": "Solid Polo Collar Pure Cotton T-shirt",
+  "discount_price": "Rs. 599",
+  "price": "Rs. 999",
+  "id": 68,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/4149448/2019/1/24/16e144d5-fa2c-4069-a4ee-bde11e4bc28b1548329973001-Mast--Harbour-Men-Multicoloured-Striped-Polo-Collar-T-shirt--1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Striped Polo Collar T-shirt",
+  "discount_price": "Rs. 675",
+  "price": "Rs. 1299",
+  "id": 69,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17148202/2022/2/22/b2962f72-50ef-411b-897d-27086439175b1645519140446-Puma-Men-Casual-Shoes-5221645519140065-1.jpg",
+  "brand": "Puma",
+  "name": "Men Cave Sneakers",
+  "discount_price": "Rs. 2149",
+  "price": "Rs. 4299",
+  "id": 70,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11278632/2020/1/31/c160e608-8eb5-4f5c-98da-9f71d34b74e01580443927749-Roadster-Men-Tshirts-9961580443926160-1.jpg",
+  "brand": "Roadster",
+  "name": "Self Design Polo Collar Pure Cotton T-shirt",
+  "discount_price": "Rs. 524",
+  "price": "Rs. 1499",
+  "id": 71,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17394938/2022/3/19/a9bec382-821b-4b86-b4af-5a91b744afe61647671850312-Puma-Men-Black-Solid-Slim-Fit-Track-Pants-2061647671849656-1.jpg",
+  "brand": "Puma",
+  "name": "Men Solid Slim Fit Track Pants",
+  "discount_price": "Rs. 1499",
+  "price": "Rs. 2499",
+  "id": 72,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdb9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2498481/2018/10/15/6dc42f97-52b2-4401-b593-44047d67042f1539587371270-Roadster-Time-Travlr-Men-Olive-Green-Solid-Scoop-Neck-T-shirt-2511539587370970-1.jpg",
+  "brand": "Roadster",
+  "name": "Time Travlr Sleveless Pure Cotton T-shirt",
+  "discount_price": "Rs. 179",
+  "price": "Rs. 399",
+  "id": 73,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdba"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19347926/2022/8/2/d9cd042a-ebba-4dd0-a19f-2b327571442b1659426938097AllenSollyWhiteShirt1.jpg",
+  "brand": "Allen Solly",
+  "name": "Men Slim Fit Casual Shirt",
+  "discount_price": "Rs. 2124",
+  "price": "Rs. 2499",
+  "id": 74,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdbb"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18786366/2022/7/1/58ccd362-92bc-464e-b4b7-f91de32cf8fb1656678218095-Puma-Unisex-Casual-Shoes-8831656678217697-1.jpg",
+  "brand": "Puma",
+  "name": "Unisex RS-Fast Limiter Sneaker",
+  "discount_price": "Rs. 7999",
+  "price": "Rs. 9999",
+  "id": 75,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdbc"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10384501/2020/11/6/f8a9d333-d5fb-45e6-8d4e-b426a65615131604640103374-Roadster-Men-Charcoal-Solid-Round-Neck-T-shirt-3841604640101-1.jpg",
+  "brand": "Roadster",
+  "name": "Solid Round Neck T-shirt",
+  "discount_price": "Rs. 239",
+  "price": "Rs. 599",
+  "id": 76,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdbd"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15267340/2021/9/18/5b34d1ee-ed05-44e8-9e2b-cca8ff4720c01631961195051-Puma-Men-Sweatshirts-9651631961194513-1.jpg",
+  "brand": "Puma",
+  "name": "Men Printed Sweatshirt",
+  "discount_price": "Rs. 1399",
+  "price": "Rs. 2799",
+  "id": 77,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdbe"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11896002/2020/7/13/82dff72e-b661-464c-aaa1-30e0aa2275821594635199067-Roadster-Men-Shirts-4581594635196744-1.jpg",
+  "brand": "Roadster",
+  "name": "Cotton Linen Casual Shirt",
+  "discount_price": "Rs. 419",
+  "price": "Rs. 999",
+  "id": 78,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdbf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18801056/2022/6/29/9c2538f0-36ef-43cb-a778-7b6763f5475c1656497843055-Nike-Flex-Experience-Run-11-Next-Nature-Mens-Road-Running-Sh-1.jpg",
+  "brand": "Nike",
+  "name": "Men Flex Experience Running",
+  "discount_price": "Rs. 3996",
+  "price": "Rs. 4995",
+  "id": 79,
+  "type": "mens",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16740806/2022/6/20/df8a3940-5133-422e-ab82-a2b88e1694841655724011371-ADIDAS-Men-Track-Pants-1511655724010727-1.jpg",
+  "brand": "ADIDAS",
+  "name": "Men Solid  Track Pants",
+  "discount_price": "Rs. 2519",
+  "price": "Rs. 2799",
+  "id": 80,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10409970/2019/10/29/50d13f27-83e3-471d-ba9f-466ad8ff00bc1572353598682-WROGN-Men-Shirts-2501572353596580-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Casual Shirt",
+  "discount_price": "Rs. 1199",
+  "price": "Rs. 2399",
+  "id": 81,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14824750/2022/5/4/e1a3d6cc-b878-44fe-8bc3-96c9f4ba05d01651662686711PumaUnisexWhiteSolidTazon7RunningShoes1.jpg",
+  "brand": "Puma",
+  "name": "Unisex Tazon 7 Running Shoes",
+  "discount_price": "Rs. 2099",
+  "price": "Rs. 5999",
+  "id": 82,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11359076/2020/2/11/1e62e63a-a809-4c13-a26a-395506f303e31581400696044-WROGN-Men-Jeans-4281581400693902-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Jeans",
+  "discount_price": "Rs. 1259",
+  "price": "Rs. 2799",
+  "id": 83,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10398209/2019/11/22/6baed568-ce5b-4782-b243-be56289f07781574410252361-Roadster-Men-Shirts-1691574410250683-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Cotton Casual Shirt",
+  "discount_price": "Rs. 610",
+  "price": "Rs. 1299",
+  "id": 84,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2363519/2022/4/19/4107aca7-aa30-4dd1-8881-2c5bed8da3a31650366013572RoadsterTimeTravlrMenBlackBasicPureCottonSustainableChinos1.jpg",
+  "brand": "Roadster",
+  "name": "Men Time Travlr Basic Cotton Chinos",
+  "discount_price": "Rs. 939",
+  "price": "Rs. 1999",
+  "id": 85,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8714063/2019/2/15/4af5dfcf-8c7f-4fa6-b4fe-1d36a2fc47001550233646175-Mast--Harbour-Men-Shirts-1251550233644851-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Slim Fit Casual Shirt",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 1699",
+  "id": 86,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/10/3/9721614a-f882-40c6-a5ea-f62c90f829741570087302752-1.jpg",
+  "brand": "Allen Solly",
+  "name": "Solid Polo Collar Pure Cotton T-shirt",
+  "discount_price": "Rs. 549",
+  "price": "Rs. 999",
+  "id": 87,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/3082387/2018/4/12/11523515363161-Mast--Harbour-Men-Tshirts-7751523515362997-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Solid Round Neck T-shirt",
+  "discount_price": "Rs. 319",
+  "price": "Rs. 799",
+  "id": 88,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdc9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16331428/2022/1/4/dae00995-d6ea-4b39-99e1-be3345b6c9b91641295544604-Nike-Dri-FIT-Challenger-Mens-Knit-Running-Pants-430164129554-1.jpg",
+  "brand": "Nike",
+  "name": "Men Printed Running Pants",
+  "discount_price": "Rs. 2796",
+  "price": "Rs. 3495",
+  "id": 89,
+  "type": "mens",
+  "ratings": 2.5
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdca"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11361478/2020/3/5/3615f361-5590-464f-baa8-7f892aa3f62f1583412030777-WROGN-Men-Shirts-6101583412028593-1.jpg",
+  "brand": "WROGN",
+  "name": "Slim Fit Checked Casual Shirt",
+  "discount_price": "Rs. 1079",
+  "price": "Rs. 2399",
+  "id": 90,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdcb"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1824339/2022/4/18/ff4c8434-9e4f-4d11-9f1e-448cebdb5c6b1650284989788RoadsterMenBlackDrop-ShoulderLonglineT-shirt1.jpg",
+  "brand": "Roadster",
+  "name": "Drop Shoulder Longline T-shirt",
+  "discount_price": "Rs. 399",
+  "price": "Rs. 799",
+  "id": 91,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdcc"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/6510128/2018/8/31/522bc07f-7802-4f94-8fa8-ad865ef4e02e1535717193261-Roadster-Men-Black-Solid-Hooded-Sweatshirt-491535717191653-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Sweatshirt",
+  "discount_price": "Rs. 764",
+  "price": "Rs. 1699",
+  "id": 92,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdcd"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17253136/2022/7/7/17329063-c68a-4dd5-b672-ac7205357f6f1657194773306-WROGN-Men-Jeans-2671657194772618-1.jpg",
+  "brand": "WROGN",
+  "name": "Men Slim Fit Jeans",
+  "discount_price": "Rs. 1299",
+  "price": "Rs. 2599",
+  "id": 93,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdce"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/4149449/2019/2/20/6cd08a82-c6c8-4b5b-8864-1c4d82f9e6261550664602748-Mast--Harbour-Men-Blue-Striped-Polo-Collar-T-shirt-821155066-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Striped Polo Collar T-shirt",
+  "discount_price": "Rs. 584",
+  "price": "Rs. 1299",
+  "id": 94,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdcf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11420826/2021/10/28/fd758e70-8ac8-46df-95f5-dbaa6721310f1635395956788-Puma-Unisex-White-Up-Sneakers-7801635395956470-1.jpg",
+  "brand": "Puma",
+  "name": "Unisex Up Sneakers",
+  "discount_price": "Rs. 3199",
+  "price": "Rs. 3999",
+  "id": 95,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdd0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11691102/2020/9/21/d1453a4c-532e-4129-aeec-811b553f93a91600660214370-Roadster-Men-Jeans-3051600660211020-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Slim Tapered Fit Jeans",
+  "discount_price": "Rs. 599",
+  "price": "Rs. 1999",
+  "id": 96,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdd1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15118696/2021/8/27/58b8fbdd-0630-4b8a-bf0c-083fb2f1574a1630041631580-Puma-Men-Track-Pants-4851630041630839-1.jpg",
+  "brand": "Puma",
+  "name": "Men DryCELL Track Pants",
+  "discount_price": "Rs. 1924",
+  "price": "Rs. 3499",
+  "id": 97,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdd2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13334898/2021/6/11/4f328030-a7e5-4b6b-b3d8-3fee2eb2e4f61623397784208-Roadster-Men-Casual-Shoes-6981623397783696-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Solid Mid-Top Sneakers",
+  "discount_price": "Rs. 1499",
+  "price": "Rs. 2999",
+  "id": 98,
+  "type": "mens",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c341e5401710519fdd3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2498410/2018/8/28/047c12c0-6632-4fff-b593-3678397d74b71535441701628-Roadster-Men-Tshirts-9471535441701488-1.jpg",
+  "brand": "Roadster",
+  "name": "Printed Round Neck T-shirt",
+  "discount_price": "Rs. 399",
+  "price": "Rs. 799",
+  "id": 99,
+  "type": "mens",
+  "ratings": 3
+}]
