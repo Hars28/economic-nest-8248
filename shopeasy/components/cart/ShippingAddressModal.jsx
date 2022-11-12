@@ -60,6 +60,7 @@ export default function Address() {
             <Text>Phone : </Text>
             <Text fontWeight="500"> {formstate.mobile}</Text>
           </Flex>
+          <Text cursor="pointer" color="blue.600" onClick={onOpen} textDecoration="underline">Edit</Text>
           </Box>
           <Box mr="10" mt="6" h="80%" p="5" border="1px dashed gray">
             <Text fontWeight="500" color="green">Cash on delivery available</Text>
@@ -136,7 +137,7 @@ export default function Address() {
               <Button variant='outline' mr={3} onClick={onClose}>
                 Cancel
               </Button>
-              <Button onClick={show} colorScheme='blue'>Save</Button>
+              <Button onClick={show} colorScheme='blue'>Save Address</Button>
             </DrawerFooter>
           </DrawerContent>
         </Drawer>

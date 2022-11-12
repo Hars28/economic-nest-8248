@@ -3,8 +3,8 @@ import styles from "../../styles/Home.module.css";
 import { GoLocation } from 'react-icons/go';
 import { BsBoxSeam } from 'react-icons/bs';
 import Address from "../../components/cart/shippingAddressModal";
-import footerImg from "../../data/footerImg.png"
 import { useState } from "react";
+// import footerImg from "../../data/footerImg.png"
 
 
 export default function Shipping(){
@@ -12,6 +12,10 @@ export default function Shipping(){
 
     return (
       <Box>
+         <Flex h="40%" w="80%" m="auto">
+                <Image w="20%" h="40%" src="/shopeeasy-logo.png" />
+                <Image ml="30" w="45%" src="/deliveryImg.png"/>
+            </Flex>
         <Flex justifyContent="space-evenly" w="80%" m="auto" mb="20" mt="20">
             <hr p="10" />
            <Box w="65%">
@@ -72,7 +76,7 @@ export default function Shipping(){
           ))}
           </SimpleGrid>
         </Box>
-        <Image src={footerImg} />
+        <Image mt="20" src="/footerImg.png" alt="footerImg"/>
         </Box>
     )
 }
