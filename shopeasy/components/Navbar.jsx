@@ -23,6 +23,9 @@ const Navbar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
   const session  = useSession()
+
+  console.log(session)
+
   const router = useRouter()
 const [auth, setauth] = useState(false)
 
