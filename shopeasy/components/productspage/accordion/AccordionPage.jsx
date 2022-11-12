@@ -10,7 +10,7 @@ import {
     Flex,
     Text,
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 
 
 const category = ["Formal", "Casual", "Sandals", "Flip Flop", "Sneakers"];
@@ -19,7 +19,9 @@ const price = ["Below Rs.500", "Rs.500-1000", "Rs.1000-1500", "1500-2000"]
 const brand = ["Roadster", "Puma", "Adidas", "Highlander"]
 const discount = ["0-20%", "21-30%", "31-40%", "41-50%", "51-80%"]
 
-const AccordionPage = () => {
+const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
+    console.log(brandName);
+
     return (
         <>
             <Flex
@@ -29,7 +31,7 @@ const AccordionPage = () => {
                 color="gray.600"
                 aria-label="Main Navigation"
             >
-                <Accordion allowMultiple>
+                <Accordion allowMultiple >
                     <AccordionItem>
                         <AccordionButton>
                             <Box flex="1" textAlign="left" fontSize="18px">
@@ -88,7 +90,7 @@ const AccordionPage = () => {
                                     >
                                         {category.map((el) => (
                                             <>
-                                                <Checkbox fontSize="15px" color="#2e2c38">
+                                                <Checkbox fontSize="15px" color="#2e2c38" >
                                                     {el}
                                                 </Checkbox>
                                             </>
@@ -154,7 +156,11 @@ const AccordionPage = () => {
                                     >
                                         {brand.map((el) => (
                                             <>
-                                                <Checkbox fontSize="15px" color="#2e2c38">
+                                                <Checkbox fontSize="15px" color="#2e2c38" value={el} onChange={(e) => {
+                                                    setBrandname(e.target.value)
+                                                    brandFilterData(brandName)
+                                                }
+                                                }>
                                                     {el}
                                                 </Checkbox>
                                             </>
@@ -223,7 +229,7 @@ const AccordionPage = () => {
                         </AccordionPanel>
                     </AccordionItem>
                 </Accordion>
-            </Flex>
+            </Flex >
         </>
     );
 };

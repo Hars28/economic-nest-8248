@@ -4,98 +4,149 @@ import {
     Box,
     Image,
     Badge,
-    useColorModeValue,
     Icon,
     chakra,
     Tooltip,
     HStack,
     VStack,
     Text,
+    GridItem,
+    Grid,
+    Button,
 } from "@chakra-ui/react";
+import { useEffect } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 
-const data = {
-    isNew: true,
-    imageURL:
-        "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
-    name: "Wayfarer Classic",
-    price: 4500,
-    rating: 4.2,
-    numReviews: 34,
-    brand: "Roadster",
-};
+function ProductAddToCart({ grid, products }) {
 
-function ProductAddToCart() {
+
+    const setToLocal = (el) => {
+        localStorage.setItem("token", JSON.stringify(el))
+    }
+    useEffect(() => {
+        if (localStorage) {
+            const getLocalState = localStorage.getItem("token");
+            console.log("token: ", getLocalState)
+        }
+    }, []);
+
     return (
-        <Flex w="full" alignItems="center" justifyContent="center">
-            <Box
-                bg={useColorModeValue("white", "gray.800")}
-                maxW="sm"
-                borderWidth="1px"
-                rounded="lg"
-                shadow="lg"
-                position="relative"
-            >
-                {data.isNew && (
-                    <Circle
-                        size="10px"
-                        position="absolute"
-                        top={2}
-                        right={2}
-                        bg="red.200"
-                    />
-                )}
-
-                <Image
-                    src={data.imageURL}
-                    alt={`Picture of ${data.name}`}
-                    roundedTop="lg"
-                />
-
-                <Box p="4">
-                    <HStack justifyContent="space-between">
-                        <Box>
-                            {data.isNew && (
-                                <Badge rounded="full" px="2" fontSize="0.8em" colorScheme="red">
-                                    New
-                                </Badge>
-                            )}
-                        </Box>
-                        <Box>
-                            <Tooltip
-                                label="Add to cart"
-                                bg="white"
-                                placement={"top"}
-                                color={"gray.800"}
-                                fontSize={"1.2em"}
+        <Grid
+            templateColumns={{
+                base: "repeat(1, 1fr)",
+                md: "repeat(2, 1fr)",
+                lg: `repeat(${grid},1fr)`,
+            }}
+            gap={2}
+        >
+            {products.map((el) => (
+                <>
+                    <Flex key={el.id} w="full" alignItems="center" justifyContent="center">
+                        <GridItem w="100%">
+                            <Box
+                                cursor="pointer"
+                                key={el.id}
+                                maxW="sm"
+                                borderWidth="1px"
+                                rounded="lg"
+                                shadow="lg"
+                                position="relative"
                             >
-                                <chakra.a href={"/cart"} display={"flex"}>
-                                    <Icon as={FiShoppingCart} h={7} w={7} alignSelf={"center"} />
-                                </chakra.a>
-                            </Tooltip>
-                        </Box>
-                    </HStack>
+                                {el.name && (
+                                    <Circle
+                                        size="10px"
+                                        position="absolute"
+                                        top={2}
+                                        right={2}
+                                        bg="red.200"
+                                    />
+                                )}
 
-                    <VStack spacing={1} align="center">
-                        <Text color="#B19975" fontWeight="bold" fontSize="1rem">
-                            {data.brand.toLocaleUpperCase()}
-                        </Text>
+                                <Image
+                                    src={
+                                        el.image
+                                            ? el.image
+                                            : "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10968502/2020/2/18/54c26fb8-d8c6-42b0-a3d6-eea009aaba161582020847616-Roadster-Women-Tshirts-2671582020846188-1.jpg"
+                                    }
+                                    alt={`Picture of ${el.name}`}
+                                    roundedTop="lg"
+                                    boxSize="xs"
+                                    onClick={() => setToLocal(el)}
+                                />
 
-                        <Text fontFamily="lora" color="#333333">
-                            {data.name}
-                        </Text>
+                                <Box p="4">
+                                    <HStack justifyContent="space-between">
+                                        <Box>
+                                            {el.name && (
+                                                <Badge
+                                                    rounded="full"
+                                                    px="2"
+                                                    fontSize="0.8em"
+                                                    colorScheme="red"
+                                                >
+                                                    New
+                                                </Badge>
+                                            )}
+                                        </Box>
+                                        <Box>
+                                            <Tooltip
+                                                label="Add to cart"
+                                                bg="white"
+                                                placement={"top"}
+                                                color={"gray.800"}
+                                                fontSize={"1.2em"}
+                                            >
+                                                <chakra.a href={"/cart"} display={"flex"}>
+                                                    <Icon
+                                                        as={FiShoppingCart}
+                                                        h={7}
+                                                        w={7}
+                                                        alignSelf={"center"}
+                                                    />
+                                                </chakra.a>
+                                            </Tooltip>
+                                        </Box>
+                                    </HStack>
 
-                        <Text fontFamily="SourceSansPro" fontWeight="700" fontSize="1rem">
-                            ₹ {data.price}
-                        </Text>
+                                    <VStack spacing={1} align="center">
+                                        <Text
+                                            color="#B19975"
+                                            fontWeight="bold"
+                                            fontSize="1rem"
+                                            textAlign="center"
+                                        >
+                                            {el.brand}
+                                        </Text>
 
-                        <Text fontFamily="SourceSansPro" fontWeight="600" color="#3AB649" textAlign="center" >
-                            Offer price : Discount-Price
-                        </Text>
-                    </VStack>
-                </Box>
-            </Box>
-        </Flex>
+                                        <Text fontFamily="lora" color="#333333" textAlign="center">
+                                            {el.name}
+                                        </Text>
+
+                                        <Text
+                                            fontFamily="SourceSansPro"
+                                            fontWeight="700"
+                                            fontSize="1rem"
+                                            textAlign="center"
+                                        >
+                                            ₹ {el.price ? el.price : "Rs. 2299"}
+                                        </Text>
+
+                                        <Text
+                                            fontFamily="SourceSansPro"
+                                            fontWeight="600"
+                                            color="#3AB649"
+                                            textAlign="center"
+                                        >
+                                            Offer price : {el.discount_price ? el.discount_price : "Rs. 209"}
+                                        </Text>
+                                    </VStack>
+                                </Box>
+                            </Box>
+                        </GridItem>
+                    </Flex>
+                </>
+            ))}
+        </Grid>
     );
 }
 
