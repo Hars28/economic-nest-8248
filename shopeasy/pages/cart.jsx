@@ -1,28 +1,49 @@
-import { Box, Button, Checkbox, Flex, Image, Input, Link, Text } from "@chakra-ui/react"
-import { useState } from "react"
+import { Box, Button, Checkbox, Flex, Image, Input, Link, Select, Text } from "@chakra-ui/react"
+import { useState } from "react";
+import styles from '../styles/Home.module.css'
+import { useRouter } from 'next/router'
+
 
 export default function Cart(){
     const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
+    const router = useRouter()
 
+    function proceedToShip(){
+        router.push('/shipping')
+    }
     return(
         <Box w="80%" m="auto">
             <Image src="https://assets.ajio.com/cms/AJIO/WEB/28032021-D-cartpagebanner-relianceones.jpg" />
-            <Flex justifyContent="space-evenly">
-                <Box w="70%">
+            <Flex justifyContent="space-evenly" mt="20">
+                <Box w="80%">
                       {
                         cart.map((item)=>(
                             <Flex p="3" boxShadow= "rgba(149, 157, 165, 0.2) 0px 8px 24px" justifyContent="space-evenly">
-                                <Image src={item.image} w="20%" />
-                                 <Text fontSize="18" pt="10">{item.name}</Text>
-                                 <Flex pt="11" justifyContent="space-evenly">
-                                    <Text>Size</Text>
+                                <Image src={item.image} w="15%" />
+                                 <Text fontSize="16" pt="10">{item.name}</Text>
+                                 <Flex pt="30" justifyContent="space-evenly">
+                                    <Select placeholder='size'>
+                                       <option value='option3'>S</option>
+                                        <option value='option1'>M</option>
+                                        <option value='option2'>L</option>
+                                        
+                                    </Select>
+                                    <Select placeholder='qty' ml="2">
+                                       <option value='option3'>1</option>
+                                        <option value='option1'>2</option>
+                                        <option value='option2'>3</option>
+                                        <option value='option3'>4</option>
+                                        <option value='option1'>5</option>
+                                        <option value='option2'>6</option>
+                                    </Select>
                                  </Flex>
-                                 <Box pt="10">
+                                 <Box pt="5">
                                     <Box>Savings: 200</Box>
                                     <Flex>
                                         <Box textDecoration="line-through">{item.price}</Box>
                                          <Box px="4" py="1" bgColor="teal.100" borderLeft="6px solid teal" fontWeight="600" fontSize="18" ml="3">{item.discount_price}</Box>
                                     </Flex>
+                                    <Button className={styles.singleProductAddtoCart} mt="6" ml="20" color="blue.400">DELETE</Button>
                                    </Box>
                             </Flex>
                             
@@ -51,7 +72,7 @@ export default function Cart(){
                     <Text fontWeight="700">Total Amount</Text>
                     <Text fontWeight="700">₹3,411.00</Text>
                  </Flex>
-                 <Button w="full" mt="5" bgColor="orange.400" color="white">Proceed to Shipping</Button>
+                 <Button onClick={proceedToShip}  className={styles.singleProductAddtoCart} w="full" mt="5" bgColor="orange.400" color="white">Proceed to Shipping</Button>
                 <Box border="1px dashed gray" my="10" px="3" pb="5" pt="3" >
                     <Text fontWeight="650">Apply Coupon</Text>
                     <Flex my="5">
