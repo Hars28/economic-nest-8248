@@ -14,12 +14,7 @@ export default async function filter(req, res) {
     if (req.method !== "GET") {
         return res.send(`this ${req.method} not valid through this route`)
     }
-    const { id } = req.headers
-
-    if (!id) {
-        return res.send("authorizaiton failed")
-    }
-
+  
     try {
 
         const params = req.query
@@ -110,3 +105,4 @@ export default async function filter(req, res) {
 
 // http://localhost:3000/api/products/category?brand=Roadster&ratings=3&cmd=lte
 // http://localhost:3000/api/products/category?discount_price=892
+// http://localhost:3000/api/products/category?price=892
