@@ -12,6 +12,13 @@ export default function Cart(){
         router.push('/shipping')
     }
     return(
+        <Box>
+            <Flex w="80%" m="auto" h="40%">
+                <Image w="20%" h="40%" src="/shopeeasy-logo.png" />
+                <Image ml="30" w="45%" src="/bagImg.png"/>
+            </Flex>
+          
+        
         <Box w="80%" m="auto">
             <Image src="https://assets.ajio.com/cms/AJIO/WEB/28032021-D-cartpagebanner-relianceones.jpg" />
             <Flex justifyContent="space-evenly" mt="20">
@@ -121,6 +128,10 @@ export default function Cart(){
                 </Box>
                 </Box>
             </Flex>
+        </Box>
+        <Image src="/footerImg.png"/>
+        <hr />
+        <Image src="/secondFooter.png" />
         </Box>
     )
 } 

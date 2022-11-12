@@ -5,10 +5,12 @@ import { MdCheckCircle  } from 'react-icons/md';
 import { FaHands } from 'react-icons/fa';
 import { MdOutlineVerified } from 'react-icons/md';
 import { RiExchangeFundsLine } from 'react-icons/ri';
-import styles from '../styles/Home.module.css'
-
+import styles from '../styles/Home.module.css';
+import Navbar from "../components/Navbar"
+import { useRouter } from 'next/router'
 
 export default function SingleProduct() {
+    const router = useRouter()
     const [data,setdata] = useState( {"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1});
     const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
     const [ isDelivery, setDelivery ] = useState(false);
@@ -111,7 +113,8 @@ export default function SingleProduct() {
     };
     return (
     <>
-     <Flex m="auto" width={['100%','70%']} >
+    <Navbar />
+     <Flex m="auto" width={['100%','70%']} mt="20" >
           <Box w="50%">
           <Box>
              <Flex
@@ -125,7 +128,7 @@ export default function SingleProduct() {
             justifyContent="center"
           >
             <Flex w="full" overflow="hidden" pos="relative">
-              <Flex h="630px" w="full" {...carouselStyle}>
+              <Flex h="620px" w="full" {...carouselStyle}>
                 {slides.map((slide, sid) => (
                   <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
                     <Image className={styles.singleProductImage}
@@ -263,7 +266,7 @@ export default function SingleProduct() {
                   <DrawerOverlay />
                   <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>My cart items</DrawerHeader>
+                    <DrawerHeader mt="100" >My cart items</DrawerHeader>
 
                     <DrawerBody>
                       <Box>
@@ -292,7 +295,7 @@ export default function SingleProduct() {
                       <Button variant='outline' mr={3} onClick={onClose}>
                         Cancel
                       </Button>
-                      <Button colorScheme='blue'>Go to Cart</Button>
+                      <Button onClick={()=> router.push('/cart') } colorScheme='blue'>Go to Cart</Button>
                     </DrawerFooter>
                   </DrawerContent>
                 </Drawer>
@@ -325,29 +328,27 @@ export default function SingleProduct() {
           </Box>
          </Box> 
      </Flex>
+     <Text fontSize="2xl" textAlign="center" mt="20" fontWeight="500">About the Company</Text>
+     <Box w="80%" m="auto" mt="8" color="gray">
+      Explore exclusive athleisure clothing for men and women on AJIO, an in-house brand of Reliance Trends. From shift dresses and high-neck sweatshirts for women to striped polo t-shirts and cotton cargo shorts for men, sporty casuals get a boost of style. +
+
+      Shirts & tops for women
+      Add funkiness to basics with the unique designs . Look smart in stripes, wearing a top with mesh sleeves. To stand out in a crowd, pick a bolder style such as a hooded top with drop sleeves or a typographic print top with raglan sleeves. Keep up with the trends in a cold-shoulder top with panelled sleeves or a graphic print top with bell sleeves.
+  <Box>
+     Coordinate your look with chic outerwear such as sweaters and sweatshirts . This company has some smart options, including colourblock sweaters with ribbed hem, all-over print sweatshirts, speckled crew-neck pullovers and more.
+  </Box>
+      Tshirts for men
+      Every man has a unique sense of style. That’s why the brand has a versatile collection of men’s T-shirts . For a modern twist to a classic style, you can choose polo T-shirts with stripes and patterned weave. Add fun to your casual wardrobe with graphic print Teamspirit Tshirts in a variety of styles. You can choose from crew neck, cut & sew, heathered, Ombre-dyed and more.
+     </Box>
      <Box m="auto" width={['100%','80%']} mt="20">
-       <Text textAlign="center" fontSize="3xl" fontWeight="500">Shop More</Text>
+       <Text textAlign="center" fontSize="3xl" fontWeight="700">Shop More</Text>
      </Box>
      <Flex justifyContent="space-evenly" alignItems='center' m="auto" width={['100%','80%']} mt="10" >
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> All Tshirts → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> Styles → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> Brands → </Box>
+      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> All Tshirts → </Box>
+      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> Styles → </Box>
+      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> Brands → </Box>
      </Flex>
-
-     <Flex justifyContent="space-evenly" w="80%" m="auto" mt="130px">
-      <Box textAlign="center">
-          <RiExchangeFundsLine className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl" >Easy Exchange</Text>
-      </Box>
-      <Box>
-          <FaHands className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl">100% HANDPICKED</Text>
-      </Box>
-      <Box>
-          <MdOutlineVerified className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl">ASSURED QUALITY</Text>
-      </Box>
-     </Flex>
+     <Image src="/secondFooter.png" mt="30" />
         </>
   );
 }
