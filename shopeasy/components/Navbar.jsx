@@ -13,8 +13,6 @@ import {ImMan, ImWoman} from "react-icons/im"
 import {FaChild} from "react-icons/fa"
 import {MdMapsHomeWork} from "react-icons/md"
 import {AiFillHeart, AiOutlineMenu, AiOutlineShoppingCart} from "react-icons/Ai"
-import { Button, Flex, Input, InputGroup, InputRightElement, Text, Box } from '@chakra-ui/react'
-import React, { useEffect, useState } from 'react'
 import { Icon } from '@chakra-ui/react'
 import LoginPg from './loginSignupmodal/LoginPg'
 import { useSession } from 'next-auth/react';
