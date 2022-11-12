@@ -1,16 +1,34 @@
 import { Search2Icon } from '@chakra-ui/icons'
 import { Button, Flex, Input, InputGroup, InputRightElement, Text, Box } from '@chakra-ui/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Icon } from '@chakra-ui/react'
 import LoginPg from './loginSignupmodal/LoginPg'
+import { useSession } from 'next-auth/react'
+import Logout from './loginSignupmodal/Logout'
 
 const Navbar = () => {
+const session  = useSession()
+
+const [auth, setauth] = useState(false)
+
+useEffect(()=>{
+if(session.status=="authenticated"){
+setauth(true)
+}else{
+  setauth(false)
+}
+},[session.status])
+
+
   return (
     <Flex direction="row" justify="space-between" align="center">
         <Text>AJIO</Text>
         <Flex direction="column">
         <Flex direction="row" gap="10px" align="center" justify="flex-end">
-            <LoginPg>Sign in / Join AJIO</LoginPg>
+          {
+            auth ? <Logout setauth={setauth}/> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
+          }
+          
             <Text>Customer Care</Text>
             <Button bg="black" color="white">Visit AJIOLUXE</Button>
         </Flex>

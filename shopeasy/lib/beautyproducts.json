@@ -1,0 +1,841 @@
+[{
+  "_id": {
+    "$oid": "636e1c891e5401710519fea5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11135636/2020/1/28/ca42d2f6-7c8b-4329-8c19-9643b798700f1580211524034-Schwarzkopf-Professional-Bonacure-Keratin-Smooth-Perfect-Tre-1.jpg",
+  "brand": "Schwarzkopf PROFESSIONAL",
+  "name": "Smooth Perfect Hair Mask",
+  "discount_price": "Rs. 892",
+  "price": "Rs. 1050",
+  "id": 0,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fea6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12107582/2022/1/4/36c018c7-84cb-4f54-bc0f-43d60888ed2b1641292301018-Dyson-Airwrap-Complete-Hair-Styler---Red--Gunmetal-Toned-386-1.jpg",
+  "brand": "dyson",
+  "name": "Airwrap Complete Hair Styler",
+  "discount_price": "Rs. 39900",
+  "price": "Rs. 44900",
+  "id": 1,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fea7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1967198/2022/7/4/a18325f9-5cd0-4dfa-945a-27e0f58c71751656922135420LOrealParisCastingCremeGlossHairColor-DarkestBrown300875g72m1.jpg",
+  "brand": "LOreal",
+  "name": "Hair Color - Darkest Brown 300",
+  "discount_price": "Rs. 157",
+  "price": "Rs. 250",
+  "id": 2,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fea8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11607146/2021/2/10/72f46edf-6b25-4a8d-81ce-155a2b2f7d951612953568797BiotiqueUnisexSustainableHairConditioningHerbcolor-Brown4N1.jpg",
+  "brand": "Biotique",
+  "name": "Unisex Sustainable Hair Herbcolor 4N",
+  "discount_price": "Rs. 157",
+  "price": "Rs. 250",
+  "id": 3,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fea9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19310120/2022/7/30/875bc85f-c253-4567-844e-0e6014404c681659171296782VGR4-in-1EpilatorShaverWithCallusRemover1.jpg",
+  "brand": "VGR",
+  "name": "4-in-1 Epilator & Shaver With Callus Remover",
+  "discount_price": "Rs. 1499",
+  "price": "Rs. 2999",
+  "id": 4,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feaa"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/57677/2020/10/10/90dae682-fcf2-4436-b291-954e3c40af0e1602269668338LotusHerbalsSustainableWhiteglowSkinWhiteningBrighteningCrem1.jpg",
+  "brand": "Lotus Herbals",
+  "name": "Whiteglow Brightening Creme",
+  "discount_price": "",
+  "price": "",
+  "id": 5,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feab"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14269676/2022/4/12/15f7cedd-9052-48e7-ab86-def45860555e1649747246876ReneeFab55in1Lipstick75g1.jpg",
+  "brand": "Renee",
+  "name": "Fab 5 in 1 Lipstick 7.5g",
+  "discount_price": "Rs. 562",
+  "price": "Rs. 750",
+  "id": 6,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feac"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14088436/2022/8/13/a70ec121-7f87-4f6c-bc5f-8820d2ec03aa1660377077294-Plum-Green-Tea-Range-Pore-Cleansing-Face-Wash---120-ml-51916-1.jpg",
+  "brand": "Plum",
+  "name": "Pore Cleansing Face Wash 120ml",
+  "discount_price": "Rs. 301",
+  "price": "Rs. 495",
+  "id": 7,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fead"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2021/1/9/01b91135-8a17-4421-9c69-7fd5b2bb6daf1610179137465-2.jpg",
+  "brand": "Just Herbs",
+  "name": "Ayurvedic Lipstick Trial Kit",
+  "discount_price": "Rs. 431",
+  "price": "Rs. 575",
+  "id": 8,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feae"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12087900/2022/3/27/983961fc-8bfc-45ac-9d32-56cae92f22ed1648366551718-Mamaearth-Vitamin-C-Face-Wash-with-Turmeric-for-Skin-Illumin-12.jpg",
+  "brand": "Mamaearth",
+  "name": "Vitamin C Face Wash 100 ml",
+  "discount_price": "Rs. 224",
+  "price": "Rs. 249",
+  "id": 9,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feaf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12800174/2020/11/6/eb647a1d-f4cd-4871-bd8e-37393a988f221604660190926-Kama-Ayurveda-10-PIECE-BESTSELLER-GIFT-BOX-6601604660188887-1.jpg",
+  "brand": "KAMA AYURVEDA",
+  "name": "Bestseller Gift Set",
+  "discount_price": "",
+  "price": "",
+  "id": 10,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10901912/2022/6/6/99634150-539e-4c43-ac49-b758f592abfa1654534975708MCaffeineSustainableGenderNeutralCoffeeMomentGiftKit1.jpg",
+  "brand": "MCaffeine",
+  "name": "Signature Coffee Moment Kit",
+  "discount_price": "Rs. 1156",
+  "price": "Rs. 1445",
+  "id": 11,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14482556/2022/5/9/787cd635-5168-48b5-834e-894414b727391652071247105-Plum-15-Vitamin-C--Mandarin-Face-Serum-20-ml-212165207124599-1.jpg",
+  "brand": "Plum",
+  "name": "15% Vitamin C Face Serum",
+  "discount_price": "Rs. 440",
+  "price": "Rs. 550",
+  "id": 12,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173102/2022/4/21/a423c374-ed8a-4bb6-8e97-12c0566a87451650517645429MinimalistVitaminC10FaceSerumforGlowingSkin30ml11.jpg",
+  "brand": "Minimalist",
+  "name": "Vitamin C Serum",
+  "discount_price": "",
+  "price": "",
+  "id": 13,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14669014/2022/7/18/025215e2-2a58-4116-9e1c-f6918093dec91658124132145-Minimalist-2-Salicylic-Acid-Face-Wash-With-LHA-100-ml-342165-1.jpg",
+  "brand": "Minimalist",
+  "name": "Salicylic Face Wash",
+  "discount_price": "",
+  "price": "",
+  "id": 14,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15537118/2022/5/25/51a894f6-8080-4596-881a-baf268080b921653462874543TheDermaco2SalicylicAcidSerumwithWillowBark30ml1.jpg",
+  "brand": "The Derma co.",
+  "name": "2% Salicylic Acid Serum 30 ml",
+  "discount_price": "Rs. 449",
+  "price": "Rs. 499",
+  "id": 15,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10924310/2021/2/15/5778c926-2711-4ecf-9708-b08bbc157dcd1613370606696-FACES-CANADA-Weightless-SPF-20-Stay-Matte-Compact---Natural--1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Stay MatteCompact - Natural 02",
+  "discount_price": "Rs. 129",
+  "price": "Rs. 199",
+  "id": 16,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15052012/2021/8/26/42070f02-b741-417b-8aa6-bcb143ae77991629927278600-Marie-Claire-Women-Kajal-and-Eyeliner-8521629927277934-1.jpg",
+  "brand": "Marie Claire",
+  "name": "Eye Kohl Me Baby Kajal  - P01",
+  "discount_price": "Rs. 69",
+  "price": "Rs. 199",
+  "id": 17,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16312142/2021/12/28/b7756bff-8924-4ce9-b7e5-6df68c7cf9d11640639577558-Agaro-2000-Watts-Professional-Hair-Dryer-HD-1120-with-Concen-1.jpg",
+  "brand": "Agaro",
+  "name": "2000 Watts Hair Dryer HD-1120",
+  "discount_price": "Rs. 1245",
+  "price": "Rs. 2595",
+  "id": 18,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17691344/2022/4/6/38a5d211-9a28-4a8e-8968-798aac65a20d1649218947072-Biolage-Unisex-Hair-Serum-6591649218946709-1.jpg",
+  "brand": "Biolage",
+  "name": "6-In-1 Smooth Proof Serum",
+  "discount_price": "",
+  "price": "",
+  "id": 19,
+  "type": "beauty",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feb9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1920200/2020/10/10/5f2c3eed-16a5-4aa3-bc12-5d71658a16271602272543274LotusHerbalsSustainableWomenWhiteGlowSkinTighteningBrighteni1.jpg",
+  "brand": "Lotus Herbals",
+  "name": "Sustainable WhiteGlow Tightening Gel Creme",
+  "discount_price": "Rs. 243",
+  "price": "Rs. 290",
+  "id": 20,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feba"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18245168/2022/6/13/202d3021-5380-4faa-add8-b2b32a3a7fe41655097883177-Innisfree-x-Gauahar-Khan-Healthy-Skin-Starter-Kit-for-Blackh-1.jpg",
+  "brand": "Innisfree",
+  "name": "Healthy Skin Starter Kit",
+  "discount_price": "Rs. 645",
+  "price": "Rs. 1290",
+  "id": 21,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519febb"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15593752/2021/10/27/032350a5-4740-4efe-9f0b-02411c9c67eb1635328440376PlumHelloClearSkinComboKitWithFaceWashFaceSerumMoisturizer1.jpg",
+  "brand": "Plum",
+  "name": "Hello Clear Skin Combo Kit",
+  "discount_price": "Rs. 1123",
+  "price": "Rs. 1605",
+  "id": 22,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519febc"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15973834/2022/5/29/f4f0142b-4cbe-4a36-910b-b48d59e468551653793344560Pilgrim25AHA2BHA5PHAFacePeelingSolutionforPigmentationAcneSc1.jpg",
+  "brand": "Pilgrim",
+  "name": "AHA BHA Face Peeling Solution",
+  "discount_price": "Rs. 517",
+  "price": "Rs. 545",
+  "id": 23,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519febd"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19283440/2022/8/12/bc88fafe-2e31-444f-82fb-866fcbfbf4641660281536606-TNW-the-natural-wash-Kumkumadi-Toner-100ml-3641660281536297-1.jpg",
+  "brand": "TNW the natural wash",
+  "name": "Kumkumadi Toner 100ml",
+  "discount_price": "Rs. 266",
+  "price": "Rs. 380",
+  "id": 24,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519febe"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18892648/2022/7/15/a38afcbe-38b0-4480-86aa-4f1a219f50851657880472677SUGARPOPSmudge-ProofWaterproofEyelinerPen-Black1.jpg",
+  "brand": "SUGAR POP",
+  "name": "Waterproof Eyeliner Pen- Black",
+  "discount_price": "Rs. 296",
+  "price": "Rs. 329",
+  "id": 25,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519febf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18243886/2022/8/1/a9e42131-88bd-459d-af8b-0d038feb2de01659334963331MACMiniPrepPrimeFix13ml1.jpg",
+  "brand": "M.A.C",
+  "name": "Mini Prep+ Prime Fix+ Primer",
+  "discount_price": "",
+  "price": "",
+  "id": 26,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12679490/2020/10/9/8f89d4f4-c305-43ba-902a-390eb3494c1e1602216306120-Biotique-Advanced-Organics-Vitamin-C-Dark-Spot-Solution-30Ml-1.jpg",
+  "brand": "Biotique",
+  "name": "Women Vit C Dark Spot Solution",
+  "discount_price": "Rs. 330",
+  "price": "Rs. 560",
+  "id": 27,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13263548/2022/6/30/7396fb7c-50c9-4d05-be43-4e8fa9c64b821656588011143FACESCANADAWeightlessMatteFinishMiniFoundationIvory0118ml1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Matte Foundation - Ivory 01",
+  "discount_price": "Rs. 129",
+  "price": "Rs. 199",
+  "id": 28,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17973256/2022/7/1/115143f3-0d93-4e1b-9dbc-7d07df72ac291656665179960MamaearthGlowOilControlSPF30CompactwithVitaminCTurmeric-Crem1.jpg",
+  "brand": "Mamaearth",
+  "name": "Glow Oil Control Compact - 02",
+  "discount_price": "Rs. 449",
+  "price": "Rs. 499",
+  "id": 29,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/57619/2022/5/25/1b92f828-f2b6-4197-a7cf-b665c13727261653463210745-Lotus-Herbals-Sun-Safe-3-in-1-Matte-Look-SPF-40-Daily-Sunscr-1.jpg",
+  "brand": "Lotus Herbals",
+  "name": "Safe Sun 3in1 SPF 40 Sunscreen",
+  "discount_price": "Rs. 390",
+  "price": "Rs. 465",
+  "id": 30,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14269688/2022/1/8/15be65ca-5bf9-4c79-820f-4fd79956d0881641647530463-Renee-Fab-5-Nude-5in1-Lipstick-75g-5291641647529957-1.jpg",
+  "brand": "Renee",
+  "name": "Fab 5 Nude 5 in 1 Lipstick",
+  "discount_price": "Rs. 562",
+  "price": "Rs. 750",
+  "id": 31,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/6617856/2020/10/19/93831bbd-23bc-463c-8c6f-19ada73680a11603096294019-Garnier-Women-Darkest-Brown-Color-Naturals-Hair-Color-3-4811-1.jpg",
+  "brand": "Garnier",
+  "name": "ColorNaturals 3 Darkest Brown",
+  "discount_price": "",
+  "price": "",
+  "id": 32,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14047514/2021/11/26/c406ce2d-506f-4aba-aae0-8539381bce2e1637926503015-Plum-Green-Tea-Range-Oil-Free-Moisturizer-50-ml-366163792650-1.jpg",
+  "brand": "Plum",
+  "name": "Green Tea Oil Free Moisturizer",
+  "discount_price": "Rs. 352",
+  "price": "Rs. 470",
+  "id": 33,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17646742/2022/6/23/6c0cfe53-276f-49ce-b10a-7426363cd2051655967999442-DUCRAY-Unisex-Shampoo-and-Conditioner-5281655967999164-1.jpg",
+  "brand": "DUCRAY",
+  "name": "Anaphase+ Complement Shampoo",
+  "discount_price": "",
+  "price": "",
+  "id": 34,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19206258/2022/7/21/9847ef2d-022d-44b2-904c-e051308f7a551658397179978VGRV-568IonicHairStraightenerBrush1.jpg",
+  "brand": "VGR",
+  "name": "V-568 Ionic Hair Straightener Brush",
+  "discount_price": "Rs. 999",
+  "price": "Rs. 2299",
+  "id": 35,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fec9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/9590379/2019/12/13/05fc4885-39ca-491e-9fcb-56e880e3817b1576212118430-MAC-Mehr-Matte-Lipstick-4741576212116185-1.jpg",
+  "brand": "M.A.C",
+  "name": "Matte Lipstick - Mehr",
+  "discount_price": "",
+  "price": "",
+  "id": 36,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feca"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16900038/2022/2/4/5ce2f982-cd15-48b6-b6d6-dba472401b481643948836795MinimalistVitaminB5LightweightOilFreeMoisturizer-50g1.jpg",
+  "brand": "Minimalist",
+  "name": "Vitamin Moisturizer-50 g",
+  "discount_price": "",
+  "price": "",
+  "id": 37,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fecb"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2175584/2021/9/25/c589b2c1-403e-4c4e-a6ac-d867b8753e3e1632537686955PlumGreenTeaPoreCleansingSustainableFaceWashforOilyorAcne-Pr1.jpg",
+  "brand": "Plum",
+  "name": "Green Tea Pore Cleansing Face Wash 75 ml",
+  "discount_price": "Rs. 224",
+  "price": "Rs. 345",
+  "id": 38,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fecc"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1884767/2021/12/16/4dcb2afd-6121-49ac-9a88-d5d9bba5be5f1639646472543-Nivea-Nourishing-Body-Milk-with-2x-Almond-Oil-for-Very-Dry-S-1.jpg",
+  "brand": "Nivea",
+  "name": "Nourishing Body Milk 400 ml",
+  "discount_price": "Rs. 299",
+  "price": "Rs. 399",
+  "id": 39,
+  "type": "beauty",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fecd"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13263540/2022/7/26/29c9192a-db94-4392-a17e-18024e9eb3431658832192785FACESCANADAWeightlessMatteFinishMiniFoundationBeige0318ml1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Weightless Foundation-Beige 03",
+  "discount_price": "Rs. 129",
+  "price": "Rs. 199",
+  "id": 40,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fece"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17077730/2022/4/13/ab99a8db-bf21-4006-9b9a-385ff9f957b51649858657045-DressBerry-Hydrating-Watermelon-One-In-A-Melon-Body-Wash-wit-1.jpg",
+  "brand": "DressBerry",
+  "name": "Watermelon Body Wash 250 ml",
+  "discount_price": "Rs. 209",
+  "price": "Rs. 299",
+  "id": 41,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fecf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18892746/2022/7/1/29323244-6f0a-44f0-b3a5-6d44268787f51656659662777-SUGAR-POP-Women-Mascara-8281656659662572-1.jpg",
+  "brand": "SUGAR POP",
+  "name": "Volumizing Mascara",
+  "discount_price": "Rs. 269",
+  "price": "Rs. 299",
+  "id": 42,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173098/2022/4/21/29e1b887-dc10-4168-bfa0-c063c94fdbb41650517604682Minimalist2AlphaArbutinSerumWithHyaluronicAcid1.jpg",
+  "brand": "Minimalist",
+  "name": "Alpha Arbutin Face Serum",
+  "discount_price": "",
+  "price": "",
+  "id": 43,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16636146/2022/1/13/6229a2a9-384e-4ea0-b46f-281a75f5d2401642052930115-GK-HAIR-Balancing-Shampoo-300-ml-931642052929844-1.jpg",
+  "brand": "GK HAIR",
+  "name": "Balancing Shampoo-300 ml",
+  "discount_price": "Rs. 1440",
+  "price": "Rs. 1800",
+  "id": 44,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10699696/2021/6/30/ae1957b1-d3d4-4854-b904-5a3fbbde85cc1625026940390FacesCanadaWeightlessCremeHydratingLipstickwithAlmondOilDark1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Dark Cocoa Lipstick 18",
+  "discount_price": "Rs. 161",
+  "price": "Rs. 249",
+  "id": 45,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12415738/2022/1/28/aff3c812-0409-429b-9795-235cfbc706ba1643364146436WOWAloeVeraMultipurposeBeautyGelforSkinandHair150ml1.jpg",
+  "brand": "WOW SKIN SCIENCE",
+  "name": "Aloe Vera Beauty Gel",
+  "discount_price": "Rs. 209",
+  "price": "Rs. 299",
+  "id": 46,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11240518/2022/6/6/2073dac7-3c54-45ef-85b0-c91786dcbd4d1654502383511-MCaffeine-Sustainable-Naked-and-Raw-Under-Eye-Cream---Reliev-12.jpg",
+  "brand": "MCaffeine",
+  "name": "Coffee Under Eye Cream",
+  "discount_price": "Rs. 517",
+  "price": "Rs. 575",
+  "id": 47,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19012386/2022/8/4/0d2a6325-b486-46a6-8a72-3cae47079a971659595075685-MCaffeine-Coffee-Powder-Sunscreen-SPF-50-PA---4-g-1041659595-11.jpg",
+  "brand": "MCaffeine",
+  "name": "Coffee Powder Sunscreen SPF 50",
+  "discount_price": "Rs. 577",
+  "price": "Rs. 649",
+  "id": 48,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14981962/2021/8/5/138fe902-9265-479f-b1ab-2259d2d146be1628158385379-KAMA-AYURVEDA-Unisex-Skin-Care-Gift-Set-9301628158385152-1.jpg",
+  "brand": "KAMA AYURVEDA",
+  "name": "Overnight Glow Gift Box",
+  "discount_price": "",
+  "price": "",
+  "id": 49,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14981962/2021/8/5/138fe902-9265-479f-b1ab-2259d2d146be1628158385379-KAMA-AYURVEDA-Unisex-Skin-Care-Gift-Set-9301628158385152-1.jpg",
+  "brand": "KAMA AYURVEDA",
+  "name": "Overnight Glow Gift Box",
+  "discount_price": "",
+  "price": "",
+  "id": 50,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1361439/2022/6/21/5d9a878b-b159-46b2-906a-b36485f9140d1655808769447LakmeAbsoluteBlurPerfectMakeupPrimer1.jpg",
+  "brand": "Lakme",
+  "name": "Blur Perfect Makeup Primer",
+  "discount_price": "Rs. 560",
+  "price": "Rs. 800",
+  "id": 51,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fed9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10780736/2022/5/26/98a605c6-20aa-47aa-a03f-fb22cb13e7231653545263196-Bio-Oil-Specialist-Skin-Care-Oil-for-Scars-Stretch-Mark-Agei-1.jpg",
+  "brand": "Bio Oil",
+  "name": "Specialist Skin Care Oil",
+  "discount_price": "Rs. 720",
+  "price": "Rs. 1200",
+  "id": 52,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feda"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2421530/2022/4/25/3813980e-3d5e-4de0-9878-2ad3d9b567091650869407873FACESCANADAUltimeProMakeupFixer1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Ultime Pro Makeup Fixer",
+  "discount_price": "Rs. 421",
+  "price": "Rs. 649",
+  "id": 53,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fedb"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10924306/2021/2/15/c9fc9a18-8351-48ba-bd0e-c4f7fb84d78e1613370780414-FACES-CANADA-Weightless-SPF-20-Stay-Matte-Compact---Beige-03-1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Stay Matte Compact - Beige",
+  "discount_price": "Rs. 149",
+  "price": "Rs. 199",
+  "id": 54,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fedc"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10901968/2022/6/4/7aaf1e83-87c6-428c-8450-28e82ba801ee1654329348478MCaffeineSustainableBeDateReadyBodyPolishingGiftKit1.jpg",
+  "brand": "MCaffeine",
+  "name": "2 in 1 Bestseller Gift Box",
+  "discount_price": "Rs. 954",
+  "price": "Rs. 1193",
+  "id": 55,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fedd"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11914720/2021/8/13/3db0e1e0-a52e-4d45-b2ce-9aabf1594b031628846256525SUGARCosmeticsGoddessOfFlawlessSPF30BBCream15CappuccinoLight1.jpg",
+  "brand": "SUGAR",
+  "name": "Flawless SPF30+ BB Cream 15",
+  "discount_price": "",
+  "price": "",
+  "id": 56,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fede"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14197736/2022/4/11/a4590a59-a9ff-48cb-9032-d594e134b2361649616325036Minimalist03RetinolAntiAgingNightSerum30ml1.jpg",
+  "brand": "Minimalist",
+  "name": "Retinol Anti Aging Night Serum",
+  "discount_price": "",
+  "price": "",
+  "id": 57,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fedf"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16091910/2022/7/7/8ead90f3-dab5-4730-ab08-a777eef4a29a1657182455706Lakme9to5PrimerMatteLiquidConcealer-Nude201.jpg",
+  "brand": "Lakme",
+  "name": "Liquid Concealer - Nude 20",
+  "discount_price": "Rs. 300",
+  "price": "Rs. 400",
+  "id": 58,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173092/2022/4/11/698ff7aa-61ba-496c-a2ae-ff68eed069e01649661864380Minimalist3PHAAlcoholFreeTonerForOilySkin-150ml1.jpg",
+  "brand": "Minimalist",
+  "name": "3% PHA Alcohol Free Toner",
+  "discount_price": "",
+  "price": "",
+  "id": 59,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13507856/2021/1/27/521f5712-ff86-4b7d-91d4-c6ca9fdbb1e01611748824967EucalyptusSpearmintMoisturizingBodyOilHairAppliancePhilipsWo1.jpg",
+  "brand": "Philips",
+  "name": "Bikini Trimmer BRT383/15",
+  "discount_price": "Rs. 1904",
+  "price": "Rs. 2295",
+  "id": 60,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee2"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12087894/2022/6/5/d27f0972-b578-43b7-bca1-844921fc8d331654392140003-Mamaearth-HydraGel-Indian-Sunscreen-SPF-50-with-Aloe-Vera--R-1.jpg",
+  "brand": "Mamaearth",
+  "name": "Indian Sunscreen SPF 50",
+  "discount_price": "Rs. 359",
+  "price": "Rs. 399",
+  "id": 61,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee3"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13205364/2021/8/11/8e3a17e1-a5f0-4441-bdc3-805b3e6bffd31628671636936PaulasChoice2BHASkinPerfectingExfoliantLiquid118ml1.jpg",
+  "brand": "Paulas Choice",
+  "name": "2% BHA Skin Exfoliant Liquid",
+  "discount_price": "",
+  "price": "",
+  "id": 62,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee4"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13203808/2022/7/18/91b05c9d-7831-445a-9bca-41450d139e661658123837699-DERMAVIVE-Hydra-Cleanser---120-ml-7091658123837366-1.jpg",
+  "brand": "DERMAVIVE",
+  "name": "Hydra Cleanser",
+  "discount_price": "",
+  "price": "",
+  "id": 63,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee5"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8890321/2022/8/10/b232c3bb-3f28-45c1-bb07-a7df1b4042a61660093471996-Faces-Canada-Weightless-Matte-Hydrating-Lipstick-with-Almond-1.jpg",
+  "brand": "FACES CANADA",
+  "name": "Matte Lipstick - Buff Nude 05",
+  "discount_price": "Rs. 209",
+  "price": "Rs. 299",
+  "id": 64,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee6"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19021914/2022/7/8/e047740a-1d48-4026-b934-6af66dac3fb31657271610815BIODERMAAtodermSOSSprayAnti-IcthingReflexForImmediateRelief51.jpg",
+  "brand": "BIODERMA",
+  "name": "SOS Spray Anti-Itching",
+  "discount_price": "Rs. 1259",
+  "price": "Rs. 1399",
+  "id": 65,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee7"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14173094/2022/4/11/441dce19-1854-47a1-839e-c6346f14f67f1649661876510MinimalistSepicalm3OatsFaceMoisturiserForOilyAcneProneSkin-51.jpg",
+  "brand": "Minimalist",
+  "name": "Sepicalm Face Moisturiser",
+  "discount_price": "",
+  "price": "",
+  "id": 66,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee8"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15974350/2021/11/2/4b79712b-608d-4c26-81a8-5c522f14c2231635846138253-Makeup-Revolution-London-Women-Eyeshadow-9721635846138181-1.jpg",
+  "brand": "Makeup Revolution London",
+  "name": "Set of 3 Reloaded Palettes",
+  "discount_price": "Rs. 1291",
+  "price": "Rs. 3150",
+  "id": 67,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519fee9"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/4328714/2022/3/21/86ae063e-7806-4878-b007-6c07ae4fabfb1647860143219-Lakme-9-to-5-Weightless-Mousse-Foundation---Beige-Vanilla-6g-1.jpg",
+  "brand": "Lakme",
+  "name": "Weightless Mousse Foundation",
+  "discount_price": "Rs. 127",
+  "price": "Rs. 170",
+  "id": 68,
+  "type": "beauty",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c891e5401710519feea"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11081248/2022/5/25/610a171d-0619-4a25-a121-d3110ed174bc1653465465099MamaearthSustainableActivatedCharcoalFaceWashWithCoffeeForOi1.jpg",
+  "brand": "Mamaearth",
+  "name": "Sustainable Charcoal Face Wash 100 ml",
+  "discount_price": "Rs. 224",
+  "price": "Rs. 249",
+  "id": 69,
+  "type": "beauty",
+  "ratings": 4.5
+}]

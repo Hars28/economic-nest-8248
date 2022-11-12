@@ -1,5 +1,5 @@
 import dbConnect from '../../../../lib/dbConnect'
-import girlModal from '../../../../modals/products/girlModals'
+import girlModal from '../../../../modals/products/girlModal'
 
 const mongoose = require('mongoose')
 

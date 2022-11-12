@@ -1,0 +1,1201 @@
+[{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe3e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10339033/2022/4/25/3170e623-ab80-4678-9628-14cb6033ab171650883660619USPoloAssnMenWhiteClarkinSneakers1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men Clarkin Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 0,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe3f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 872",
+  "price": "Rs. 3795",
+  "id": 1,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe40"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14528384/2021/7/16/ccb4d0a4-b494-4e60-bf8a-9be73c1a88771626414102911-Nike-Winflo-8-Mens-Running-Shoe-9771626414102570-1.jpg",
+  "brand": "Nike",
+  "name": "Men Winflo 8 Running Shoes",
+  "discount_price": "Rs. 7465",
+  "price": "Rs. 8295",
+  "id": 2,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe41"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18290390/2022/6/15/20f0d50d-5f08-4097-93c2-0b675d0c21301655282615654ElPasoMenBlackThongFlip-Flops1.jpg",
+  "brand": "El Paso",
+  "name": "Men Thong Flip-Flops",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 3995",
+  "id": 3,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe42"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18509904/2022/5/31/766bda50-82e7-480b-a52c-9cd648a2d7941653975616884MactreeMenWhiteColourblockedPUSneakers1.jpg",
+  "brand": "Mactree",
+  "name": "Men Colourblocked PU Sneakers",
+  "discount_price": "Rs. 744",
+  "price": "Rs. 3720",
+  "id": 4,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe43"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17277676/2022/3/11/8537f87a-b701-4d82-8f71-04349a12697e1646999055602-US-Polo-Assn-Men-Flip-Flops-2581646999055242-1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men BEESLEY 4.0 Printed Slider",
+  "discount_price": "Rs. 959",
+  "price": "Rs. 1599",
+  "id": 5,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe44"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17924756/2022/5/26/25e8d482-a14e-4bab-b0ca-c372fea894af1653533464493AfroJackMenBlackCrosliteSliders1.jpg",
+  "brand": "AfroJack",
+  "name": "Men Croslite Sliders",
+  "discount_price": "Rs. 499",
+  "price": "Rs. 2495",
+  "id": 6,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe45"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17301784/2022/2/26/f96ec6ff-9272-472f-ba1f-ddace6daaf5a1645852137528RedTapeWomenWhiteSneakers1.jpg",
+  "brand": "Red Tape",
+  "name": "Women Sneakers",
+  "discount_price": "Rs. 1199",
+  "price": "Rs. 4799",
+  "id": 7,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe46"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17305046/2022/2/26/d3e17ae1-f482-42d1-bc3b-a46afb1a25c01645858426508KillerMenNavyBlueSlip-OnSneakers1.jpg",
+  "brand": "Killer",
+  "name": "Men Slip-On Sneakers",
+  "discount_price": "Rs. 699",
+  "price": "Rs. 1999",
+  "id": 8,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe47"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17906400/2022/6/29/7afbaf50-53c7-46e8-9253-82e68815a8bc1656498353619-New-Balance-Men-Casual-Shoes-9951656498353252-1.jpg",
+  "brand": "New Balance",
+  "name": "Men Brand Logo Sliders",
+  "discount_price": "Rs. 2399",
+  "price": "Rs. 3999",
+  "id": 9,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe48"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10331501/2020/3/18/d4d07c60-88d9-43d9-aa78-9cc7712816321584508934272-US-Polo-Assn-Men-White-Colourblocked-Sneakers-84015845089331-1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 10,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe49"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10248557/2022/8/3/7e905109-4e00-422e-866c-60c2df73b97c1659524393162-Puma-Men-Black-Enzo-Running-Shoes-6251659524392836-1.jpg",
+  "brand": "Puma",
+  "name": "Men Enzo Running Shoes",
+  "discount_price": "Rs. 2584",
+  "price": "Rs. 5499",
+  "id": 11,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14572470/2022/8/12/b9af12ad-485a-400d-843d-56c922ccf0ee1660282162783-Newfeel-By-Decathlon-Men-Grey-Mesh-Walking-Non-Marking-Shoes-1.jpg",
+  "brand": "Newfeel By Decathlon",
+  "name": "Men Walking Shoes",
+  "discount_price": "",
+  "price": "",
+  "id": 12,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17148144/2022/2/14/e68f7db0-0d01-4842-96b2-516c58507e651644820624617RedTapeMenBlack1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1224",
+  "price": "Rs. 4899",
+  "id": 13,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19362324/2022/8/3/d3836371-4605-4662-b7d1-636c5c07dcef1659502093792SparxMenBlackNeonOrangeSportsShoes1.jpg",
+  "brand": "Sparx",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 1999",
+  "id": 14,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19321100/2022/7/30/a6c639d3-95db-4997-8a3b-c5733e6cceec1659187420479SportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Women Walking Shoes",
+  "discount_price": "Rs. 1524",
+  "price": "Rs. 6099",
+  "id": 15,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11029848/2022/3/3/42b85640-6586-434e-9ea2-5e2fb6da2ac11646307858997-Mast--Harbour-Men-Navy-Blue-Solid-Sliders-4121646307858617-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Solid Sliders",
+  "discount_price": "Rs. 594",
+  "price": "Rs. 1699",
+  "id": 16,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe4f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/3/7/0adbc936-ec99-4157-ab34-9a7226e0738f1646660549902RoadsterMenBlackSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 872",
+  "price": "Rs. 3795",
+  "id": 17,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe50"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17350972/2022/8/9/407fc165-223e-4d48-ab36-27bca7aeb8741660022259750-Puma-Men-Black-Lex-Training-Shoes-8871660022259372-1.jpg",
+  "brand": "Puma",
+  "name": "Men Lex Training Shoes",
+  "discount_price": "Rs. 2999",
+  "price": "Rs. 5999",
+  "id": 18,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe51"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17792884/2022/5/5/bc4da722-45d2-49ea-978b-96e7dd575e631651729115165KianaWomenWhitePrintedT-StrapFlatswithLaserCuts1.jpg",
+  "brand": "Kiana",
+  "name": "Women Mules Flats",
+  "discount_price": "Rs. 672",
+  "price": "Rs. 2490",
+  "id": 19,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe52"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13886008/2022/8/3/34894dcf-d48a-4ae4-8c25-8bbd1c4546e21659524764572-Nike-Men-Black-Mesh-ZOOM-WINFLO-8-Running-Shoes-786165952476-1.jpg",
+  "brand": "Nike",
+  "name": "Men ZOOM WINFLO8 Running Shoes",
+  "discount_price": "Rs. 7465",
+  "price": "Rs. 8295",
+  "id": 20,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe53"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15461146/2021/12/7/8198188f-5b43-4571-8836-fac58beef9f21638875430363-AfroJack-Men-Green--White-Woven-Design-Sneakers-641638875429-1.jpg",
+  "brand": "AfroJack",
+  "name": "Men Woven Design Sneakers",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 3995",
+  "id": 21,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe54"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19004154/2022/7/7/fd6c78d8-7551-4bfc-b50a-681484011a1f1657191065583RedTapeMenBlackMeshWalkingNon-MarkingShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1324",
+  "price": "Rs. 5299",
+  "id": 22,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe55"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11431554/2022/6/15/d661fe7d-c552-4c9e-9948-ac654cd6885b1655302498543-MENGLER-Men-Black-Textile-Walking-Shoes-3521655302498488-7.jpg",
+  "brand": "MENGLER",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 3999",
+  "id": 23,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe56"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13855576/2022/4/25/1d9760b4-c33e-4d72-a6af-8e81970fd0161650883622705USPoloAssnMenGreySolidSneakers1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men Solid Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 24,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe57"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16412240/2021/12/7/b0819c35-6d60-4b05-b04f-ff8aa74d21cc1638879699050AfroJackWomenWhiteColourblockedSneakers1.jpg",
+  "brand": "AfroJack",
+  "name": "Women Sneakers",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 3745",
+  "id": 25,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe58"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17020636/2022/8/4/2fc6fcd9-b8e8-4899-ae42-335e2a9e292c1659613184793-Skechers-Men-Black-Max-Cushioning-Premier-Running-Shoes-9821-1.jpg",
+  "brand": "Skechers",
+  "name": "Men Max Cushioning Running",
+  "discount_price": "Rs. 7199",
+  "price": "Rs. 8999",
+  "id": 26,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe59"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18737782/2022/7/25/ee566dfb-56ca-4d19-b07c-dec46a4290f61658740351724-ADIDAS-Originals-Men-Green--Yellow-Printed-Adilette-22-Slide-1.jpg",
+  "brand": "ADIDAS Originals",
+  "name": "Men Adilette 22 Sliders",
+  "discount_price": "",
+  "price": "",
+  "id": 27,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17020770/2022/3/25/d30dc753-33f4-4837-bbb8-41d3df35a9271648203909235-Skechers-Women-Sports-Shoes-5651648203908908-1.jpg",
+  "brand": "Skechers",
+  "name": "Women Go Walk Walking Shoes",
+  "discount_price": "Rs. 2699",
+  "price": "Rs. 5999",
+  "id": 28,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2019/8/14/cd6632e5-a2c6-4ec2-a3d8-9a6a6c59e0f51565782726402-1.jpg",
+  "brand": "H&M",
+  "name": "Men Trainers",
+  "discount_price": "",
+  "price": "",
+  "id": 29,
+  "type": "shoes",
+  "ratings": 3.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17333752/2022/2/28/1b9a9e4a-3eaf-43e6-b6ef-b255ae87c8461646053483586RoadsterMenBlueTexturedSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Textured Sneakers",
+  "discount_price": "Rs. 899",
+  "price": "Rs. 4495",
+  "id": 30,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12282150/2022/8/5/41e1049c-83b7-4ec6-addf-18abfe15ad431659699873365-Puma-Women-Black-Prowl-Slip-On-Training-Shoes-86816596998727-1.jpg",
+  "brand": "Puma",
+  "name": "Women Prowl Training Shoes",
+  "discount_price": "Rs. 2399",
+  "price": "Rs. 3999",
+  "id": 31,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15354232/2022/4/22/b2cc3abe-b780-4763-9323-edd8db5799ce1650604625687TWINTOESWomenWhiteBeigeColourblockedSneakers1.jpg",
+  "brand": "TWIN TOES",
+  "name": "Women Colourblocked Sneakers",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 999",
+  "id": 32,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe5f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19443004/2022/8/9/a44f6c32-dc22-4d6e-afc3-edb68bec7e3e1660026503774SportsShoes1.jpg",
+  "brand": "ABROS",
+  "name": "Men Walking Shoes",
+  "discount_price": "",
+  "price": "",
+  "id": 33,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe60"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16977646/2022/1/29/4a7cc08d-0fa5-4762-9417-d16c25cac0571643450945439CrocsClassicBlueUnisexClog1.jpg",
+  "brand": "Crocs",
+  "name": "Unisex Solid Clogs",
+  "discount_price": "Rs. 1797",
+  "price": "Rs. 2995",
+  "id": 34,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe61"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14528384/2021/7/16/ccb4d0a4-b494-4e60-bf8a-9be73c1a88771626414102911-Nike-Winflo-8-Mens-Running-Shoe-9771626414102570-1.jpg",
+  "brand": "Nike",
+  "name": "Men Winflo 8 Running Shoes",
+  "discount_price": "Rs. 7465",
+  "price": "Rs. 8295",
+  "id": 35,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe62"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14746050/2022/4/25/1a67b7aa-55dd-4470-89da-61352b3788391650883695832USPoloAssnMenOff-WhiteGAIMAN2OSneakers1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men GAIMAN 2.O Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 36,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe63"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15244956/2021/9/22/8761b4a9-a841-4473-9722-9a7db46d25931632292567962-Puma-Men-Flip-Flops-9191632292567614-1.jpg",
+  "brand": "Puma",
+  "name": "Men Colourblocked Sliders",
+  "discount_price": "Rs. 2099",
+  "price": "Rs. 3499",
+  "id": 37,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe64"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17450954/2022/3/9/9e20f37c-5da9-40c0-8c6b-d347402eb5811646808454812RedTapeWomenWhiteWovenDesignSneakers1.jpg",
+  "brand": "Red Tape",
+  "name": "Women Woven Design Sneakers",
+  "discount_price": "Rs. 1199",
+  "price": "Rs. 4799",
+  "id": 38,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe65"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16038132/2021/11/9/ce0d12a4-50c9-47e8-8e2d-cfa2ef4805481636446793617RedTapeMenBlack1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1574",
+  "price": "Rs. 6299",
+  "id": 39,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe66"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18509902/2022/6/6/529c9365-fbac-438c-8a11-216d1d4071561654525739316MactreeMenWhiteColourblockedPUSneakers1.jpg",
+  "brand": "Mactree",
+  "name": "Men Colourblocked PU Sneakers",
+  "discount_price": "Rs. 798",
+  "price": "Rs. 3990",
+  "id": 40,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe67"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16470850/2021/12/11/c430d9f6-89e0-4d58-92a1-60982a662f0b1639202760038CasualShoes1.jpg",
+  "brand": "Puma",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 1719",
+  "price": "Rs. 3999",
+  "id": 41,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe68"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18801004/2022/7/22/a4ea8417-5bbd-46ce-8023-74fb3778ef1d1658485757384-Nike-Revolution-5-Mens-Road-Running-Shoes-6981658485757020-1.jpg",
+  "brand": "Nike",
+  "name": "Men Revolution 5 Running Shoes",
+  "discount_price": "Rs. 3325",
+  "price": "Rs. 3695",
+  "id": 42,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe69"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14769850/2022/4/26/21ae91bc-b379-4848-bd84-17b234dc083b1650947244961-Roadster-Men-Beige--Green-Colourblocked-Sneakers-81116509472-7.jpg",
+  "brand": "Roadster",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 879",
+  "price": "Rs. 2199",
+  "id": 43,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11391306/2020/2/12/10b9eea6-35be-4b7d-8c39-826d4d3500c11581485549564-US-Polo-Assn-Men-Casual-Shoes-4671581485548936-1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 44,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/7741225/2022/4/28/a25a206b-d66f-4c1f-864f-fe726f2f80251651146955597-Eego-Italy-Men-Black-Leather-High-Top-Trekking-Shoes-5441651-1.jpg",
+  "brand": "Eego Italy",
+  "name": "Men Trekking Shoes",
+  "discount_price": "Rs. 987",
+  "price": "Rs. 2599",
+  "id": 45,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17203282/2022/2/18/4dde8d65-c3e4-4213-8ba9-608a78c823531645168952489Slip-ontrainers1.jpg",
+  "brand": "H&M",
+  "name": "Men Blue Slip-on trainers",
+  "discount_price": "Rs. 899",
+  "price": "Rs. 1499",
+  "id": 46,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16309932/2021/12/1/6adab139-7454-428e-a2e0-3b29aab8ad941638335605329CasualShoes1.jpg",
+  "brand": "Puma",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 1719",
+  "price": "Rs. 4299",
+  "id": 47,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18123686/2022/5/2/cdfbc93e-9732-46a4-8281-5fc1b0d9e7cb1651503910153RedTapeMenBlackSportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1324",
+  "price": "Rs. 5299",
+  "id": 48,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe6f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11715024/2022/4/6/641a7792-396f-4916-80b1-a1517a25e8351649214016956MastHarbourMenWhiteStripedSliders1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Striped Sliders",
+  "discount_price": "Rs. 679",
+  "price": "Rs. 1699",
+  "id": 49,
+  "type": "shoes",
+  "ratings": 4.8
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe70"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19098502/2022/7/13/24d63f07-75d6-4db1-b220-fa425fc148881657724940766SparxMenOliveGreenMeshRunningNon-MarkingShoes1.jpg",
+  "brand": "Sparx",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 1440",
+  "price": "Rs. 1549",
+  "id": 50,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe71"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19098502/2022/7/13/24d63f07-75d6-4db1-b220-fa425fc148881657724940766SparxMenOliveGreenMeshRunningNon-MarkingShoes1.jpg",
+  "brand": "Sparx",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 1440",
+  "price": "Rs. 1549",
+  "id": 51,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe72"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11567678/2020/3/20/7bcde32c-85b6-4e09-b033-8a5f560e0cc61584705422432-Crocs-Unisex-White-Solid-Thong-Flip-Flops-6381584705421488-1.jpg",
+  "brand": "Crocs",
+  "name": "Unisex Solid Thong Flip-Flops",
+  "discount_price": "Rs. 2096",
+  "price": "Rs. 2995",
+  "id": 52,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe73"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16925016/2022/2/5/cc1134fd-37ab-4236-a5f3-82874ce0ea0e1644058684160RoadsterMenWhiteSneakers1.jpg",
+  "brand": "Roadster",
+  "name": "Men Sneakers",
+  "discount_price": "Rs. 878",
+  "price": "Rs. 3995",
+  "id": 53,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe74"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15321114/2021/9/9/c340b549-9f51-4c5b-8efe-3b3fe7ae2f731631204557472-HERENOW-Women-Beige--Brown-Solid-Slip-On-4931631204557346-6.jpg",
+  "brand": "HERE&NOW",
+  "name": "Women Flats",
+  "discount_price": "Rs. 698",
+  "price": "Rs. 2495",
+  "id": 54,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe75"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14184828/2021/4/24/c88717db-d6ac-4ac7-bbe2-92c24fa62ff31619249339340PumaUnisexBluePrinted1.jpg",
+  "brand": "Puma",
+  "name": "Unisex Printed Thong Flip-Flops",
+  "discount_price": "Rs. 519",
+  "price": "Rs. 799",
+  "id": 55,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe76"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2314924/2017/12/17/11513492907870-Nike-Men-Flip-Flops-5641513492907742-1.jpg",
+  "brand": "Nike",
+  "name": "Men KAWA Printed Flip-Flops",
+  "discount_price": "Rs. 2096",
+  "price": "Rs. 2795",
+  "id": 56,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe77"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15384928/2022/8/8/f0f81f25-896b-473f-b7a9-26919bf365d41659945184287NikeMenBlueFlexControlTrainingShoes1.jpg",
+  "brand": "Nike",
+  "name": "Men Flex Control Training",
+  "discount_price": "Rs. 4396",
+  "price": "Rs. 5495",
+  "id": 57,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe78"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17663236/2022/4/12/6ce04683-8221-4b05-85bb-f372d6b7c7e11649762879723-one8-x-PUMA-Men-Navy-Blue--Lime-Green-Thong-Flip-Flops-41516-1.jpg",
+  "brand": "one8 x PUMA",
+  "name": "Men Breeze V7 Thong Flip-Flops",
+  "discount_price": "Rs. 509",
+  "price": "Rs. 1699",
+  "id": 58,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe79"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19313926/2022/7/30/b507bb76-c133-4ec9-9d6d-e3d5348e91fb1659180730438AfroJackWomenBlackColourblockedSneakers1.jpg",
+  "brand": "AfroJack",
+  "name": "Women Colourblocked Sneakers",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 3995",
+  "id": 59,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18960730/2022/7/4/fed64a32-0df9-4822-b367-b935ce6164e41656935850503CasualShoes1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men PU Loafers",
+  "discount_price": "Rs. 1983",
+  "price": "Rs. 3199",
+  "id": 60,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/10388941/2022/6/2/13dc9867-c9ee-4768-a061-1502db8f876c1654168971720-Mast--Harbour-Men-Black-Solid-Sliders-2471654168971230-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Solid Sliders",
+  "discount_price": "Rs. 899",
+  "price": "Rs. 1999",
+  "id": 61,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19321106/2022/7/30/39f4094a-65fa-440f-819d-3a2acc30fc161659187846330SportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Women Running Shoes",
+  "discount_price": "Rs. 1524",
+  "price": "Rs. 6099",
+  "id": 62,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/12470304/2022/8/5/0048c86a-c4e8-43ab-be5d-3391486ac31d1659694980931-Skechers-Women-Blue-Go-Run-Fast-Running-Shoes-88416596949802-1.jpg",
+  "brand": "Skechers",
+  "name": "Women Running Shoes",
+  "discount_price": "Rs. 2999",
+  "price": "Rs. 4999",
+  "id": 63,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17990342/2022/4/22/9b07013a-6b53-4e96-99c5-5768885840081650619111596KillerMenBlackWovenDesignSlip-OnSneakers7.jpg",
+  "brand": "Killer",
+  "name": "Men Woven Design Slip-On Sneakers",
+  "discount_price": "Rs. 699",
+  "price": "Rs. 2499",
+  "id": 64,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe7f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19217392/2022/7/22/7efa99df-0c5f-4389-8620-910cafca4e701658470291970SportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1524",
+  "price": "Rs. 6099",
+  "id": 65,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe80"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17924754/2022/5/26/03870c04-0ae0-45bc-a64e-c8fab0ee48d01653533467827AfroJackMenGreySolidSliders1.jpg",
+  "brand": "AfroJack",
+  "name": "Men Solid Sliders",
+  "discount_price": "Rs. 499",
+  "price": "Rs. 2495",
+  "id": 66,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe81"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18862140/2022/6/25/35b67654-fc9c-421e-9e0d-cc4b41b1ebab1656097056961SportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1524",
+  "price": "Rs. 6099",
+  "id": 67,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe82"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17507138/2022/3/15/82fcdb05-8d5d-479d-ab70-ea0ce445b9a11647331181106mrwonkerMenWhiteSneakers1.jpg",
+  "brand": "mr.wonker",
+  "name": "Men Colourblocked Sneakers",
+  "discount_price": "Rs. 699",
+  "price": "Rs. 3499",
+  "id": 68,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe83"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14931728/2021/8/17/5b223b30-3cf1-49fd-b83b-32cbce6f18671629194435375-Skechers-Men-Sports-Shoes-2591629194434796-1.jpg",
+  "brand": "Skechers",
+  "name": "GO WALK 4 -VIABILITY Shoes",
+  "discount_price": "Rs. 3479",
+  "price": "Rs. 5799",
+  "id": 69,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe84"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11979886/2022/7/22/2349da8f-54c2-4376-aa55-7d22ebd9199b1658489173548-Nike-Revolution-5-Mens-Running-Shoe-9961658489173141-1.jpg",
+  "brand": "Nike",
+  "name": "Men Revolution 5 Running Shoes",
+  "discount_price": "Rs. 3325",
+  "price": "Rs. 3695",
+  "id": 70,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe85"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11418836/2022/6/13/689f5c16-409c-46ae-89b3-0b163e13c3301655120723669PumaWomenWhiteMeshEnzo2MetalRunningShoes1.jpg",
+  "brand": "Puma",
+  "name": "Women Enzo 2 Metal Shoes",
+  "discount_price": "Rs. 2749",
+  "price": "Rs. 5499",
+  "id": 71,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe86"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17333252/2022/3/1/1e4092b3-0344-4653-a616-56b138c146691646077489203RedTapeMenBlackSportsShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1324",
+  "price": "Rs. 5299",
+  "id": 72,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe87"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13648378/2021/11/8/dee18565-5bc4-4653-a234-405751d5a68d1636352823870PumaMenBaymaxIDPSneakers1.jpg",
+  "brand": "Puma",
+  "name": "Men Baymax IDP Sneakers",
+  "discount_price": "Rs. 2649",
+  "price": "Rs. 5299",
+  "id": 73,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe88"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15778982/2021/10/25/705a529a-97a1-4b60-bdf2-64bab0d151031635184404737ProvogueMenBlackSolidFormalDebys1.jpg",
+  "brand": "Provogue",
+  "name": "Men Black Solid Formal Debys",
+  "discount_price": "Rs. 899",
+  "price": "Rs. 4495",
+  "id": 74,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe89"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11952894/2022/5/18/8de62fe1-ad03-4f1c-8c10-2bb4ea7d3fea1652845374670-HRX-by-Hrithik-Roshan-Men-Black-Mesh-Running-Shoes-871165284-1.jpg",
+  "brand": "HRX by Hrithik Roshan",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 1999",
+  "price": "Rs. 4999",
+  "id": 75,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/12/26/e7b2aa83-9108-4dda-a8e3-4b04b1cd5a811608986722476-1.jpg",
+  "brand": "H&M",
+  "name": "Men Solid Trainers",
+  "discount_price": "",
+  "price": "",
+  "id": 76,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19150510/2022/7/18/d4395d17-643b-4b34-9a07-5e60a68c2c2b1658147862842PumaMenWhiteSportsShoes1.jpg",
+  "brand": "Puma",
+  "name": "Men Cricket Shoes",
+  "discount_price": "Rs. 2749",
+  "price": "Rs. 4999",
+  "id": 77,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19368822/2022/8/3/ee7f1be0-8d3b-4505-af6d-c10b24480ecd1659523475311FlipFlops1.jpg",
+  "brand": "hummel",
+  "name": "Men Printed Sliders",
+  "discount_price": "Rs. 699",
+  "price": "Rs. 999",
+  "id": 78,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/14769872/2021/8/2/9fb528a6-840f-4618-9901-340aaed70e3e1627899427528-Roadster-Men-Olive-Green-Sneakers-2951627899427031-1.jpg",
+  "brand": "Roadster",
+  "name": "Men Suede Finish Sneakers",
+  "discount_price": "Rs. 879",
+  "price": "Rs. 2199",
+  "id": 79,
+  "type": "shoes",
+  "ratings": 4.5
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18153732/2022/7/1/4b4fa96d-39e9-49d9-b4ac-c0f9994a789c1656653847099-US-Polo-Assn-Men-Casual-Shoes-981656653846705-1.jpg",
+  "brand": "U.S. Polo Assn.",
+  "name": "Men OCTAVIA Slip-On Sneakers",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 2999",
+  "id": 80,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe8f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19443020/2022/8/11/e1694f5d-7297-4b9a-ad04-99d2ebb4e3691660197508135ABROSMenBlackMeshWalkingShoes1.jpg",
+  "brand": "ABROS",
+  "name": "Men Walking Shoes",
+  "discount_price": "",
+  "price": "",
+  "id": 81,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe90"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15022294/2022/8/9/493e26ff-b5f2-48d4-a8a8-7c06bda5dc4d1660037544133-Nike-Men-Black-Quest-4-Running-Shoes-4051660037543748-1.jpg",
+  "brand": "Nike",
+  "name": "Men Quest 4 Running Shoes",
+  "discount_price": "Rs. 5395",
+  "price": "Rs. 5995",
+  "id": 82,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe91"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11420826/2021/10/28/fd758e70-8ac8-46df-95f5-dbaa6721310f1635395956788-Puma-Unisex-White-Up-Sneakers-7801635395956470-1.jpg",
+  "brand": "Puma",
+  "name": "Unisex Up Sneakers",
+  "discount_price": "Rs. 3199",
+  "price": "Rs. 3999",
+  "id": 83,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe92"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16468686/2021/12/11/13b5056c-e744-41e9-a1ae-1b4ef5dd0acd1639229611024AfroJackMenBlackPrintedSneakers1.jpg",
+  "brand": "AfroJack",
+  "name": "Men Printed Sneakers",
+  "discount_price": "Rs. 799",
+  "price": "Rs. 3995",
+  "id": 84,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe93"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16668036/2022/1/4/5171eb82-ca0e-44fa-91d9-48baeb7d2cc41641234853663RedTapeMenBlue1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1574",
+  "price": "Rs. 6299",
+  "id": 85,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe94"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16558200/2022/7/15/82276c05-3054-419a-ace8-b7d924b694ca1657861118186-ADIDAS-Originals-Men-Casual-Shoes-7491657861117720-1.jpg",
+  "brand": "ADIDAS Originals",
+  "name": "Men Niteball II Sneakers",
+  "discount_price": "Rs. 9349",
+  "price": "Rs. 10999",
+  "id": 86,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe95"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/productimage/2020/9/11/0383593d-4304-4115-9d5d-8d18884f2c0e1599774130983-1.jpg",
+  "brand": "Fentacia",
+  "name": "Men Lightweight Flat Boots",
+  "discount_price": "Rs. 1799",
+  "price": "Rs. 5999",
+  "id": 87,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe96"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19150592/2022/7/18/bdb6b48a-6555-488e-8058-dee0c23abac21658148948322PumaMenBlueSportsShoes1.jpg",
+  "brand": "Puma",
+  "name": "Men Sports Shoes",
+  "discount_price": "Rs. 2749",
+  "price": "Rs. 4999",
+  "id": 88,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe97"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17429102/2022/3/8/2f598da5-c9c3-4c6b-9837-7bfe8abf451e1646714925616BondStreetByRedTapeMenGreySportsShoes1.jpg",
+  "brand": "Bond Street By Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 979",
+  "price": "Rs. 4899",
+  "id": 89,
+  "type": "shoes",
+  "ratings": 4
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe98"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/13916950/2022/2/21/83690630-bf15-4e54-a52b-5a2cf0bf50c51645443100884-Mast--Harbour-Men-Olive-Green--White-Striped-Sliders-1351645-1.jpg",
+  "brand": "Mast & Harbour",
+  "name": "Men Striped Sliders",
+  "discount_price": "Rs. 489",
+  "price": "Rs. 1399",
+  "id": 90,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe99"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17848062/2022/4/11/6965e0cb-4b8b-484f-b946-027efcf26b7e1649673203302RedTapeMenBlackSolidFormalSlipOnLoafers1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Solid Formal Slip On Loafers",
+  "discount_price": "Rs. 1749",
+  "price": "Rs. 6999",
+  "id": 91,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9a"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18800608/2022/8/5/379b0030-b0ef-43e0-8f8d-533a50e80d951659690557242-Nike-Men-Charcoal-Grey-Air-Zoom-Pegasus-39--Road-Running-Sho-1.jpg",
+  "brand": "Nike",
+  "name": "Men Pegasus 39 Running Shoes",
+  "discount_price": "Rs. 9445",
+  "price": "Rs. 10495",
+  "id": 92,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9b"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19075840/2022/7/12/73f1497b-b7d9-4a82-87e7-b8f6baa5da5a1657635442635SparxMenBlackMeshRunningShoes1.jpg",
+  "brand": "Sparx",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 1529",
+  "price": "Rs. 1699",
+  "id": 93,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9c"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/19004180/2022/7/7/5b489e3e-9d1f-4f53-9a9d-3dd8f5716d0a1657189231059RedTapeMenGreyMeshWalkingNon-MarkingShoes1.jpg",
+  "brand": "Red Tape",
+  "name": "Men Walking Shoes",
+  "discount_price": "Rs. 1524",
+  "price": "Rs. 6099",
+  "id": 94,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9d"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15312374/2022/6/13/8284d7b1-69de-4da2-bc96-3811289327a71655120583437PumaMenNavyBlueWhiteSwingSliponShoes1.jpg",
+  "brand": "Puma",
+  "name": "Navy Blue & White SlipOn Shoes",
+  "discount_price": "Rs. 1749",
+  "price": "Rs. 3499",
+  "id": 95,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9e"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15321120/2021/9/9/dfd847d3-6f0e-41b0-b0da-9d228094323c1631204649319-HERENOW-Women-Black-Solid-Synthetic-Casual-Slip-On-With-Buck-6.jpg",
+  "brand": "HERE&NOW",
+  "name": "Women Solid Flats With Buckles",
+  "discount_price": "Rs. 698",
+  "price": "Rs. 2495",
+  "id": 96,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fe9f"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/18800882/2022/6/29/2a6fee61-ffc5-4d9b-b97e-d0c926a12cab1656499788248-Jordan-Super-Play-Mens-Slides-8971656499787966-1.jpg",
+  "brand": "Nike",
+  "name": "Men JORDAN SUPER PLAY Sliders",
+  "discount_price": "Rs. 3775",
+  "price": "Rs. 4195",
+  "id": 97,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fea0"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15466766/2021/9/14/7d092a0f-a84e-41fe-afbf-b73f15e153091631632200833SportsShoes1.jpg",
+  "brand": "ASIAN",
+  "name": "Men Running Shoes",
+  "discount_price": "Rs. 659",
+  "price": "Rs. 999",
+  "id": 98,
+  "type": "shoes",
+  "ratings": 3
+},{
+  "_id": {
+    "$oid": "636e1c6a1e5401710519fea1"
+  },
+  "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/8326931/2019/4/23/c9f623f9-b2e8-4964-813f-5e000f4da95e1556027735330-HRX-by-Hrithik-Roshan-Men-Grey-Meta-Flash-Running-Shoes-2581-1.jpg",
+  "brand": "HRX by Hrithik Roshan",
+  "name": "Men Metaflash Running Shoes",
+  "discount_price": "Rs. 2199",
+  "price": "Rs. 5499",
+  "id": 99,
+  "type": "shoes",
+  "ratings": 3
+}]

@@ -17,6 +17,6 @@ const schema = new mongoose.Schema(
 )
 
 
-const girlModal = mongoose.models.girl || mongoose.model('girl', schema)
+const categoryModal = mongoose.models.category || mongoose.model('category', schema)
 
-module.exports = girlModal
+module.exports = categoryModal

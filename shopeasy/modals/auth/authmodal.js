@@ -39,7 +39,7 @@ const authSchema = new mongoose.Schema(
         },
         oauth: {
             type: String,
-            enum: ["google", 'faceBook'],
+            enum: ["google", 'facebook'],
             require: true
         }
     }, {
@@ -47,7 +47,7 @@ const authSchema = new mongoose.Schema(
 }
 )
 
-const authModal = mongoose.modelNames.authmodal || new mongoose.model("authmodal", authSchema)
+const authModal = mongoose.models.authmodal ||mongoose.model("authmodal", authSchema)
 
 
 export default authModal
