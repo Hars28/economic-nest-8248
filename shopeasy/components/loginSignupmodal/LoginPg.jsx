@@ -21,8 +21,10 @@ import {
   Radio,
   HStack,
   Checkbox,
+  Center,
 } from "@chakra-ui/react";
 import { signIn, useSession } from "next-auth/react";
+import { ArrowBackIcon } from "@chakra-ui/icons";
 
 const LoginPg = ({ children, providers, session,setauth }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -89,30 +91,36 @@ console.log(seassion)
 
   return (
     <>
-      <Text onClick={onOpen}>{children}</Text>
+      <Text cursor="pointer" onClick={onOpen}>{children}</Text>
       <Modal
+        mt={20}
         initialFocusRef={initialRef}
         finalFocusRef={finalRef}
         isOpen={isOpen}
+        
         onClose={onClose}
       >
         <ModalOverlay />
         <ModalContent
-          sx={{
-            border: "1px solid black",
-            height: "80vh",
-            width: "360px",
-          }}
+        p="1rem"
+        mt="6rem"
+          
+            border= "1px solid black"
+            width= "380px"
+          
         >
+          {show?<ArrowBackIcon cursor="pointer" onClick={()=>setShow(!show)}/>:""}
           <ModalHeader
+          textAlign="center"
             sx={{
               fontSize: "26px",
               color: "#333333",
               fontWeight: 400,
             }}
           >
-            Welcome to AJIO
+            Welcome to SHOPEASY
           </ModalHeader>
+          
           <ModalCloseButton />
           <ModalBody
             sx={{
@@ -127,28 +135,27 @@ console.log(seassion)
                 gap: "5px",
               }}
             >
+
               {!show && (
                 <>
-                  <FormLabel>Enter Mobile Number / Email* </FormLabel>
                   <Box display={"flex"} justifyContent={"space-evenly"}>
                     <Button
-                      variant={"outline"}
-                      color={"blue"}
-                      colorScheme={"blue"}
+                      colorScheme={"facebook"}
                       onClick={()=>signIn("")}
                     >
                       Facebook
                     </Button>
                     <Button
-                      variant={"outline"}
-                      color={"red"}
                       colorScheme={"red"}
                       onClick={()=>signIn("google")}
                     >
                       Google
                     </Button>
                   </Box>
+                  
                   <Divider orientation="horizontal" my={"15px"} />
+                  <FormLabel textAlign="center">Enter Mobile Number / Email </FormLabel>
+
                 </>
               )}
 
@@ -156,13 +163,17 @@ console.log(seassion)
 
               {show ? (
                 <>
-                  <Box p={6}>
+                
+                  <Box p={1} >
                     <Box>
                       <Text
+                      bg="black"
+                      color="white"
+                      textAlign="center"
                         sx={{
-                          fontSize: "14px",
-                          color: "#454545",
-                          fontWeight: 400,
+                          fontSize: "20px",
+                          // color: "#454545",
+                          fontWeight: 600,
                         }}
                       >
                         Please set up your account
@@ -174,16 +185,16 @@ console.log(seassion)
                           color: "#454545",
                           fontWeight: 400,
                           display: "flex",
-                          justifyContent: "space-between",
-                          marginTop: "10px",
+                          justifyContent: "center",
                         }}
                       >
-                        <Text> {phone} </Text>
+                        <Text fontSize="20px"> {phone} </Text>
                         <Text
+                        
+                          m="4px 0 0 12px"
                           onClick={() => setShow(false)}
                           sx={{
                             color: "blue",
-                            textDecoration: "underline",
                           }}
                         >
                           Edit
@@ -191,9 +202,9 @@ console.log(seassion)
                       </Box>
                       <Text
                         sx={{
-                          fontSize: "10px",
-                          color: "#454545",
-                          fontWeight: 400,
+                          mt:"10px",
+                          fontSize: "14px",
+                          fontWeight: 500,
                         }}
                       >
                         OTP will be sent to your number for verification.
@@ -203,11 +214,10 @@ console.log(seassion)
                     <Box>
                       <Box
                         sx={{
-                          // border : "1px solid red",
-                          fontSize: "14px",
-                          color: "#454545",
-                          fontWeight: 400,
+                          fontSize:"20px", 
+                          fontWeight: 600,
                           display: "flex",
+                          alignItems:"center",
                           gap: "20px",
                           paddingY: "10px",
                         }}
@@ -234,7 +244,8 @@ console.log(seassion)
                         }}
                       >
                         <Input
-                          size={"sm"}
+                        textAlign={"center"}
+                          fontSize="18px"
                           variant="flushed"
                           type={"text"}
                           placeholder={"Name"}
@@ -242,24 +253,27 @@ console.log(seassion)
                           name={"name"}
                         />
                         <Input
+                        textAlign={"center"}
                           onChange={(e) => handlesavedata(e)}
-                          size={"sm"}
+                          fontSize="18px"
                           variant="flushed"
                           type={"text"}
                           placeholder={"Email"}
                           name={"email"}
                         />
                         <Input
+                        textAlign={"center"}
                           onChange={(e) => handlesavedata(e)}
-                          size={"sm"}
+                          fontSize="18px"
                           variant="flushed"
                           type={"password"}
                           placeholder={"Password"}
                           name={"password"}
                         />
                         <Input
+                        textAlign={"center"}
                           onChange={(e) => handlesavedata(e)}
-                          size={"sm"}
+                          fontSize="18px"
                           variant="flushed"
                           type={"text"}
                           placeholder={"Invite Code(optional)"}
@@ -276,18 +290,22 @@ console.log(seassion)
                             fontWeight: 400,
                             my: "10px",
                           }}
-                          size="sm"
+                          size="lg"
                         >
                           By Signing In, I agree to
-                          <Link href="https://www.ajio.com/help/termsAndCondition">
+                          <Link color="blue" href="https://www.ajio.com/help/termsAndCondition">
                             Terms and Conditions.
                           </Link>
                         </Checkbox>
-                        <Button colorScheme={"yellow"} size="sm">
+                       
+                      </Box>
+                      
+                    </Box>
+                    <Center>
+                    <Button colorScheme={"blue"}  size="sm">
                           SEND OTP
                         </Button>
-                      </Box>
-                    </Box>
+                        </Center>
                   </Box>
                 </>
               ) : (
@@ -299,16 +317,17 @@ console.log(seassion)
                     ref={initialRef}
                   />
                   <Button
+                    
                     w={"fit-content"}
                     onClick={(e) => handlenumbersumbit(e)}
                     colorScheme="blue"
-                    mr={3}
+                    m="auto"
                   >
                     CONTINUE
                   </Button>
-                  <Text>
+                  <Text textAlign="center">
                     By Signing In, I agree to
-                    <Link href="https://www.ajio.com/help/termsAndCondition">
+                    <Link color="blue" href="https://www.ajio.com/help/termsAndCondition">
                       Terms and Conditions.
                     </Link>
                   </Text>
