@@ -7,7 +7,13 @@ function DashboardCards({
   icon = TfiLayoutWidthDefaultAlt,
 }) {
   return (
-    <Box bg="rgb(0 0 0 / 0.2)" padding="2rem" borderRadius="3rem">
+    <Box
+      bg="rgb(0 0 0 / 0.8)"
+      transition="0.3s all ease-in-out"
+      padding="2rem"
+      borderRadius="3rem"
+      _hover={{ transform: "scale(0.9)" }}
+    >
       <Flex
         flexDir="column"
         justifyContent="center"
@@ -20,6 +26,7 @@ function DashboardCards({
           alignItems="center"
           gap="1rem"
           fontSize="2.2rem"
+          fontWeight="medium"
         >
           <Icon as={icon} />
           <Text>{title}</Text>
