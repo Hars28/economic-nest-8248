@@ -1,12 +1,31 @@
-import { UnlockIcon } from "@chakra-ui/icons";
-import { Box, Divider, Flex, SimpleGrid, Text } from "@chakra-ui/react";
+import { Icon, UnlockIcon } from "@chakra-ui/icons";
+import { Box, Divider, Flex, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import React from "react";
-
+import {GiCardExchange} from "react-icons/gi"
+import {FaHandHoldingHeart} from "react-icons/fa"
+import {BsFillPatchCheckFill} from "react-icons/bs"
 const Footer = () => {
   return (
-    <Flex direction="column" p="10px" width="100%" bg="#2c4152">
+  <>
+  <Flex>
+        <Flex justify="space-evenly" align="center" w="100%" p={["5px","5px","10px","10px"]}>
+          <VStack>
+          <Icon as={GiCardExchange} boxSize={["35px","40px","45px","50px"]}/>
+          <Text>EASY EXCHANGE</Text>
+          </VStack>
+          <VStack>
+          <Icon as={FaHandHoldingHeart} boxSize={["35px","40px","45px","50px"]}/>
+          <Text>100% HANDPICKED</Text>
+          </VStack>
+          <VStack>
+          <Icon as={BsFillPatchCheckFill} boxSize={["35px","40px","45px","50px"]}/>
+          <Text>ASSURED QUALITY</Text>
+          </VStack>
+        </Flex>
+    </Flex>
+    <Flex direction="column" p="20px" width="100%" bg="#2c4152">
       <Flex direction="column" >
-          <SimpleGrid columns={[1,2,2,4]} spacingX='40px' spacingY='20px'>
+          <SimpleGrid columns={[1,2,2,4]} spacingX='40px' p="20px" spacingY='20px'>
             <Box >
               <Text color="#c0c5be">Ajio</Text>
               <Flex direction="column" mt="10px">
@@ -58,25 +77,26 @@ const Footer = () => {
           </SimpleGrid>
       </Flex>
       <Divider orientation="horizontal"/>
-      <Flex direction="column">
+      <Flex direction="column"  p="20px">
         <Flex direction="row" justify="space-between">
         <Text color='#c0c5be'>Payment methods</Text>
         <Text color='#c0c5be'>Secure systems</Text>
         </Flex>
-        <Flex direction="row" justify="space-between">
+        <Flex direction="row" justify="space-between" p="10px">
             <SimpleGrid columns={[2,2,4,5]} spacingX="20px" spacingY="10px">
-            <Text color='#c0c5be'>Net Banking</Text>
-            <Text color='#c0c5be'>Verified by VISA</Text>
-            <Text color='#c0c5be'>MasterCard</Text>
-            <Text color='#c0c5be'>CASH ON DELIVERY</Text>
-            <Text color='#c0c5be'>Jio Money</Text>
+            <Flex justify="center" color='white'>Net <Text bg="white" color="black">Banking</Text></Flex>
+            <Text color='white'>Verified by VISA</Text>
+            <Text color='white'>MasterCard</Text>
+            <Text color='white'>CASH ON DELIVERY</Text>
+            <Flex justify="center" color='white'><Text bg="white" color="black" borderRadius="50%">Jio</Text> Money</Flex>
             </SimpleGrid>
             <Flex direction="row">
-                <Text color='#c0c5be'><UnlockIcon/>256 BIT</Text>
+                <Text color='white'><UnlockIcon/>256 BIT</Text>
             </Flex>
         </Flex>
       </Flex>
     </Flex>
+    </>
   );
 };
 
