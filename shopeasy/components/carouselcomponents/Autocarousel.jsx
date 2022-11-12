@@ -1,8 +1,9 @@
 import { Box, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const AutoCarousel = ({ slides }) => {
-
+    const router = useRouter()
     const [currentSlide, setCurrentSlide] = useState(0);
     const slidesCount = slides.length;
     const carouselStyle = {
@@ -45,6 +46,7 @@ const AutoCarousel = ({ slides }) => {
                 <Flex pos="relative" w="full" {...carouselStyle}>
                     {slides.map((slide, sid) => (
                         <Box key={`slide-${sid}`} flex="none" boxSize="full" shadow="md">
+
                             <Image
                                 src={slide.img}
                                 w={{ base: "95%", md: "60%" }}
@@ -56,6 +58,7 @@ const AutoCarousel = ({ slides }) => {
                                     transition: "1s",
                                     cursor: "pointer",
                                 }}
+                                onClick={() => router.replace("/products")}
                             />
                         </Box>
                     ))}

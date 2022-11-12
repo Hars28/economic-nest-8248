@@ -10,7 +10,7 @@ const KeyCarousel = ({ slides }) => {
         mt: "-22px",
         p: "8px",
         color: "Gray",
-        backgroudColor: "white",
+        backgroundColor: "white",
         fontWeight: "bold",
         fontSize: "20px",
         transition: "0.6s ease",
