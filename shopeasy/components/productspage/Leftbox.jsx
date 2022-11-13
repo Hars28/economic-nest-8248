@@ -6,6 +6,7 @@ import {
     GridItem,
     Select,
     Text,
+    VStack,
 } from "@chakra-ui/react";
 
 import ProductAddToCart from "./SingleProduct";
@@ -91,38 +92,40 @@ const LeftBox = () => {
             });
     };
 
-    console.log(products);
+
     useEffect(() => {
         getData();
     }, []);
 
     const SidebarContent = (props) => (
-        <Box pos="relative">
-            <Box
-                as="nav"
-                pos="absolute"
-                top="0"
-                left="0"
-                h="full"
-                pb="10"
-                overflowX="hidden"
-                overflowY="auto"
-                bg="white"
-                _dark={{
-                    bg: "gray.800",
-                }}
-                color="inherit"
-                border="1px solid #e5e3e3"
-                w="60"
-                {...props}
-            >
-                <AccordionPage
-                    brandFilterData={brandFilterData}
-                    filterByPrice={filterByPrice}
-                    filterByType={filterByType}
-                />
-            </Box>
-        </Box>
+
+        <VStack
+            pos="fixed"
+            top="7.5rem"
+            left="10rem"
+            pb="10"
+            overflowX="hidden"
+            overflowY="auto"
+            bg="white"
+            _dark={{
+                bg: "gray.800",
+            }}
+            color="inherit"
+            border="1px solid #e5e3e3"
+            w="60"
+            h="1xl"
+            display={{
+                base: "none",
+                md: "unset",
+            }}
+        >
+            <AccordionPage
+                brandFilterData={brandFilterData}
+                filterByPrice={filterByPrice}
+                filterByType={filterByType}
+            />
+        </VStack>
+
     );
 
     return (
@@ -137,11 +140,7 @@ const LeftBox = () => {
             minH="100vh"
         >
             <SidebarContent
-                h="1xl"
-                display={{
-                    base: "none",
-                    md: "unset",
-                }}
+
             />
             <Box
                 ml={{
