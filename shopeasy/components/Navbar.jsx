@@ -44,7 +44,7 @@ const Navbar = () => {
       <Flex w={{ sm: "500px", sm: "500px", md: "700px", lg: "900px", }} direction="column" border="3px orange">
         <HStack display={{ base: "none", md: "inline-flex", lg: "inline-flex" }} alignItems="center" justify="flex-end" >
           {
-            auth ? <><Text px={3} py={3}>{session.data.user.name.trim().split(" ")[0]}</Text><Logout setauth={setauth} /></> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
+            auth ? <><Text px={3} py={3}>{session.data.user?.name.trim().split(" ")[0]}</Text><Logout setauth={setauth} /></> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
           }
 
           <Button _hover={{ bg: "#ffddba", textDecoration: "underline", color: "black" }} bg="black" onClick={() => router.push("https://luxe.ajio.com/?_ga=2.146994423.1331547409.1667928574-1338200682.1667928574")} color="white">Visit AJIOLUXE</Button>
