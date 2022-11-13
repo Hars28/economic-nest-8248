@@ -2,7 +2,7 @@ import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import styles from "../../styles/Home.module.css";
 import { GoLocation } from 'react-icons/go';
 import { BsBoxSeam } from 'react-icons/bs';
-import Address from "../../components/cart/shippingAddressModal";
+import Address from "./Address";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from 'next/router';
