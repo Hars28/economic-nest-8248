@@ -87,37 +87,37 @@ export default function Address() {
                 <Box>
                 <FormControl>
                 <FormLabel >Name</FormLabel>
-                  <Input  type="text"  name="name" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.name}
+                  <Input py={2} px={2} variant='unstyled'  type="text"  name="name" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.name}
                     onChange={handleChange}
                     placeholder='Please enter user name'
                   />
                   <FormLabel >Mobile</FormLabel>
-                   <Input  name="mobile" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.mobile}
+                   <Input py={2} px={2}  variant='unstyled' name="mobile" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.mobile}
                     onChange={handleChange}
                     placeholder='Enter number'
                   />
                   <FormLabel >Flat no</FormLabel>
-                   <Input  name="flat" type="flat" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.flat}
+                   <Input py={2} px={2} variant="unstyled" name="flat" type="flat" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.flat}
                     onChange={handleChange}
                     placeholder='Enter flat no'
                   />
                  
                   <FormLabel >Locality/Area/Street</FormLabel>
-                   <Input  name="area" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.area}
+                   <Input py={2} px={2}  name="area" variant="unstyled" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.area}
                     onChange={handleChange}
                     placeholder='Enter Locality'
                   />
                    <FormLabel >Pincode</FormLabel>
-                   <Input  name="pincode" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.pincode}
+                   <Input py={2} px={2}  name="pincode" variant="unstyled" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" value={formstate.pincode}
                     onChange={handleChange}
                     placeholder='Enter pincode'
                   />
                   <FormLabel >District</FormLabel>
-                   <Input  name="district" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" onChange={handleChange} value={formstate.district}
+                   <Input py={2} px={2}  name="district" variant="unstyled" type="text" mb="3" borderTop="none" borderBottom="2px solid orange" onChange={handleChange} value={formstate.district}
                     placeholder='Enter district'
                   />
                   <FormLabel >State</FormLabel>
-                   <Input  name="state" type="text" mb="3" borderTop="none" borderBottom="2px solid orange"  value={formstate.state} onChange={handleChange}
+                   <Input py={2} px={2}  name="state" variant="unstyled" type="text" mb="3" borderTop="none" borderBottom="2px solid orange"  value={formstate.state} onChange={handleChange}
                     placeholder='Enter state'
                   />
                 </FormControl>
