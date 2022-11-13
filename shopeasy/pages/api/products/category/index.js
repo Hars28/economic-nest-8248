@@ -17,10 +17,10 @@ export default async function filter(req, res) {
         // authorization 
         const { id } = req.headers
 
-        const authorization =  await authModal.find({ "_id" : id})
+        const authorization = await authModal.find({ "_id": id })
 
 
-
+        // todo
 
         console.log(id)
 
@@ -67,7 +67,6 @@ export default async function filter(req, res) {
         // discount_price: String,
         // price: String,
         // type : String,
-
         // sorting based on rating 
         if (params.ratings) {
             const obj = { ...params, ratings: undefined }
@@ -108,25 +107,25 @@ export default async function filter(req, res) {
 
             if (params.cmd === "lte") {
                 const filtered = await categoryModal.aggregate([
-                    { $match: { "price": { $lte: price } } }, {$sort : { price : 1}}, { $limit: 20 }
+                    { $match: { "price": { $lte: price } } }, { $sort: { price: 1 } }, { $limit: 20 }
                 ])
                 return res.send(filtered)
             }
             else if (params.cmd === "lt") {
                 const filtered = await categoryModal.aggregate([
-                    { $match: { "price": { $lt: price } } }, {$sort : { price : 1}}, { $limit: 20 }
+                    { $match: { "price": { $lt: price } } }, { $sort: { price: 1 } }, { $limit: 20 }
                 ])
                 return res.send(filtered)
             }
             else if (params.cmd === "gte") {
                 const filtered = await categoryModal.aggregate([
-                    { $match: { "price": { $gte: price } } }, {$sort : { price : 1}}, { $limit: 20 }
+                    { $match: { "price": { $gte: price } } }, { $sort: { price: 1 } }, { $limit: 20 }
                 ])
                 return res.send(filtered)
             }
             else if ((params.cmd === "gt")) {
                 const filtered = await categoryModal.aggregate([
-                    { $match: { "price": { $gt: price } } }, {$sort : { price : 1}}, { $limit: 20 }
+                    { $match: { "price": { $gt: price } } }, { $sort: { price: 1 } }, { $limit: 20 }
                 ])
                 return res.send(filtered)
             }
@@ -139,7 +138,7 @@ export default async function filter(req, res) {
 
 
             const filtered = await categoryModal.aggregate([
-                { $match: { "price": { $lte: price } } }, {$sort : { price : -1}}, { $limit: 20 }
+                { $match: { "price": { $lte: price } } }, { $sort: { price: -1 } }, { $limit: 20 }
             ])
             console.log(filtered);
             return res.send(filtered)
@@ -148,9 +147,18 @@ export default async function filter(req, res) {
             const discount = params.discount_price
             // console.log(discount)
             const filtered = await categoryModal.aggregate([
-                { $match: { "discount_price": { $lte: discount } } },{$sort : { price : -1}}, { $limit: 20 }
+                { $match: { "discount_price": { $lte: discount } } }, { $sort: { price: -1 } }, { $limit: 20 }
             ])
             return res.send(filtered)
+        }
+        else if (params.findbyid) {
+  
+            const product = await categoryModal.findById(params.findbyid)
+            return res.send({
+                massage: "your item",
+                data: product
+            })
+
         }
 
 
@@ -161,7 +169,8 @@ export default async function filter(req, res) {
 
         res.send({
             para: params,
-            data: filtered
+            data: filtered,
+            // "hii": "jii"
         })
 
     }
