@@ -17,18 +17,18 @@ export default async function Home(req, res) {
                     massage: "sorry havn't anything here "
                 })
             }
-          return res.send(finduser)
+            return res.send(finduser)
         }
         case "POST": {
-        
+
             const cartitem = req.body
             try {
 
                 const isitemhave = await cartModals.find({ "userId": cartitem.userId })
-                if (isitemhave.join("")!=="") {
+                if (isitemhave.join("") !== "") {
                     let qty = isitemhave[0].quantity + cartitem.quantity
                     console.log("qty");
-                    const update = await cartModals.updateOne({ "userId": cartitem.userId }, { "quantity": qty, "Productid" : isitemhave.Productid  })
+                    const update = await cartModals.updateOne({ "userId": cartitem.userId }, { "quantity": qty, "Productid": isitemhave.Productid }, { new: true })
                     return res.send(update)
                 }
                 const cartitemsave = new cartModals({
@@ -39,7 +39,7 @@ export default async function Home(req, res) {
                 return res.send({
                     e: cartitemsave
                 })
-                  }
+            }
             catch (e) {
                 return res.send({
                     e: e.massage
@@ -48,11 +48,11 @@ export default async function Home(req, res) {
         }
         case "DELETE": {
 
-            const _id  = req.body
+            const _id = req.body
             console.log(_id)
 
             const deleteitem = await cartModals.deleteOne({ "_id": _id })
-          
+
             res.send(deleteitem)
 
             return res.send("hii")
