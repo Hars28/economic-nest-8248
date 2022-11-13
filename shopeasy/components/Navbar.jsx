@@ -12,7 +12,7 @@ import React, { useEffect, useState } from 'react'
 import { ImMan, ImWoman } from "react-icons/im"
 import { FaChild } from "react-icons/fa"
 import { MdMapsHomeWork } from "react-icons/md"
-import { AiFillHeart, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/Ai"
+import { AiFillHeart, AiOutlineMenu, AiOutlineShoppingCart } from "react-icons/ai"
 import { Icon } from '@chakra-ui/react'
 import LoginPg from './loginSignupmodal/LoginPg'
 import { useSession } from 'next-auth/react';
