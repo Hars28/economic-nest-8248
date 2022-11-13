@@ -61,7 +61,7 @@ const ClickCarousel = ({data}) => {
       }
   return (
     <Slider {...settings}>
-        {data.map((item)=><ClickCarouselCard src={item.src} to={item.to}/>)}
+        {data.map((item)=><ClickCarouselCard key={item.src} src={item.src} to={item.to}/>)}
     </Slider>
   )
 }

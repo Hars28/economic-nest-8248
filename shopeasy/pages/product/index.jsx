@@ -338,7 +338,7 @@ export default function SingleProduct() {
                       {
                         cart.map((item) => (
                       
-                          <Flex mb="7" justifyContent="space-evenly">
+                          <Flex key={item.image} mb="7" justifyContent="space-evenly">
                             <Image w="40%" src={item.image} />
                             <Box>
                               <Text ml="10%">{item.name}</Text>

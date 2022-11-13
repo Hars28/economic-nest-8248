@@ -103,7 +103,7 @@ const seassion = useSession()
         <ModalOverlay />
         <ModalContent
         p="1rem"
-        mt="6rem"
+        mt="7rem"
           
             border= "1px solid black"
             width= "380px"
@@ -123,9 +123,11 @@ const seassion = useSession()
           
           <ModalCloseButton />
           <ModalBody
+         
             sx={{
               display: "flex",
               flexDir: "column",
+
             }}
           >
             <FormControl
