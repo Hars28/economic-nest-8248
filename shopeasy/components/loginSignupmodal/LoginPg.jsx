@@ -46,7 +46,7 @@ const LoginPg = ({ children, providers, session,setauth }) => {
 // api to set data into backend
 
 const seassion = useSession()
-console.log(seassion)
+
   const handlesavedata = (e) => {
     const { checked, value, name, type } = e.target;
     setUserinfo({
@@ -141,7 +141,7 @@ console.log(seassion)
                   <Box display={"flex"} justifyContent={"space-evenly"}>
                     <Button
                       colorScheme={"facebook"}
-                      onClick={()=>signIn("")}
+                      onClick={()=>signIn("facebook")}
                     >
                       Facebook
                     </Button>

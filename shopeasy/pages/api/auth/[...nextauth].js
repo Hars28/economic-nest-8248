@@ -11,8 +11,8 @@ const GOOGLE_CLIENT_ID = '1099013241213-kpro4gfoc4shhpu9rijemngqpvi4eupk.apps.go
 const GOOGLE_CLIENT_SECRET = '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'
 const NEXTAUTH_SECRET = "NEXTAUTH_SECRET"
 const MONGODB_URI = "mongodb+srv://server:server@cluster0.bgu4xhh.mongodb.net/shopeasy"
-const  FACEBOOK_CLIENT_ID ='1014907879904094'
-const  FACEBOOK_CLIENT_SECRET ="6fb1cb2d147bbfe899fc431bcc38db4c"
+const FACEBOOK_CLIENT_ID = '1014907879904094'
+const FACEBOOK_CLIENT_SECRET = "6fb1cb2d147bbfe899fc431bcc38db4c"
 
 
 
@@ -29,39 +29,44 @@ export const authOptions = {
       clientSecret: FACEBOOK_CLIENT_SECRET
     }),
     // ...add more providers here
-  ],session : {
-    jwt : true 
+  ], session: {
+    jwt: true
   },
-  
+
   database: MONGODB_URI,
   callbacks: {
-    async signIn({user, account, profile}){
+    async signIn({ user, account, profile }) {
       await dbConnect()
+
+      let isuserexist = await authmodal.find({ email : user.email })
       
-      let isuserexist = authmodal.find({email: user.email})
-      if(isuserexist){
-       return true
-      }      
+      if (isuserexist.join("")!=="") {
+       
+        return true
+      }
+      console.log("newuser")
       const newuser = new authmodal({
         name : user.name,
         email : user.email,
         password : user.name.trim().split(" ")[0] + '@123',
         oauth : account.provider,
       })
+      console.log("newuser")
+
        await newuser.save()
       return true
     },
     async session({ session, token, user }) {
 
-      const subject = await authmodal({email : session.user.email})
-
+      const subject = await authmodal({ email: session.user.email })
+      // todo
       session.user.role = "admin"; // Add role value to user object so it is passed along with session
       session.user.objId = subject._id
       return session;
     }
-    
-  },secret : NEXTAUTH_SECRET
-  
+
+  }, secret: NEXTAUTH_SECRET
+
 
 }
 
