@@ -9,7 +9,11 @@ const handlesignout=(e)=>{
   // setauth(false)
 }
   return (
-    <Text onClick={(e)=>handlesignout(e)}>
+    <Text px={3} py ={3}  fontWeight={"bold"} letterSpacing={"0.5px"} cursor={"pointer"} _hover={{
+      color : "red",
+      transition : "0.5s",
+     
+    }} onClick={(e)=>handlesignout(e)}>
         logout
     </Text>
   )
