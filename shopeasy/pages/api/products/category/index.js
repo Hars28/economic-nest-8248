@@ -43,16 +43,15 @@ export default async function filter(req, res) {
 
         const { id } = req.headers
         const authorization = await authModal.find({ "_id": id })
-
-        console.log("authorization", authorization)
+        // console.log("authorization", authorization)
         if (authorization[0]?.role === "admin") {
             const items = req.body
-            console.log(items)
+            // console.log(items)
             const additem = new categoryModal({
                 ...items
-            })
+            }, { $position: 0 })
             await additem.save()
-            console.log("hii")
+            // console.log("hii")
             return res.send({
                 massage: "saved",
             })
@@ -194,9 +193,7 @@ export default async function filter(req, res) {
         }
 
 
-        const filtered = await categoryModal.aggregate([{ $match: params }, {
-            $sort: { totalOrderValue: -1 }
-        }, { $limit: 20 }])
+        const filtered = await categoryModal.aggregate([{ $match: params }, { $limit: 20 }])
         console.log(filtered)
 
         res.send({
