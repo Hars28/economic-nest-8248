@@ -16,9 +16,24 @@ import {
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { FiShoppingCart } from "react-icons/fi";
+import { useSession } from "next-auth/react"
+import axios from "axios";
 
 function ProductAddToCart({ grid, products }) {
+    const { data } = useSession()
 
+    const addToCart = async (el) => {
+        event.preventDefault()
+        const id = data.user.objId;
+
+        console.log("objId : -", id, " prodId : -", el._id)
+
+        await axios.post(`http://localhost:3000/api/cart`, {
+            userId: id,
+            productid: el._id,
+            quantity: 1
+        })
+    }
 
     const setToLocal = (el) => {
         localStorage.setItem("token", JSON.stringify(el))
@@ -88,7 +103,7 @@ function ProductAddToCart({ grid, products }) {
                                                 </Badge>
                                             )}
                                         </Box>
-                                        <Box>
+                                        <Box onClick={() => addToCart(el)}>
                                             <Tooltip
                                                 label="Add to cart"
                                                 bg="white"
@@ -96,14 +111,14 @@ function ProductAddToCart({ grid, products }) {
                                                 color={"gray.800"}
                                                 fontSize={"1.2em"}
                                             >
-                                                <chakra.a href={"/cart"} display={"flex"}>
+                                                <chakra.p display={"flex"}>
                                                     <Icon
                                                         as={FiShoppingCart}
                                                         h={7}
                                                         w={7}
                                                         alignSelf={"center"}
                                                     />
-                                                </chakra.a>
+                                                </chakra.p>
                                             </Tooltip>
                                         </Box>
                                     </HStack>

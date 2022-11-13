@@ -10,17 +10,15 @@ import {
     Flex,
     Text,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
 
 
 const category = ["Formal", "Casual", "Sandals", "Flip Flop", "Sneakers"];
-const gender = ["Male", "Female"]
-const price = ["Below Rs.500", "Rs.500-1000", "Rs.1000-1500", "1500-2000"]
+const gender = [["Male", "mens"], ["Female", "womens"], ["Beauty", "beauty"]]
+const price = ["Rs.299-500", "Rs.500-1000", "Rs.1000-1500", "Rs.1500-2000"]
 const brand = ["Roadster", "Puma", "Adidas", "Highlander"]
 const discount = ["0-20%", "21-30%", "31-40%", "41-50%", "51-80%"]
 
-const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
-    console.log(brandName);
+const AccordionPage = ({ brandFilterData, filterByPrice, filterByType }) => {
 
     return (
         <>
@@ -61,8 +59,10 @@ const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
                                     >
                                         {gender.map((el) => (
                                             <>
-                                                <Checkbox fontSize="15px" color="#2e2c38">
-                                                    {el}
+                                                <Checkbox fontSize="15px" color="#2e2c38" onChange={() => {
+                                                    filterByType(el[1])
+                                                }}>
+                                                    {el[0]}
                                                 </Checkbox>
                                             </>
                                         ))}
@@ -70,38 +70,7 @@ const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
                                 </AccordionPanel>
                             </AccordionItem>
 
-                            <AccordionItem>
-                                <AccordionButton p={1}>
-                                    <AccordionIcon />
-                                    <Button size="sm" variant="none">
-                                        Category
-                                    </Button>
 
-                                    <Box flex="1" textAlign="left" fontSize="18px"></Box>
-                                </AccordionButton>
-
-                                <AccordionPanel pb={4}>
-                                    <Flex
-                                        flexDir="column"
-                                        gap={3}
-                                        justify="center"
-                                        align="flex-start"
-                                        pl={6}
-                                    >
-                                        {category.map((el) => (
-                                            <>
-                                                <Checkbox fontSize="15px" color="#2e2c38" >
-                                                    {el}
-                                                </Checkbox>
-                                            </>
-                                        ))}
-
-                                        <Text cursor="pointer" color="#B19975" fontWeight="600">
-                                            More
-                                        </Text>
-                                    </Flex>
-                                </AccordionPanel>
-                            </AccordionItem>
 
                             <AccordionItem>
                                 <AccordionButton p={1}>
@@ -123,7 +92,11 @@ const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
                                     >
                                         {price.map((el) => (
                                             <>
-                                                <Checkbox fontSize="15px" color="#2e2c38">
+                                                <Checkbox key={el + Math.random()} fontSize="15px" color="#2e2c38"
+                                                    onChange={() => {
+                                                        filterByPrice(el)
+                                                    }
+                                                    }>
                                                     {el}
                                                 </Checkbox>
                                             </>
@@ -156,11 +129,11 @@ const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
                                     >
                                         {brand.map((el) => (
                                             <>
-                                                <Checkbox fontSize="15px" color="#2e2c38" value={el} onChange={(e) => {
-                                                    setBrandname(e.target.value)
-                                                    brandFilterData(brandName)
-                                                }
-                                                }>
+                                                <Checkbox key={el + Math.random()} fontSize="15px" color="#2e2c38"
+                                                    onChange={() => {
+                                                        brandFilterData(el)
+                                                    }
+                                                    }>
                                                     {el}
                                                 </Checkbox>
                                             </>
@@ -194,6 +167,38 @@ const AccordionPage = ({ brandName, setBrandname, brandFilterData }) => {
                                         {discount.map((el) => (
                                             <>
                                                 <Checkbox fontSize="15px" color="#2e2c38">
+                                                    {el}
+                                                </Checkbox>
+                                            </>
+                                        ))}
+
+                                        <Text cursor="pointer" color="#B19975" fontWeight="600">
+                                            More
+                                        </Text>
+                                    </Flex>
+                                </AccordionPanel>
+                            </AccordionItem>
+                            <AccordionItem>
+                                <AccordionButton p={1}>
+                                    <AccordionIcon />
+                                    <Button size="sm" variant="none">
+                                        Category
+                                    </Button>
+
+                                    <Box flex="1" textAlign="left" fontSize="18px"></Box>
+                                </AccordionButton>
+
+                                <AccordionPanel pb={4}>
+                                    <Flex
+                                        flexDir="column"
+                                        gap={3}
+                                        justify="center"
+                                        align="flex-start"
+                                        pl={6}
+                                    >
+                                        {category.map((el) => (
+                                            <>
+                                                <Checkbox fontSize="15px" color="#2e2c38" >
                                                     {el}
                                                 </Checkbox>
                                             </>
