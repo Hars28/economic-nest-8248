@@ -18,7 +18,7 @@ export default async function filter(req, res) {
         const { id } = req.headers
         const authorization = await authModal.find({ "_id": id })
         console.log("authorization", authorization)
-        if (authorization[0].role === "admin") {
+        if (authorization[0]?.role === "admin") {
             const { id } = req.query
             console.log(id);
             const deleteitem = await categoryModal.deleteOne({ "_id": id })
@@ -29,11 +29,6 @@ export default async function filter(req, res) {
         } else {
             return res.send("invalid role")
         }
-        // todo
-
-
-
-
     }
     if (req.method === "POST") {
         // "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/3/7/0adbc936-ec99-4157-ab34-9a7226e0738f1646660549902RoadsterMenBlackSneakers1.jpg",
@@ -69,6 +64,28 @@ export default async function filter(req, res) {
 
 
 
+    }
+    if (req.method === "PUT") {
+        await dbConnect()
+        // authorization 
+        const { id } = req.headers
+        const authorization = await authModal.find({ "_id": id })
+        console.log("authorization", authorization)
+        if (authorization[0]?.role === "admin") {
+            const { id } = req.query
+
+            const data = req.body
+            console.log(data)
+            const updateeditem = await categoryModal.updateOne({ "_id": id }, data)
+            console.log(updateeditem)
+            return res.send({
+                // deleteitem: deleteitem,
+                massage: "category me update acchi btt nhi hai "
+            })
+        } else {
+            return res.send("invalid role")
+        }
+        // todo
     }
     try {
 
@@ -204,3 +221,13 @@ export default async function filter(req, res) {
 // http://localhost:3000/api/products/category?brand=Roadster&ratings=3&cmd=lte
 // http://localhost:3000/api/products/category?discount_price=892
 // http://localhost:3000/api/products/category?price=892
+
+// {
+//     "_id": "6370a0a90fcf1d6f21a785f1",
+//     "name": "123",
+//     "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/3/7/0adbc936-ec99-4157-ab34-9a7226e0738f1646660549902RoadsterMenBlackSneakers1.jpg",
+//     "brand": "12344",
+//     "discount_price": 124443,
+//     "price": 3795,
+//     "type": "shoes"
+// }
