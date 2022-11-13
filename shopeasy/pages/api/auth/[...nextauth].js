@@ -38,32 +38,35 @@ export const authOptions = {
     async signIn({ user, account, profile }) {
       await dbConnect()
 
-      let isuserexist = await authmodal.find({ email : user.email })
-      
-      if (isuserexist.join("")!=="") {
-       
+      let isuserexist = await authmodal.find({ email: user.email })
+
+      if (isuserexist.join("") !== "") {
+
         return true
       }
-      console.log("newuser")
       const newuser = new authmodal({
-        name : user.name,
-        email : user.email,
-        password : user.name.trim().split(" ")[0] + '@123',
-        oauth : account.provider,
-      })
-      console.log("newuser")
+        name: user.name,
+        email: user.email,
+        password: user.name.trim().split(" ")[0] + '@123',
+        oauth: account.provider,
 
-       await newuser.save()
+      })
+
+      await newuser.save()
       return true
     },
-    async session({ session, token, user }) {
+    async session({ session, user, token }) {
+      await dbConnect()
 
-      const subject = await authmodal({ email: session.user.email })
+
+      const subject = await authmodal.find({ email: session.user.email })
       // todo
-      session.user.role = "admin"; // Add role value to user object so it is passed along with session
-      session.user.objId = subject._id
+
+      session.user.role = subject[0].role; // Add role value to user object so it is passed along with session
+      session.user.objId = subject[0]._id
       return session;
     }
+
 
   }, secret: NEXTAUTH_SECRET
 
@@ -73,30 +76,3 @@ export const authOptions = {
 
 export default NextAuth(authOptions)
 
-
-// const x = {
-//   user: {
-//     name: 'Deepak mandal',
-//     email: 'deepak.studentid2030@gmail.com',
-//     image: 'https://lh3.googleusercontent.com/a/ALm5wu2HPEjzMjhG4YlHSlVO6APcmsfJFIAdofrZLrfu_Q=s96-c'
-//   },
-//   expires: '2022-12-12T07:44:18.075Z'
-// }
-// { data: undefined, status: 'loading' }
-// { data: undefined, status: 'loading' }
-// {
-//   user: {
-//     name: 'Deepak mandal',
-//     email: 'deepak.studentid2030@gmail.com',
-//     image: 'https://lh3.googleusercontent.com/a/ALm5wu2HPEjzMjhG4YlHSlVO6APcmsfJFIAdofrZLrfu_Q=s96-c'
-//   },
-//   expires: '2022-12-12T07:44:42.589Z'
-// }
-// {
-//   user: {
-//     name: 'Deepak mandal',
-//     email: 'deepak.studentid2030@gmail.com',
-//     image: 'https://lh3.googleusercontent.com/a/ALm5wu2HPEjzMjhG4YlHSlVO6APcmsfJFIAdofrZLrfu_Q=s96-c'
-//   },
-//   expires: '2022-12-12T07:44:42.647Z'
-// }
