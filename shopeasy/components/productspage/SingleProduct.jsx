@@ -18,10 +18,11 @@ import { useEffect } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { useSession } from "next-auth/react"
 import axios from "axios";
+import { useRouter } from "next/router";
 
 function ProductAddToCart({ grid, products }) {
     const { data } = useSession()
-
+    const router = useRouter()
     const addToCart = async (el) => {
         event.preventDefault()
         const id = data.user.objId;
@@ -37,6 +38,7 @@ function ProductAddToCart({ grid, products }) {
 
     const setToLocal = (el) => {
         localStorage.setItem("token", JSON.stringify(el))
+        router.replace("/product")
     }
     useEffect(() => {
         if (localStorage) {
@@ -66,6 +68,7 @@ function ProductAddToCart({ grid, products }) {
                                 rounded="lg"
                                 shadow="lg"
                                 position="relative"
+
                             >
                                 {el.name && (
                                     <Circle
