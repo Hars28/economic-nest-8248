@@ -89,6 +89,14 @@ const Navbar = () => {
           ) : (
             <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
           )}
+  return (    
+        <Flex borderTop="2px solid" alignItems="center" justifyContent="space-around" mx="auto" left={0} top={0} pos="sticky" bg="white" zIndex={10000} opacity={10000}>
+         <Image onClick={()=>router.replace("/")} cursor="pointer" w={["20%","20%","15%","15%"]} src="/shopeeasy-logo.png" alt=""/>
+          <Flex  w={{sm:"500px",sm:"500px",md:"700px",lg:"900px",}} direction="column" border="3px orange">
+          <HStack   display={{ base: "none", md: "inline-flex", lg:"inline-flex" }} alignItems="center" justify="flex-end" >
+          {
+            auth ? <><Text px={3} py ={3}>{session.data.user.name}</Text><Logout setauth={setauth}/></> : <LoginPg setauth={setauth}>Sign in / Join AJIO</LoginPg>
+          }
 
           <Button
             _hover={{

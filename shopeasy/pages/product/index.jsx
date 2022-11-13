@@ -1,16 +1,25 @@
-import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure } from '@chakra-ui/react';
-import { useRef, useState, } from 'react';
+import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SimpleGrid, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure } from '@chakra-ui/react';
+import { useEffect, useRef, useState, } from 'react';
 import { RiShoppingBagLine  } from 'react-icons/ri';
 import { MdCheckCircle  } from 'react-icons/md';
-import { FaHands } from 'react-icons/fa';
+import { AiOutlineStar } from 'react-icons/ai';
 import { MdOutlineVerified } from 'react-icons/md';
 import { RiExchangeFundsLine } from 'react-icons/ri';
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css';
+import Navbar from "../../components/Navbar"
+import { useRouter } from 'next/router';
+import axios from "axios";
+import { App } from './App/App';
+import { useSession } from 'next-auth/react';
 
 
 export default function SingleProduct() {
-    const [data,setdata] = useState( {"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1});
-    const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
+    const router = useRouter()
+    const [resdata, setresData]= useState([])
+    const [localData, setLocalData] = useState("")
+   const [img, setImg] = useState("")
+    const [data,setdata] = useState("");
+    const [cart,setCart] = useState([])
     const [ isDelivery, setDelivery ] = useState(false);
     const [ pincode, setPincode ] = useState("");
     const [size1, setSize1] = useState(false);
@@ -20,16 +29,52 @@ export default function SingleProduct() {
     const [size5, setSize5] = useState(false);
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
-     
-    function addToCart(){
+    const  sessdata  = useSession() ;
+
+
+    async function addToCart(){
+    
     if(!(size1||size2||size3||size4||size5)){
       alert("Please select any size")
     }
     else{
-      alert("Added to cart successfully")
+
+      const id = sessdata.data.user.objId;
+
+      console.log("objId : -", id, " prodId : -", localData._id)
+
+      await axios.post(`http://localhost:3000/api/cart`, {
+          userId: id,
+          productid: localData._id,
+          quantity: 1
+      }).then((res)=>getDatas(res.data))
+      
       onOpen()
     }
     }
+    async function getDatas(res){
+      console.log(res,"Hello")
+      let id = res.e.productid;
+      await axios.get(`http://localhost:3000/api/products/category?findbyid=${id}`)
+      .then((res)=>setCart([...cart,res.data.data]))
+     
+     
+    }
+  console.log(cart)
+    async function getCart(){
+  
+        const id = sessdata.data.user.objId;
+  
+        console.log("objId : -", id, " prodId : -", localData._id)
+  
+        let cartData = await axios.get(`http://localhost:3000/api/cart`, {
+            userId: id,
+        })
+        setCart(cartData.data)
+        console.log(cartData)
+
+      }
+
     function selectSizefunc1(){
       setSize1(true);setSize2(false);setSize3(false);setSize4(false);setSize5(false);
     }
@@ -81,13 +126,10 @@ export default function SingleProduct() {
     };
     const slides = [
       {
-        img: "https://assets.ajio.com/medias/sys_master/root/h4b/h38/13440824705054/-1117Wx1400H-441000675-navy-MODEL.jpg",
+        img: img
       },
       {
-        img: "https://assets.ajio.com/medias/sys_master/root/heb/hc9/13440825294878/-1117Wx1400H-441000675-navy-MODEL2.jpg",
-      },
-      {
-        img: "https://assets.ajio.com/medias/sys_master/root/hd8/h11/13440825032734/-1117Wx1400H-441000675-navy-MODEL3.jpg",
+        img:"http://localhost:3000/shopeeasy-logo.png"
       }
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -109,9 +151,34 @@ export default function SingleProduct() {
       transition: "all .5s",
       ml: `-${currentSlide * 100}%`,
     };
+
+    const getData = async()=>{
+      let res = await axios.get("http://localhost:3000/api/products/category");
+      setresData(res.data.data)
+      console.log(res.data)
+      console.log(resdata)
+  }
+  useEffect(()=>{
+      getData()
+  },[])
+
+   useEffect(() => {
+    if (localStorage) {
+        const tokendata = localStorage.getItem("token");
+        const val = JSON.parse(tokendata)
+        setLocalData(val)
+       setImg(val.image)
+       
+    }
+  }, []);
+
+console.log(img)
     return (
     <>
-     <Flex m="auto" width={['100%','70%']} >
+    
+    <Navbar />
+    <Button onClick={()=>router.replace("/products")}>Go to products</Button>
+     <Flex m="auto" width={['100%','70%']} mt="20" >
           <Box w="50%">
           <Box>
              <Flex
@@ -125,7 +192,7 @@ export default function SingleProduct() {
             justifyContent="center"
           >
             <Flex w="full" overflow="hidden" pos="relative">
-              <Flex h="630px" w="full" {...carouselStyle}>
+              <Flex h="620px" w="full" {...carouselStyle}>
                 {slides.map((slide, sid) => (
                   <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
                     <Image className={styles.singleProductImage}
@@ -185,11 +252,12 @@ export default function SingleProduct() {
           </Box>
 
           <Box boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" textAlign="center" w="50%" ml="30px">
-            <Text fontSize="3xl" color="orange">{data.brand}</Text>
-            <Text fontWeight="500" color="gray">{data.name}</Text>
-            <Text fontSize="2xl">{data.discount_price}</Text>
+            <Text fontSize="3xl" color="orange">{localData.brand}</Text>
+            <Text fontWeight="500" color="gray">{localData.name}</Text>
+            <Button ml="2" colorScheme='green' h="7">{localData.ratings} <AiOutlineStar /></Button>
+            <Text fontSize="2xl">₹ {localData.discount_price}</Text>
             <Flex m="auto" w="26%">
-                <Text textDecoration='line-through' color="orange.300">{data.price} </Text>
+                <Text textDecoration='line-through' color="orange.300">₹ {localData.price} </Text>
                 <Text>(51% OFF)</Text>
             </Flex>
            <Text fontSize="2xs" color="gray" >Price inclusive of all taxes</Text>
@@ -221,7 +289,7 @@ export default function SingleProduct() {
            </Tooltip>
            </Box>
            <Link color="blue">Check size chart</Link>
-           <Text fontSize="2xs">Compare TEAM SPIRIT size with other brand sizes</Text>
+           <Text fontSize="2xs">Compare {localData.brand} size with other brand sizes</Text>
          
           <Box>
           <Flex w="60%" m="auto" mt="5">
@@ -253,7 +321,7 @@ export default function SingleProduct() {
             <Text> Select your size to know your estimated delivery date.</Text>
           </Box>
           <Box>
-          <Button ref={btnRef} onClick={()=>addToCart()} className={styles.singleProductAddtoCart} boxShadow ="rgba(0, 0, 0, 0.35) 0px 5px 15px" mt="5" w="70%" color="white" bgColor="orange.300"> <RiShoppingBagLine /> <Text ml="2">Add to Bag</Text> </Button>
+          <Button ref={btnRef} onClick={()=>addToCart(data)} className={styles.singleProductAddtoCart} boxShadow ="rgba(0, 0, 0, 0.35) 0px 5px 15px" mt="5" w="70%" color="white" bgColor="orange.300"> <RiShoppingBagLine /> <Text ml="2">Add to Bag</Text> </Button>
                 <Drawer
                   isOpen={isOpen}
                   placement='right'
@@ -263,7 +331,7 @@ export default function SingleProduct() {
                   <DrawerOverlay />
                   <DrawerContent>
                     <DrawerCloseButton />
-                    <DrawerHeader>My cart items</DrawerHeader>
+                    <DrawerHeader mt="100" >My cart items</DrawerHeader>
 
                     <DrawerBody>
                       <Box>
@@ -292,7 +360,7 @@ export default function SingleProduct() {
                       <Button variant='outline' mr={3} onClick={onClose}>
                         Cancel
                       </Button>
-                      <Button colorScheme='blue'>Go to Cart</Button>
+                      <Button onClick={()=> router.push('/cart') } colorScheme='blue'>Go to Cart</Button>
                     </DrawerFooter>
                   </DrawerContent>
                 </Drawer>
@@ -325,29 +393,30 @@ export default function SingleProduct() {
           </Box>
          </Box> 
      </Flex>
-     <Box m="auto" width={['100%','80%']} mt="20">
-       <Text textAlign="center" fontSize="3xl" fontWeight="500">Shop More</Text>
-     </Box>
-     <Flex justifyContent="space-evenly" alignItems='center' m="auto" width={['100%','80%']} mt="10" >
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> All Tshirts → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> Styles → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="teal.100" p="10"> Brands → </Box>
-     </Flex>
+     <Text fontSize="2xl" textAlign="center" mt="20" fontWeight="500">About the Company</Text>
+     <Box w="80%" m="auto" mt="8" color="gray">
+      Explore exclusive athleisure clothing for men and women on AJIO, an in-house brand of Reliance Trends. From shift dresses and high-neck sweatshirts for women to striped polo t-shirts and cotton cargo shorts for men, sporty casuals get a boost of style. +
 
-     <Flex justifyContent="space-evenly" w="80%" m="auto" mt="130px">
-      <Box textAlign="center">
-          <RiExchangeFundsLine className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl" >Easy Exchange</Text>
-      </Box>
-      <Box>
-          <FaHands className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl">100% HANDPICKED</Text>
-      </Box>
-      <Box>
-          <MdOutlineVerified className={styles.singleProductlogo} />
-          <Text fontWeight="500" fontSize="2xl">ASSURED QUALITY</Text>
-      </Box>
+      Shirts & tops for women
+      Add funkiness to basics with the unique designs . Look smart in stripes, wearing a top with mesh sleeves. To stand out in a crowd, pick a bolder style such as a hooded top with drop sleeves or a typographic print top with raglan sleeves. Keep up with the trends in a cold-shoulder top with panelled sleeves or a graphic print top with bell sleeves.
+  <Box>
+     Coordinate your look with chic outerwear such as sweaters and sweatshirts . This company has some smart options, including colourblock sweaters with ribbed hem, all-over print sweatshirts, speckled crew-neck pullovers and more.
+  </Box>
+      Tshirts for men
+      Every man has a unique sense of style. That’s why the brand has a versatile collection of men’s T-shirts . For a modern twist to a classic style, you can choose polo T-shirts with stripes and patterned weave. Add fun to your casual wardrobe with graphic print Teamspirit Tshirts in a variety of styles. You can choose from crew neck, cut & sew, heathered, Ombre-dyed and more.
+     </Box>
+     <Box m="auto" width={['100%','80%']} mt="20">
+       <Text textAlign="center" fontSize="3xl" fontWeight="700">Shop More</Text>
+     </Box>
+     <Flex  justifyContent="space-evenly" alignItems='center' m="auto" width={['100%','80%']} mt="10" mb="20" >
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" color="green" bgColor="gray.100" p="10"> All Tshirts → </Box>
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" color="green" bgColor="gray.100" p="10"> Styles → </Box>
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" color="green" bgColor="gray.100" p="10"> Brands → </Box>
      </Flex>
+     <Box>
+      <App />
+     </Box>
+     <Image src="/secondFooter.png" mt="30" />
         </>
   );
 }

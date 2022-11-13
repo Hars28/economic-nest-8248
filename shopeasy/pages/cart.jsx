@@ -1,17 +1,37 @@
 import { Box, Button, Checkbox, Flex, Image, Input, Link, Select, Text } from "@chakra-ui/react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from '../styles/Home.module.css'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import axios from "axios"
 
 
 export default function Cart(){
     const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
     const router = useRouter()
+    const [data, setData]= useState([])
 
     function proceedToShip(){
         router.push('/shipping')
     }
+
+    const getData = async()=>{
+        let res = await axios.get("http://localhost:3000/api/products/category");
+        setData(res.data.data)
+        console.log(res.data)
+        console.log(data)
+    }
+    useEffect(()=>{
+        getData()
+    },[])
+
     return(
+        <Box>
+            <Flex w="80%" m="auto" h="40%">
+                <Image w="20%" h="40%" src="/shopeeasy-logo.png" />
+                <Image ml="30" w="45%" src="/bagImg.png"/>
+            </Flex>
+          
+        
         <Box w="80%" m="auto">
             <Image src="https://assets.ajio.com/cms/AJIO/WEB/28032021-D-cartpagebanner-relianceones.jpg" />
             <Flex justifyContent="space-evenly" mt="20">
@@ -121,6 +141,10 @@ export default function Cart(){
                 </Box>
                 </Box>
             </Flex>
+        </Box>
+        <Image src="/footerImg.png"/>
+        <hr />
+        <Image src="/secondFooter.png" />
         </Box>
     )
 } 

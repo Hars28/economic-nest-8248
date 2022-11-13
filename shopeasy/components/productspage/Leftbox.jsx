@@ -6,40 +6,126 @@ import {
     GridItem,
     Select,
     Text,
+    VStack,
 } from "@chakra-ui/react";
 
 import ProductAddToCart from "./SingleProduct";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import AccordionPage from "./accordion/AccordionPage";
-
-const ar = [1, 2, 3, 4, 5];
+import axios from "axios";
 
 const LeftBox = () => {
     const [grid, setGrid] = useState(3);
+    const [products, setProducts] = useState([]);
+
+    // Fetching all the data and displaying
+    const getData = async () => {
+        await axios
+            .get("http://localhost:3000/api/products/category")
+            .then((res) => {
+                setProducts(res.data.data);
+            });
+    };
+
+    // filterData by brand
+    const brandFilterData = async (brandName) => {
+        await axios
+            .get(`http://localhost:3000/api/products/category?brand=${brandName}`)
+            .then((res) => {
+                setProducts(res.data.data);
+            });
+    };
+
+    //According to price range
+    const filterByPrice = async (el) => {
+        let price = Number(el.trim().split("-")[1])
+        await axios
+            .get(`http://localhost:3000/api/products/category?price=${price}`)
+            .then((res) => {
+                console.log(res.data)
+                setProducts(res.data);
+            });
+    };
+
+    //According to type - mens ,womens ,beauty
+    const filterByType = async (type) => {
+
+        await axios
+            .get(`http://localhost:3000/api/products/category?type=${type}`)
+            .then((res) => {
+                console.log(res.data)
+                setProducts(res.data.data);
+            });
+    };
+
+    // According to range of price - lte,lt,gte,gt
+    const filterByPriceRange = async (cmd) => {
+        if (cmd == "gt") {
+            let price = 8000;
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=${price}&cmd=${cmd}`)
+                .then((res) => {
+                    setProducts(res.data);
+                });
+        }
+        else if (cmd == 'lt') {
+            let price = 10000;
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=${price}&cmd=${cmd}`)
+                .then((res) => {
+                    setProducts(res.data);
+                });
+        }
+
+        else if (cmd == "gte") {
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=8000&cmd=${cmd}`)
+                .then((res) => {
+                    res.data.sort((a, b) => (a.price < b.price ? 1 : -1))
+                    setProducts(res.data)
+                });
+        }
+        else await axios
+            .get(`http://localhost:3000/api/products/category?price=5000&cmd=${cmd}`)
+            .then((res) => {
+                setProducts(res.data)
+            });
+    };
+
+
+    useEffect(() => {
+        getData();
+    }, []);
 
     const SidebarContent = (props) => (
-        <Box pos="relative">
-            <Box
-                as="nav"
-                pos="absolute"
-                top="0"
-                left="0"
-                h="full"
-                pb="10"
-                overflowX="hidden"
-                overflowY="auto"
-                bg="white"
-                _dark={{
-                    bg: "gray.800",
-                }}
-                color="inherit"
-                border="1px solid #e5e3e3"
-                w="60"
-                {...props}
-            >
-                <AccordionPage />
-            </Box>
-        </Box>
+
+        <VStack
+            pos="fixed"
+            top="7.5rem"
+            left="10rem"
+            pb="10"
+            overflowX="hidden"
+            overflowY="auto"
+            bg="white"
+            _dark={{
+                bg: "gray.800",
+            }}
+            color="inherit"
+            border="1px solid #e5e3e3"
+            w="60"
+            h="1xl"
+            display={{
+                base: "none",
+                md: "unset",
+            }}
+        >
+            <AccordionPage
+                brandFilterData={brandFilterData}
+                filterByPrice={filterByPrice}
+                filterByType={filterByType}
+            />
+        </VStack>
+
     );
 
     return (
@@ -54,11 +140,7 @@ const LeftBox = () => {
             minH="100vh"
         >
             <SidebarContent
-                h="1xl"
-                display={{
-                    base: "none",
-                    md: "unset",
-                }}
+
             />
             <Box
                 ml={{
@@ -69,7 +151,9 @@ const LeftBox = () => {
             >
                 <Box fontFamily="lora">
                     <Center fontSize={{ base: "1.5rem", md: "2.5rem" }} color="#333333">
-                        FOOTWEAR
+                        {products.length && products[2].brand
+                            ? products[2].brand
+                            : "Search More"}
                     </Center>
                 </Box>
                 <Flex
@@ -90,7 +174,7 @@ const LeftBox = () => {
                     backgroundColor="#F9F9F9"
                 >
                     <Text color="gray" fontWeight="500">
-                        Hello
+                        ({products.length}) Items Found
                     </Text>
                     <Box display={{ base: "none", md: "flex" }} gap={1}>
                         <Text color="gray" fontWeight="500">
@@ -148,15 +232,16 @@ const LeftBox = () => {
                             <Select
                                 placeholder="Select to sort"
                                 size={{ base: "xs", md: "sm" }}
+                                onChange={(e) => {
+                                    filterByPriceRange(e.target.value)
+                                }}
                             >
-                                <option value="htl">
-                                    <Text color="gray" fontWeight="500">
-                                        Price (highest first)
-                                    </Text>
+                                <option value="lte">Price (lowest to high)</option>
+                                <option value="gt">Relavance</option>
+                                <option value="lt">Discount</option>
+                                <option value="gte">
+                                    Price (high to low)
                                 </option>
-                                <option value="Discount">Discount</option>
-                                <option value="Relavance">Relavance</option>
-                                <option value="lth">Price (lowest first)</option>
                             </Select>
                         </Box>
                     </Box>
@@ -164,22 +249,7 @@ const LeftBox = () => {
 
                 <Box as="main" p="1">
                     <Box p={2}>
-                        <Grid
-                            templateColumns={{
-                                base: "repeat(1, 1fr)",
-                                md: "repeat(2, 1fr)",
-                                lg: `repeat(${grid},1fr)`,
-                            }}
-                            gap={2}
-                        >
-                            {ar.map((el) => (
-                                <>
-                                    <GridItem w="100%">
-                                        <ProductAddToCart />
-                                    </GridItem>
-                                </>
-                            ))}
-                        </Grid>
+                        <ProductAddToCart grid={grid} products={products} />
                     </Box>
                 </Box>
             </Box>
