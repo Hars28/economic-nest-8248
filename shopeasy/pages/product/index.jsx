@@ -1,4 +1,4 @@
-import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SimpleGrid, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SimpleGrid, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure, useToast } from '@chakra-ui/react';
 import { useEffect, useRef, useState, } from 'react';
 import { RiShoppingBagLine  } from 'react-icons/ri';
 import { MdCheckCircle  } from 'react-icons/md';
@@ -30,12 +30,19 @@ export default function SingleProduct() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const  sessdata  = useSession() ;
-
+    const toast = useToast()
 
     async function addToCart(){
     
     if(!(size1||size2||size3||size4||size5)){
-      alert("Please select any size")
+      toast({
+        title: 'Please select any size',
+        status: 'success',
+        duration: 9000,
+        status: "error",
+        isClosable: true,
+      })
+      
     }
     else{
 
@@ -53,12 +60,10 @@ export default function SingleProduct() {
     }
     }
     async function getDatas(res){
-      console.log(res,"Hello")
-      let id = res.e.productid;
-      await axios.get(`http://localhost:3000/api/products/category?findbyid=${id}`)
+      // console.log(res,"Hello")
+      // let id = res.e.productid;
+      await axios.get(`http://localhost:3000/api/products/category?findbyid=${localData._id}`)
       .then((res)=>setCart([...cart,res.data.data]))
-     
-     
     }
   console.log(cart)
     async function getCart(){
@@ -71,7 +76,7 @@ export default function SingleProduct() {
             userId: id,
         })
         setCart(cartData.data)
-        console.log(cartData)
+        // console.log(cartData)
 
       }
 
@@ -155,29 +160,24 @@ export default function SingleProduct() {
     const getData = async()=>{
       let res = await axios.get("http://localhost:3000/api/products/category");
       setresData(res.data.data)
-      console.log(res.data)
-      console.log(resdata)
+      // console.log(res.data)
+      // console.log(resdata)
   }
-  useEffect(()=>{
-      getData()
-  },[])
-
    useEffect(() => {
+    getData()
     if (localStorage) {
         const tokendata = localStorage.getItem("token");
         const val = JSON.parse(tokendata)
         setLocalData(val)
        setImg(val.image)
-       
-    }
+       }
   }, []);
 
-console.log(img)
     return (
     <>
     
     <Navbar />
-    <Button onClick={()=>router.replace("/products")}>Go to products</Button>
+    <Button ml="100" mt="10" colorScheme='blue' onClick={()=>router.replace("/products")}> {"<-  "}Go to products</Button>
      <Flex m="auto" width={['100%','70%']} mt="20" >
           <Box w="50%">
           <Box>
@@ -350,9 +350,13 @@ console.log(img)
                          
                         ))
                       }
-                      <Text fontSize="2xl" fontWeight="500">
-                        Total Price :
+                      <Flex>
+                        <Text fontSize="2xl" fontWeight="500">
+                        Total Price : 
                       </Text>
+                      <Text ml="2" color="teal" fontSize="2xl" fontWeight="500">₹ {localData.discount_price}</Text>
+                      </Flex>
+                      
                       </Box>
                     </DrawerBody>
 
