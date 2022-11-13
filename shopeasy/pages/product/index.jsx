@@ -2,7 +2,7 @@ import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerCon
 import { useEffect, useRef, useState, } from 'react';
 import { RiShoppingBagLine  } from 'react-icons/ri';
 import { MdCheckCircle  } from 'react-icons/md';
-import { FaHands } from 'react-icons/fa';
+import { AiOutlineStar } from 'react-icons/ai';
 import { MdOutlineVerified } from 'react-icons/md';
 import { RiExchangeFundsLine } from 'react-icons/ri';
 import styles from '../../styles/Home.module.css';
@@ -10,14 +10,16 @@ import Navbar from "../../components/Navbar"
 import { useRouter } from 'next/router';
 import axios from "axios";
 import { App } from './App/App';
+import { useSession } from 'next-auth/react';
 
 
 export default function SingleProduct() {
     const router = useRouter()
     const [resdata, setresData]= useState([])
-
-    const [data,setdata] = useState( {"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1});
-    const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
+    const [localData, setLocalData] = useState("")
+   const [img, setImg] = useState("")
+    const [data,setdata] = useState("");
+    const [cart,setCart] = useState([])
     const [ isDelivery, setDelivery ] = useState(false);
     const [ pincode, setPincode ] = useState("");
     const [size1, setSize1] = useState(false);
@@ -27,17 +29,52 @@ export default function SingleProduct() {
     const [size5, setSize5] = useState(false);
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
-     
-    function addToCart(data){
+    const  sessdata  = useSession() ;
+
+
+    async function addToCart(){
+    
     if(!(size1||size2||size3||size4||size5)){
       alert("Please select any size")
     }
     else{
-      alert("Added to cart successfully")
-      axios.post("http://localhost:3000/api/cart", data)
+
+      const id = sessdata.data.user.objId;
+
+      console.log("objId : -", id, " prodId : -", localData._id)
+
+      await axios.post(`http://localhost:3000/api/cart`, {
+          userId: id,
+          productid: localData._id,
+          quantity: 1
+      }).then((res)=>getDatas(res.data))
+      
       onOpen()
     }
     }
+    async function getDatas(res){
+      console.log(res,"Hello")
+      let id = res.e.productid;
+      await axios.get(`http://localhost:3000/api/products/category?findbyid=${id}`)
+      .then((res)=>setCart([...cart,res.data.data]))
+     
+     
+    }
+  console.log(cart)
+    async function getCart(){
+  
+        const id = sessdata.data.user.objId;
+  
+        console.log("objId : -", id, " prodId : -", localData._id)
+  
+        let cartData = await axios.get(`http://localhost:3000/api/cart`, {
+            userId: id,
+        })
+        setCart(cartData.data)
+        console.log(cartData)
+
+      }
+
     function selectSizefunc1(){
       setSize1(true);setSize2(false);setSize3(false);setSize4(false);setSize5(false);
     }
@@ -89,13 +126,10 @@ export default function SingleProduct() {
     };
     const slides = [
       {
-        img: "https://assets.ajio.com/medias/sys_master/root/h4b/h38/13440824705054/-1117Wx1400H-441000675-navy-MODEL.jpg",
+        img: img
       },
       {
-        img: "https://assets.ajio.com/medias/sys_master/root/heb/hc9/13440825294878/-1117Wx1400H-441000675-navy-MODEL2.jpg",
-      },
-      {
-        img: "https://assets.ajio.com/medias/sys_master/root/hd8/h11/13440825032734/-1117Wx1400H-441000675-navy-MODEL3.jpg",
+        img:"http://localhost:3000/shopeeasy-logo.png"
       }
     ];
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -128,10 +162,22 @@ export default function SingleProduct() {
       getData()
   },[])
 
+   useEffect(() => {
+    if (localStorage) {
+        const tokendata = localStorage.getItem("token");
+        const val = JSON.parse(tokendata)
+        setLocalData(val)
+       setImg(val.image)
+       
+    }
+  }, []);
 
+console.log(img)
     return (
     <>
+    
     <Navbar />
+    <Button onClick={()=>router.replace("/products")}>Go to products</Button>
      <Flex m="auto" width={['100%','70%']} mt="20" >
           <Box w="50%">
           <Box>
@@ -206,11 +252,12 @@ export default function SingleProduct() {
           </Box>
 
           <Box boxShadow = "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" textAlign="center" w="50%" ml="30px">
-            <Text fontSize="3xl" color="orange">{data.brand}</Text>
-            <Text fontWeight="500" color="gray">{data.name}</Text>
-            <Text fontSize="2xl">{data.discount_price}</Text>
+            <Text fontSize="3xl" color="orange">{localData.brand}</Text>
+            <Text fontWeight="500" color="gray">{localData.name}</Text>
+            <Button ml="2" colorScheme='green' h="7">{localData.ratings} <AiOutlineStar /></Button>
+            <Text fontSize="2xl">₹ {localData.discount_price}</Text>
             <Flex m="auto" w="26%">
-                <Text textDecoration='line-through' color="orange.300">{data.price} </Text>
+                <Text textDecoration='line-through' color="orange.300">₹ {localData.price} </Text>
                 <Text>(51% OFF)</Text>
             </Flex>
            <Text fontSize="2xs" color="gray" >Price inclusive of all taxes</Text>
@@ -242,7 +289,7 @@ export default function SingleProduct() {
            </Tooltip>
            </Box>
            <Link color="blue">Check size chart</Link>
-           <Text fontSize="2xs">Compare TEAM SPIRIT size with other brand sizes</Text>
+           <Text fontSize="2xs">Compare {localData.brand} size with other brand sizes</Text>
          
           <Box>
           <Flex w="60%" m="auto" mt="5">
