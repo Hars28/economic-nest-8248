@@ -12,14 +12,27 @@ import {
   ModalOverlay,
 } from "@chakra-ui/react";
 import { useState } from "react";
+import { useSession } from "next-auth/react";
+import axios from "axios";
 
-export default function EditItem({ isOpen, onOpen, onClose, item }) {
+export default function EditItem({
+  isOpen,
+  onOpen,
+  onClose,
+  item,
+  setA,
+  setEditLoading,
+}) {
   const [name, setName] = useState(item.name);
   const [image, setImage] = useState(item.image);
   const [price, setPrice] = useState(item.price);
   const [type, setType] = useState(item.type);
 
+  const session = useSession();
+
   const editData = async () => {
+    setEditLoading(true);
+    const id = session.data.user.objId;
     let obj = {
       name,
       image,
@@ -27,7 +40,19 @@ export default function EditItem({ isOpen, onOpen, onClose, item }) {
       type,
     };
 
-    console.log(obj);
+    axios({
+      method: "put",
+      url: `http://localhost:3000/api/products/category?id=${item._id}`,
+      data: obj,
+      headers: {
+        id,
+      },
+    }).then((res) => {
+      setA((a) => a + 1);
+      setEditLoading(false);
+    });
+
+    // console.log(obj);
   };
 
   return (

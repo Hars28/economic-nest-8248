@@ -25,7 +25,7 @@ function DashboardCards({
           color="green.200"
           alignItems="center"
           gap="1rem"
-          fontSize="2.2rem"
+          fontSize="2rem"
           fontWeight="medium"
         >
           <Icon as={icon} />

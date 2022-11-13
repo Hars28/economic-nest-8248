@@ -24,6 +24,8 @@ export default function ProductBox() {
   const [allProductData, setAllProductData] = useState([]);
   const [productData, setProductData] = useState([]);
   const [page, setPage] = useState(1);
+  const [a, setA] = useState(1);
+  const [loading, setLoading] = useState(false);
 
   const trimProductArray = (page) => {
     let trimmedArr = allProductData.filter((item, index) => {
@@ -35,14 +37,16 @@ export default function ProductBox() {
   };
 
   const getProductData = async () => {
-    let res = await axios.get("http://localhost:3000/api/products/category");
+    let res = await axios.get(
+      "http://localhost:3000/api/products/category?price=10&cmd=gte"
+    );
     // console.log(res.data);
-    setAllProductData(res.data.data);
+    setAllProductData(res.data);
   };
 
   useEffect(() => {
     getProductData();
-  }, []);
+  }, [a]);
 
   useEffect(() => {
     trimProductArray(page);
@@ -58,32 +62,46 @@ export default function ProductBox() {
   return (
     <Box padding="2rem" width="100%">
       {isOpen && (
-        <AddProducts isOpen={isOpen} onOpen={onOpen} onClose={onClose} />
+        <AddProducts
+          setA={setA}
+          isOpen={isOpen}
+          onOpen={onOpen}
+          onClose={onClose}
+          setLoading={setLoading}
+        />
       )}
       <Flex alignItems="center" justifyContent="space-between">
         <Box>
           <Heading>Products</Heading>
         </Box>
         <Box
-          onClick={onOpen}
-          sx={{
-            marginRight: "2rem",
-            padding: "1rem 2rem",
-            backgroundColor: "green.500",
-            fontsize: "1.7rem",
-            borderRadius: "1rem",
-            fontWeight: "bold",
-            color: "white",
-            cursor: "pointer",
-            transition: "0.2s all ease-in-out",
-            _hover: {
-              backgroundColor: "green.600",
-              transform: "scale(0.9)",
-              textDecor: "underline",
-            },
-          }}
+        // onClick={onOpen}
+        // sx={{
+        //   marginRight: "2rem",
+        //   padding: "1rem 2rem",
+        //   backgroundColor: "green.500",
+        //   fontsize: "1.7rem",
+        //   borderRadius: "1rem",
+        //   fontWeight: "bold",
+        //   color: "white",
+        //   cursor: "pointer",
+        //   transition: "0.2s all ease-in-out",
+        //   _hover: {
+        //     backgroundColor: "green.600",
+        //     transform: "scale(0.9)",
+        //     textDecor: "underline",
+        //   },
+        // }}
         >
-          <Text textAlign="right">Add Products</Text>
+          <Button
+            onClick={onOpen}
+            isLoading={loading}
+            colorScheme="green"
+            padding="1.5rem 2rem"
+          >
+            Add Products
+          </Button>
+          {/* <Text textAlign="right">Add Products</Text> */}
         </Box>
       </Flex>
       <TableContainer mt="5rem">
@@ -101,7 +119,7 @@ export default function ProductBox() {
           </Thead>
           <Tbody>
             {allProductData.map((item) => (
-              <TableBody key={item._id} item={item} sr={sr++} />
+              <TableBody key={item._id} setA={setA} item={item} sr={sr++} />
             ))}
           </Tbody>
         </Table>
