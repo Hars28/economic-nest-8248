@@ -17,30 +17,29 @@ export default async function Home(req, res) {
                     massage: "sorry havn't anything here "
                 })
             }
-            res.send(finduser)
+          return res.send(finduser)
         }
         case "POST": {
+        
             const cartitem = req.body
             try {
 
                 const isitemhave = await cartModals.find({ "userId": cartitem.userId })
-                if (isitemhave) {
+                if (isitemhave.join("")!=="") {
                     let qty = isitemhave[0].quantity + cartitem.quantity
-                    const update = await cartModals.updateOne({ "userId": cartitem.userId }, { "quantity": qty })
-                    return res.send(isitemhave)
+                    console.log("qty");
+                    const update = await cartModals.updateOne({ "userId": cartitem.userId }, { "quantity": qty, "Productid" : isitemhave.Productid  })
+                    return res.send(update)
                 }
-
-
                 const cartitemsave = new cartModals({
                     ...cartitem
                 })
                 await cartitemsave.save()
-                // console.log(cartitemsave);
+                console.log(cartitemsave);
                 return res.send({
                     e: cartitemsave
                 })
-                res.send("sorry")
-            }
+                  }
             catch (e) {
                 return res.send({
                     e: e.massage
