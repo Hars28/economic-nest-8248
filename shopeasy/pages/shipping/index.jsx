@@ -68,7 +68,7 @@ export default function Shipping(){
                     <Text fontWeight="700">Total Amount</Text>
                     <Text fontWeight="700">₹ {cart.discount_price}</Text>
                  </Flex>
-                 <Button onClick={()=>router.replace("/")} className={styles.singleProductAddtoCart} w="full" mt="5" bgColor="orange.400" color="white">Proceed to Payment</Button>
+                 <Button onClick={()=>{ alert("Payment successfull");router.replace("/")}} className={styles.singleProductAddtoCart} w="full" mt="5" bgColor="orange.400" color="white">Proceed to Payment</Button>
                  </Box>
         </Flex>
         <hr />
