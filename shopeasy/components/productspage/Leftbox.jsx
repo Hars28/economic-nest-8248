@@ -16,30 +16,85 @@ import axios from "axios";
 const LeftBox = () => {
     const [grid, setGrid] = useState(3);
     const [products, setProducts] = useState([]);
-    const [brandName, setBrandname] = useState("")
+
     // Fetching all the data and displaying
     const getData = async () => {
         await axios
             .get("http://localhost:3000/api/products/category")
             .then((res) => {
-                setProducts(res.data.data)
-
+                setProducts(res.data.data);
             });
     };
 
-    // filterData by brand 
+    // filterData by brand
     const brandFilterData = async (brandName) => {
         await axios
             .get(`http://localhost:3000/api/products/category?brand=${brandName}`)
             .then((res) => {
                 setProducts(res.data.data);
             });
-    }
+    };
 
+    //According to price range
+    const filterByPrice = async (el) => {
+        let price = Number(el.trim().split("-")[1])
+        await axios
+            .get(`http://localhost:3000/api/products/category?price=${price}`)
+            .then((res) => {
+                console.log(res.data)
+                setProducts(res.data);
+            });
+    };
+
+    //According to type - mens ,womens ,beauty
+    const filterByType = async (type) => {
+
+        await axios
+            .get(`http://localhost:3000/api/products/category?type=${type}`)
+            .then((res) => {
+                console.log(res.data)
+                setProducts(res.data.data);
+            });
+    };
+
+    // According to range of price - lte,lt,gte,gt
+    const filterByPriceRange = async (cmd) => {
+        if (cmd == "gt") {
+            let price = 8000;
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=${price}&cmd=${cmd}`)
+                .then((res) => {
+                    setProducts(res.data);
+                });
+        }
+        else if (cmd == 'lt') {
+            let price = 10000;
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=${price}&cmd=${cmd}`)
+                .then((res) => {
+                    setProducts(res.data);
+                });
+        }
+
+        else if (cmd == "gte") {
+            await axios
+                .get(`http://localhost:3000/api/products/category?price=8000&cmd=${cmd}`)
+                .then((res) => {
+                    res.data.sort((a, b) => (a.price < b.price ? 1 : -1))
+                    setProducts(res.data)
+                });
+        }
+        else await axios
+            .get(`http://localhost:3000/api/products/category?price=5000&cmd=${cmd}`)
+            .then((res) => {
+                setProducts(res.data)
+            });
+    };
+
+    console.log(products);
     useEffect(() => {
         getData();
     }, []);
-
 
     const SidebarContent = (props) => (
         <Box pos="relative">
@@ -61,7 +116,11 @@ const LeftBox = () => {
                 w="60"
                 {...props}
             >
-                <AccordionPage brandFilterData={brandFilterData} setBrandname={setBrandname} brandName={brandName} />
+                <AccordionPage
+                    brandFilterData={brandFilterData}
+                    filterByPrice={filterByPrice}
+                    filterByType={filterByType}
+                />
             </Box>
         </Box>
     );
@@ -93,7 +152,9 @@ const LeftBox = () => {
             >
                 <Box fontFamily="lora">
                     <Center fontSize={{ base: "1.5rem", md: "2.5rem" }} color="#333333">
-                        {products.length && products[5].brand ? products[5].brand : "Search More"}
+                        {products.length && products[2].brand
+                            ? products[2].brand
+                            : "Search More"}
                     </Center>
                 </Box>
                 <Flex
@@ -114,7 +175,7 @@ const LeftBox = () => {
                     backgroundColor="#F9F9F9"
                 >
                     <Text color="gray" fontWeight="500">
-                        Products : ({products.length * 1000})
+                        ({products.length}) Items Found
                     </Text>
                     <Box display={{ base: "none", md: "flex" }} gap={1}>
                         <Text color="gray" fontWeight="500">
@@ -172,15 +233,16 @@ const LeftBox = () => {
                             <Select
                                 placeholder="Select to sort"
                                 size={{ base: "xs", md: "sm" }}
+                                onChange={(e) => {
+                                    filterByPriceRange(e.target.value)
+                                }}
                             >
-                                <option value="htl">
-                                    <Text color="gray" fontWeight="500">
-                                        Price (highest first)
-                                    </Text>
+                                <option value="lte">Price (lowest to high)</option>
+                                <option value="gt">Relavance</option>
+                                <option value="lt">Discount</option>
+                                <option value="gte">
+                                    Price (high to low)
                                 </option>
-                                <option value="Discount">Discount</option>
-                                <option value="Relavance">Relavance</option>
-                                <option value="lth">Price (lowest first)</option>
                             </Select>
                         </Box>
                     </Box>
