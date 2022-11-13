@@ -64,9 +64,12 @@ export const authOptions = {
 
       session.user.role = subject[0].role; // Add role value to user object so it is passed along with session
       session.user.objId = subject[0]._id
+      session.token = token
       return session;
+    },
+    async jwt({ token, user, account, profile, isNewUser }) {
+      return token
     }
-
 
   }, secret: NEXTAUTH_SECRET
 

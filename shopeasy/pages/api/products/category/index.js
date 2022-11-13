@@ -16,22 +16,24 @@ export default async function filter(req, res) {
         await dbConnect()
         // authorization 
         const { id } = req.headers
-
         const authorization = await authModal.find({ "_id": id })
-
-
+        console.log("authorization", authorization)
+        if (authorization[0].role === "admin") {
+            const { id } = req.query
+            console.log(id);
+            const deleteitem = await categoryModal.deleteOne({ "_id": id })
+            return res.send({
+                deleteitem: deleteitem,
+                massage: "category me delete acchi btt nhi hai "
+            })
+        } else {
+            return res.send("invalid role")
+        }
         // todo
 
-        console.log(id)
 
-        // const { id } = req.query
-        // console.log(id);
-        // const deleteitem = await categoryModal.deleteOne({ "_id": id })
 
-        return res.send({
-            // deleteitem: deleteitem,
-            massage: "category me delete acchi btt nhi hai "
-        })
+
     }
     if (req.method === "POST") {
         // "image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17425548/2022/3/7/0adbc936-ec99-4157-ab34-9a7226e0738f1646660549902RoadsterMenBlackSneakers1.jpg",
@@ -43,16 +45,29 @@ export default async function filter(req, res) {
         // "type": "shoes",
         // "ratings": 3.5
         await dbConnect()
-        const items = req.body
-        console.log(items)
-        const additem = new categoryModal({
-            ...items
-        })
-        await additem.save()
-        console.log("hii")
-        return res.send({
-            massage: "saved",
-        })
+
+        const { id } = req.headers
+        const authorization = await authModal.find({ "_id": id })
+
+        console.log("authorization", authorization)
+        if (authorization[0]?.role === "admin") {
+            const items = req.body
+            console.log(items)
+            const additem = new categoryModal({
+                ...items
+            })
+            await additem.save()
+            console.log("hii")
+            return res.send({
+                massage: "saved",
+            })
+        } else {
+            return res.send("invalid role")
+        }
+
+
+
+
 
     }
     try {
@@ -152,7 +167,7 @@ export default async function filter(req, res) {
             return res.send(filtered)
         }
         else if (params.findbyid) {
-  
+
             const product = await categoryModal.findById(params.findbyid)
             return res.send({
                 massage: "your item",
