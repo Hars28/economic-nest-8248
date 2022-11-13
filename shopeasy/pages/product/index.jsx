@@ -1,16 +1,21 @@
-import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure } from '@chakra-ui/react';
-import { useRef, useState, } from 'react';
+import { Box, Button, Collapse, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, Flex, Heading, HStack, Image, Input, Link, List, ListIcon, ListItem, SimpleGrid, SliderThumb, Tab, TabList, TabPanel, TabPanels, Tabs, Text, Tooltip, UnorderedList, useDisclosure } from '@chakra-ui/react';
+import { useEffect, useRef, useState, } from 'react';
 import { RiShoppingBagLine  } from 'react-icons/ri';
 import { MdCheckCircle  } from 'react-icons/md';
 import { FaHands } from 'react-icons/fa';
 import { MdOutlineVerified } from 'react-icons/md';
 import { RiExchangeFundsLine } from 'react-icons/ri';
-import styles from '../styles/Home.module.css';
-import Navbar from "../components/Navbar"
-import { useRouter } from 'next/router'
+import styles from '../../styles/Home.module.css';
+import Navbar from "../../components/Navbar"
+import { useRouter } from 'next/router';
+import axios from "axios";
+import { App } from './App/App';
+
 
 export default function SingleProduct() {
     const router = useRouter()
+    const [resdata, setresData]= useState([])
+
     const [data,setdata] = useState( {"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1});
     const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
     const [ isDelivery, setDelivery ] = useState(false);
@@ -23,12 +28,13 @@ export default function SingleProduct() {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
      
-    function addToCart(){
+    function addToCart(data){
     if(!(size1||size2||size3||size4||size5)){
       alert("Please select any size")
     }
     else{
       alert("Added to cart successfully")
+      axios.post("http://localhost:3000/api/cart", data)
       onOpen()
     }
     }
@@ -111,6 +117,18 @@ export default function SingleProduct() {
       transition: "all .5s",
       ml: `-${currentSlide * 100}%`,
     };
+
+    const getData = async()=>{
+      let res = await axios.get("http://localhost:3000/api/products/category");
+      setresData(res.data.data)
+      console.log(res.data)
+      console.log(resdata)
+  }
+  useEffect(()=>{
+      getData()
+  },[])
+
+
     return (
     <>
     <Navbar />
@@ -256,7 +274,7 @@ export default function SingleProduct() {
             <Text> Select your size to know your estimated delivery date.</Text>
           </Box>
           <Box>
-          <Button ref={btnRef} onClick={()=>addToCart()} className={styles.singleProductAddtoCart} boxShadow ="rgba(0, 0, 0, 0.35) 0px 5px 15px" mt="5" w="70%" color="white" bgColor="orange.300"> <RiShoppingBagLine /> <Text ml="2">Add to Bag</Text> </Button>
+          <Button ref={btnRef} onClick={()=>addToCart(data)} className={styles.singleProductAddtoCart} boxShadow ="rgba(0, 0, 0, 0.35) 0px 5px 15px" mt="5" w="70%" color="white" bgColor="orange.300"> <RiShoppingBagLine /> <Text ml="2">Add to Bag</Text> </Button>
                 <Drawer
                   isOpen={isOpen}
                   placement='right'
@@ -343,11 +361,14 @@ export default function SingleProduct() {
      <Box m="auto" width={['100%','80%']} mt="20">
        <Text textAlign="center" fontSize="3xl" fontWeight="700">Shop More</Text>
      </Box>
-     <Flex justifyContent="space-evenly" alignItems='center' m="auto" width={['100%','80%']} mt="10" >
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> All Tshirts → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> Styles → </Box>
-      <Box fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px" color="green" bgColor="gray.100" p="10"> Brands → </Box>
+     <Flex  justifyContent="space-evenly" alignItems='center' m="auto" width={['100%','80%']} mt="10" mb="20" >
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" color="green" bgColor="gray.100" p="10"> All Tshirts → </Box>
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" color="green" bgColor="gray.100" p="10"> Styles → </Box>
+      <Box cursor="pointer" _hover={{color:"red"}} fontSize="2xl" fontWeight="600" boxShadow= "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px" color="green" bgColor="gray.100" p="10"> Brands → </Box>
      </Flex>
+     <Box>
+      <App />
+     </Box>
      <Image src="/secondFooter.png" mt="30" />
         </>
   );
