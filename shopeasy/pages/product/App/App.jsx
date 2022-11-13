@@ -1,11 +1,11 @@
 import { Box } from '@chakra-ui/react'
 import * as React from 'react'
-import { ProductCard } from './ProductCard'
-import { products } from './_data'
-import { ProductGrid } from './ProductGrid'
+import  ProductCard  from './ProductCard'
+import  products  from './_data'
+import  ProductGrid from './ProductGrid'
 import axios from 'axios'
 
-export const App = () => {
+export default function App(){
 
   const [data, setData]= React.useState([])
 

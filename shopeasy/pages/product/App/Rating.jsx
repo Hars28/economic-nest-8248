@@ -2,7 +2,7 @@ import { HStack, Icon, useColorModeValue } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaStar } from 'react-icons/fa'
 
-export const Rating = (props) => {
+export default function Rating(props){
   const { defaultValue = 0, max = 5, size = 'md', rootProps } = props
   const color = useColorModeValue('gray.200', 'gray.600')
   const activeColor = useColorModeValue('blue.500', 'blue.200')
