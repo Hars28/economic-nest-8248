@@ -12,38 +12,55 @@ import {
     Text,
     GridItem,
     Grid,
-    Button,
+    useToast,
 } from "@chakra-ui/react";
 import { useEffect } from "react";
 import { FiShoppingCart } from "react-icons/fi";
-import { useSession } from "next-auth/react"
+import { useSession } from "next-auth/react";
 import axios from "axios";
 import { useRouter } from "next/router";
 
 function ProductAddToCart({ grid, products }) {
-    const { data } = useSession()
-    const router = useRouter()
+    const { data } = useSession();
+    const router = useRouter();
+    const toast = useToast()
+
     const addToCart = async (el) => {
-        event.preventDefault()
+        event.preventDefault();
         const id = data.user.objId;
-
-        console.log("objId : -", id, " prodId : -", el._id)
-
+        console.log("objId : -", id, " prodId : -", el._id);
         await axios.post(`http://localhost:3000/api/cart`, {
             userId: id,
             productid: el._id,
-            quantity: 1
-        })
-    }
+            quantity: 1,
+        }).then((res) => {
+            if (res) {
+                toast({
+                    title: 'Product Added to Cart',
+                    status: 'success',
+                    duration: 3000,
+                    isClosable: true,
+                })
+            }
+            else {
+                toast({
+                    title: 'Account created.',
+                    status: 'error',
+                    duration: 3000,
+                    isClosable: true,
+                })
+            }
+        });
+    };
 
     const setToLocal = (el) => {
-        localStorage.setItem("token", JSON.stringify(el))
-        router.replace("/product")
-    }
+        localStorage.setItem("token", JSON.stringify(el));
+        router.replace("/product");
+    };
     useEffect(() => {
         if (localStorage) {
             const getLocalState = localStorage.getItem("token");
-            console.log("token: ", getLocalState)
+            console.log("token: ", getLocalState);
         }
     }, []);
 
@@ -58,7 +75,12 @@ function ProductAddToCart({ grid, products }) {
         >
             {products.map((el) => (
                 <>
-                    <Flex key={el.id} w="full" alignItems="center" justifyContent="center">
+                    <Flex
+                        key={el.name + Math.random()}
+                        w="full"
+                        alignItems="center"
+                        justifyContent="center"
+                    >
                         <GridItem w="100%">
                             <Box
                                 cursor="pointer"
@@ -68,10 +90,10 @@ function ProductAddToCart({ grid, products }) {
                                 rounded="lg"
                                 shadow="lg"
                                 position="relative"
-
                             >
                                 {el.name && (
                                     <Circle
+
                                         size="10px"
                                         position="absolute"
                                         top={2}
@@ -155,7 +177,8 @@ function ProductAddToCart({ grid, products }) {
                                             color="#3AB649"
                                             textAlign="center"
                                         >
-                                            Offer price : {el.discount_price ? el.discount_price : "Rs. 209"}
+                                            Offer price :{" "}
+                                            {el.discount_price ? el.discount_price : "Rs. 209"}
                                         </Text>
                                     </VStack>
                                 </Box>
