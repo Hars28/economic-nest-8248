@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Icon } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, Image } from "@chakra-ui/react";
 import Link from "next/link";
 import { MdDashboard, MdProductionQuantityLimits } from "react-icons/md";
 import { AiOutlineUser } from "react-icons/ai";
@@ -22,7 +22,10 @@ export default function Sidebar({ changeLinkTarget }) {
             borderRight: "1px solid grey",
           }}
         >
-          <Heading>Shopify</Heading>
+          <Box cursor="pointer">
+            <Image src="/shopeeasy-logo.png" />
+            {/* <Heading>Shopify</Heading> */}
+          </Box>
           <Box
             sx={{
               mt: "5rem",

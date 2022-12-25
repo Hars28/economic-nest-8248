@@ -2,13 +2,31 @@ import { Box, Button, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import styles from "../../styles/Home.module.css";
 import { GoLocation } from 'react-icons/go';
 import { BsBoxSeam } from 'react-icons/bs';
-import Address from "../../components/cart/shippingAddressModal";
-import { useState } from "react";
-// import footerImg from "../../data/footerImg.png"
+import Address from "./Address";
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { useRouter } from 'next/router';
 
 
 export default function Shipping(){
-  const [cart,setCart] = useState([{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 1},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 2},{"image": "https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1376577/2022/6/3/ea10ab6c-883e-437a-8780-ed87484393f81654235830793-Roadster-Men-Black--Grey-Checked-Casual-Sustainable-Shirt-42-1.jpg","brand": "Roadster","name": "Men Pure Cotton Casual Shirt","discount_price": "Rs. 524","price": "Rs. 1499","id": 3}])
+  const [cart,setCart] = useState({})
+  const router = useRouter()
+  async function getDatas(val){
+   
+   let data=await axios.get(`http://localhost:3000/api/products/category?findbyid=${val._id}`)
+   console.log(data)
+     setCart(data.data.data)
+  }
+
+  useEffect(() => {
+    // getData()
+    let val=""
+    if (localStorage) {
+        const tokendata = localStorage.getItem("token");
+        val = JSON.parse(tokendata)
+       }
+       getDatas(val)
+  }, []);
 
     return (
       <Box>
@@ -32,11 +50,11 @@ export default function Shipping(){
                  <Text fontWeight="700" my="2">Order Details</Text>
                  <Flex justifyContent="space-between">
                     <Text>Bag total</Text>
-                    <Text>₹8,785.00</Text>
+                    <Text>₹{cart.price}</Text>
                  </Flex>
                  <Flex justifyContent="space-between">
                     <Text>Bag discount</Text>
-                    <Text>-₹3,411.00</Text>
+                    <Text>₹{cart.price-cart.discount_price}</Text>
                  </Flex>
                
                 <Flex justifyContent="space-between" my="3" >
@@ -48,9 +66,12 @@ export default function Shipping(){
                 </Flex> 
                 <Flex justifyContent="space-between">
                     <Text fontWeight="700">Total Amount</Text>
-                    <Text fontWeight="700">₹3,411.00</Text>
+                    <Text fontWeight="700">₹ {cart.discount_price}</Text>
                  </Flex>
-                 <Button className={styles.singleProductAddtoCart} w="full" mt="5" bgColor="orange.400" color="white">Proceed to Payment</Button>
+
+
+                 <Button onClick={()=>{alert("Order Successfull"); router.replace("/")}} className={styles.singleProductAddtoCart} w="full" mt="5" bgColor="orange.400" color="white">Proceed to Payment</Button>
+
                  </Box>
         </Flex>
         <hr />
@@ -63,17 +84,17 @@ export default function Shipping(){
           </Flex>
           
         <SimpleGrid columns={2} spacing={10}>
-          {cart.map((item)=>(
+          
             <Flex>
-              <Image w="24" src={item.image} />
+              <Image w="24" src={cart.image} />
               <Box>
-                <Text ml="3" fontSize="17">{item.name} </Text>
-                <Text color="orange" ml="3">{item.brand} </Text>
+                <Text ml="3" fontSize="17">{cart.name} </Text>
+                <Text color="orange" ml="3">{cart.brand} </Text>
                 <Text ml="3">Delivery expected 29 Nov</Text>
               </Box>
               
             </Flex>
-          ))}
+      
           </SimpleGrid>
         </Box>
         <Image mt="20" src="/footerImg.png" alt="footerImg"/>

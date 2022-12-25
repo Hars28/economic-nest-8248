@@ -1,9 +1,11 @@
 import {
   Box,
+  Button,
   Heading,
   Table,
   TableContainer,
   Tbody,
+  Td,
   Th,
   Thead,
   Tr,
@@ -15,16 +17,27 @@ export default function AllUsersBox() {
     <Box padding="2rem" width="100%">
       <Heading>Users</Heading>
       <TableContainer mt="5rem">
-        <Table variant="striped" colorScheme="teal">
+        <Table size="md" variant="striped" colorScheme="teal">
           <Thead>
             <Tr>
               <Th>S. no.</Th>
-              <Th>Image</Th>
-              <Th>Product Name</Th>
-              <Th>Price</Th>
+              <Th>User Name</Th>
+              <Th>Role</Th>
+              <Th>Remove</Th>
             </Tr>
           </Thead>
-          <Tbody>Users</Tbody>
+          <Tbody>
+            <Tr>
+              <Td>1</Td>
+              <Td>Admin</Td>
+              <Td>admin</Td>
+              <Td>
+                <Button disabled colorScheme="red">
+                  Delete
+                </Button>
+              </Td>
+            </Tr>
+          </Tbody>
         </Table>
       </TableContainer>
     </Box>

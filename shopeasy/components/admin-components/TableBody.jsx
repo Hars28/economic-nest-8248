@@ -8,7 +8,10 @@ import {
   useDisclosure,
   Wrap,
 } from "@chakra-ui/react";
+import axios from "axios";
 import EditItem from "./EditItem";
+import { useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
 
 const scrollBarStyles = {
   /* width */
@@ -31,12 +34,29 @@ const scrollBarStyles = {
   },
 };
 
-export default function TableBody({ item, sr }) {
+export default function TableBody({ item, sr, setA }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [delLoading, setDelLoading] = useState(false);
+  const [editLoading, setEditLoading] = useState(false);
+  const session = useSession();
 
   const deleteData = async (id) => {
-    console.log(`data of this id ${id} will be deleted you sure?`);
+    const oId = session.data.user.objId;
+    setDelLoading(true);
+    await axios({
+      method: "delete",
+      url: `http://localhost:3000/api/products/category?id=${id}`,
+      headers: {
+        id: oId,
+      },
+    }).then((res) => {
+      setA((b) => b + 1);
+      setDelLoading(false);
+    });
+    // console.log(session);
   };
+
+  // useEffect(() => {}, [b]);
 
   return (
     <>
@@ -46,6 +66,8 @@ export default function TableBody({ item, sr }) {
           isOpen={isOpen}
           onOpen={onOpen}
           onClose={onClose}
+          setA={setA}
+          setEditLoading={setEditLoading}
         />
       )}
       <Tr fontSize="1.1rem">
@@ -67,12 +89,13 @@ export default function TableBody({ item, sr }) {
         <Td>{item.price}</Td>
         <Td>{item.type}</Td>
         <Td>
-          <Button colorScheme="blue" onClick={onOpen}>
+          <Button isLoading={editLoading} colorScheme="blue" onClick={onOpen}>
             Edit
           </Button>
         </Td>
         <Td>
           <Button
+            isLoading={delLoading}
             onClick={() => {
               deleteData(item._id);
             }}
