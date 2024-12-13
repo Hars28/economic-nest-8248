@@ -11,6 +11,9 @@ after that go into the folder by typing cd /shopeasy
 after that `npm install` to install dependencies 
 and the `npm run start` to run the app
 
+## deployed link
+https://economic-nest-8248-three.vercel.app/
+
 ## Team Members
 - [Govind](https://github.com/singh-govind)
 - [Bishal](https://github.com/bishal00sharma)
